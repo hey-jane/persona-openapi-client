@@ -1,9 +1,13 @@
+# Regenerate new versions using this config by updating the openapi-bundled.yml in this repo with this file:
+# https://github.com/persona-id/persona-openapi/blob/main/openapi-bundled.yaml
+# And then run this command:
+# openapi-generator generate -i ./openapi-bundled.yaml -g ruby  -o ./ -c openapi_generator_config.yml
 additionalProperties:
   gemAuthor: "Hey Jane"
   gemAuthorEmail: "eng_product@heyjane.co"
+  gemLicense: "MIT"
   GemName: "persona_openapi_client"
   gemVersion: "1.0.0"
   library: "faraday"
   gemRequiredRubyVersion: "3.3"
   moduleName: "PersonaAPIClient"
-
