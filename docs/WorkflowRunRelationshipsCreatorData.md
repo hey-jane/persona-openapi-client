@@ -1,4 +1,4 @@
-# OpenapiClient::WorkflowRunRelationshipsCreatorData
+# PersonaAPIClient::WorkflowRunRelationshipsCreatorData
 
 ## Class instance methods
 
@@ -9,9 +9,9 @@ Returns the list of classes defined in oneOf.
 #### Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-OpenapiClient::WorkflowRunRelationshipsCreatorData.openapi_one_of
+PersonaAPIClient::WorkflowRunRelationshipsCreatorData.openapi_one_of
 # =>
 # [
 #   :'Object',
@@ -28,12 +28,12 @@ Find the appropriate object from the `openapi_one_of` list and casts the data in
 #### Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-OpenapiClient::WorkflowRunRelationshipsCreatorData.build(data)
+PersonaAPIClient::WorkflowRunRelationshipsCreatorData.build(data)
 # => #<Object:0x00007fdd4aab02a0>
 
-OpenapiClient::WorkflowRunRelationshipsCreatorData.build(data_that_doesnt_match)
+PersonaAPIClient::WorkflowRunRelationshipsCreatorData.build(data_that_doesnt_match)
 # => nil
 ```
 

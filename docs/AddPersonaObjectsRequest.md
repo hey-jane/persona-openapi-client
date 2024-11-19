@@ -1,4 +1,4 @@
-# OpenapiClient::AddPersonaObjectsRequest
+# PersonaAPIClient::AddPersonaObjectsRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::AddPersonaObjectsRequest.new(
+instance = PersonaAPIClient::AddPersonaObjectsRequest.new(
   meta: null
 )
 ```

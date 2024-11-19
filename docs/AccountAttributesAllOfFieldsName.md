@@ -1,4 +1,4 @@
-# OpenapiClient::AccountAttributesAllOfFieldsName
+# PersonaAPIClient::AccountAttributesAllOfFieldsName
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::AccountAttributesAllOfFieldsName.new(
+instance = PersonaAPIClient::AccountAttributesAllOfFieldsName.new(
   type: null,
   value: null
 )

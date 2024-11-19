@@ -1,4 +1,4 @@
-# OpenapiClient::EventAttributesPayloadData
+# PersonaAPIClient::EventAttributesPayloadData
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::EventAttributesPayloadData.new(
+instance = PersonaAPIClient::EventAttributesPayloadData.new(
   type: null,
   id: null,
   attributes: null,

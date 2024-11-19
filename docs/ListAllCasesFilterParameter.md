@@ -1,4 +1,4 @@
-# OpenapiClient::ListAllCasesFilterParameter
+# PersonaAPIClient::ListAllCasesFilterParameter
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ListAllCasesFilterParameter.new(
+instance = PersonaAPIClient::ListAllCasesFilterParameter.new(
   status: null,
   case_template_id: null,
   account_id: null,

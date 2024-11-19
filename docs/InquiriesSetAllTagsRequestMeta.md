@@ -1,4 +1,4 @@
-# OpenapiClient::InquiriesSetAllTagsRequestMeta
+# PersonaAPIClient::InquiriesSetAllTagsRequestMeta
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::InquiriesSetAllTagsRequestMeta.new(
+instance = PersonaAPIClient::InquiriesSetAllTagsRequestMeta.new(
   tag_name: null,
   tag_id: null
 )

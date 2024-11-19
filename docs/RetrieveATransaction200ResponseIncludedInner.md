@@ -1,4 +1,4 @@
-# OpenapiClient::RetrieveATransaction200ResponseIncludedInner
+# PersonaAPIClient::RetrieveATransaction200ResponseIncludedInner
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::RetrieveATransaction200ResponseIncludedInner.new(
+instance = PersonaAPIClient::RetrieveATransaction200ResponseIncludedInner.new(
   type: null,
   id: null
 )

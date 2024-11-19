@@ -1,4 +1,4 @@
-# OpenapiClient::CreateAGovernmentIdDocumentRequestDataAttributes
+# PersonaAPIClient::CreateAGovernmentIdDocumentRequestDataAttributes
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateAGovernmentIdDocumentRequestDataAttributes.new(
+instance = PersonaAPIClient::CreateAGovernmentIdDocumentRequestDataAttributes.new(
   back_photo: null,
   country_code: null,
   front_photo: null,

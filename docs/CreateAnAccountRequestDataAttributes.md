@@ -1,4 +1,4 @@
-# OpenapiClient::CreateAnAccountRequestDataAttributes
+# PersonaAPIClient::CreateAnAccountRequestDataAttributes
 
 ## Properties
 
@@ -26,9 +26,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateAnAccountRequestDataAttributes.new(
+instance = PersonaAPIClient::CreateAnAccountRequestDataAttributes.new(
   account_status: null,
   reference_id: null,
   selfie_photo: null,

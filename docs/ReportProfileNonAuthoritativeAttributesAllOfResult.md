@@ -1,4 +1,4 @@
-# OpenapiClient::ReportProfileNonAuthoritativeAttributesAllOfResult
+# PersonaAPIClient::ReportProfileNonAuthoritativeAttributesAllOfResult
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportProfileNonAuthoritativeAttributesAllOfResult.new(
+instance = PersonaAPIClient::ReportProfileNonAuthoritativeAttributesAllOfResult.new(
   name: Norman Osborn,
   birthdate: 1991-10-07,
   emails: null,

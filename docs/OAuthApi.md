@@ -1,4 +1,4 @@
-# OpenapiClient::OAuthApi
+# PersonaAPIClient::OAuthApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -20,14 +20,14 @@ Creates an access token using an authorization code.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::OAuthApi.new
+api_instance = PersonaAPIClient::OAuthApi.new
 code = 'code_example' # String | Authorization Code
 grant_type = 'grant_type_example' # String | Must be set to 'authorization_code'
 opts = {
@@ -40,7 +40,7 @@ begin
   # Create Access Token
   result = api_instance.create_access_token(code, grant_type, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling OAuthApi->create_access_token: #{e}"
 end
 ```
@@ -58,7 +58,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAccessToken201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling OAuthApi->create_access_token_with_http_info: #{e}"
 end
 ```
@@ -99,14 +99,14 @@ Authorizes another Organization to access your Inquiry, Verifications, or other 
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::OAuthApi.new
+api_instance = PersonaAPIClient::OAuthApi.new
 client_id = 'client_id_example' # String | Organization (`org_`) to authorize
 response_type = 'response_type_example' # String | Must be set to 'code'
 scope = 'scope_example' # String | Space-separated list of 'permission:object' combinations (i.e. `inquiry.read:inq_uX7kRTiBxsJ1sZqPLAsjdP9j verification.read:ver_ynYuWdrjwwjiHJ2rgHfSoHeT`
@@ -120,7 +120,7 @@ begin
   # Create Authorization
   result = api_instance.create_authorization(client_id, response_type, scope, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling OAuthApi->create_authorization: #{e}"
 end
 ```
@@ -138,7 +138,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAuthorization201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling OAuthApi->create_authorization_with_http_info: #{e}"
 end
 ```

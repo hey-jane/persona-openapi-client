@@ -1,4 +1,4 @@
-# OpenapiClient::ReportProfile
+# PersonaAPIClient::ReportProfile
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportProfile.new(
+instance = PersonaAPIClient::ReportProfile.new(
   type: null,
   id: null,
   attributes: null,

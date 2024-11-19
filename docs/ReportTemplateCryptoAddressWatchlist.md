@@ -1,4 +1,4 @@
-# OpenapiClient::ReportTemplateCryptoAddressWatchlist
+# PersonaAPIClient::ReportTemplateCryptoAddressWatchlist
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportTemplateCryptoAddressWatchlist.new(
+instance = PersonaAPIClient::ReportTemplateCryptoAddressWatchlist.new(
   type: null,
   id: rptp_7WNzPaNcroBKLarNHBjYDLAp,
   attributes: null,

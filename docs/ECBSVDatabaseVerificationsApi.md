@@ -1,4 +1,4 @@
-# OpenapiClient::ECBSVDatabaseVerificationsApi
+# PersonaAPIClient::ECBSVDatabaseVerificationsApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -19,14 +19,14 @@ Retrieve an eCBSV database verification
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ECBSVDatabaseVerificationsApi.new
+api_instance = PersonaAPIClient::ECBSVDatabaseVerificationsApi.new
 verification_id = 'verification_id_example' # String | ID of Verification to retrieve
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -39,7 +39,7 @@ begin
   # Retrieve an eCBSV Database Verification
   result = api_instance.retrieve_an_ecbsv_database_verification(verification_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ECBSVDatabaseVerificationsApi->retrieve_an_ecbsv_database_verification: #{e}"
 end
 ```
@@ -57,7 +57,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveAnEcbsvDatabaseVerification200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ECBSVDatabaseVerificationsApi->retrieve_an_ecbsv_database_verification_with_http_info: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# OpenapiClient::ReportsApi
+# PersonaAPIClient::ReportsApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -30,27 +30,27 @@ Creates a new Report of any type.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ReportsApi.new
+api_instance = PersonaAPIClient::ReportsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_report_request: OpenapiClient::CreateAReportRequest.new # CreateAReportRequest | 
+  create_a_report_request: PersonaAPIClient::CreateAReportRequest.new # CreateAReportRequest | 
 }
 
 begin
   # Create a Report
   result = api_instance.create_a_report(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->create_a_report: #{e}"
 end
 ```
@@ -68,7 +68,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAReport201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->create_a_report_with_http_info: #{e}"
 end
 ```
@@ -109,28 +109,28 @@ Dismisses active matches for supported report types
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ReportsApi.new
+api_instance = PersonaAPIClient::ReportsApi.new
 report_id = 'report_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  dismiss_matches_request: OpenapiClient::DismissMatchesRequest.new({data: OpenapiClient::DismissMatchesRequestData.new}) # DismissMatchesRequest | 
+  dismiss_matches_request: PersonaAPIClient::DismissMatchesRequest.new({data: PersonaAPIClient::DismissMatchesRequestData.new}) # DismissMatchesRequest | 
 }
 
 begin
   # Report Action: Dismiss Matches
   result = api_instance.dismiss_matches(report_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->dismiss_matches: #{e}"
 end
 ```
@@ -148,7 +148,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAReport201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->dismiss_matches_with_http_info: #{e}"
 end
 ```
@@ -190,19 +190,19 @@ Returns a list of all your organization's Reports.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ReportsApi.new
+api_instance = PersonaAPIClient::ReportsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
-  page: OpenapiClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
+  page: PersonaAPIClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
   filter: { key: { key: 3.56}} # ListAllReportsFilterParameter | 
 }
 
@@ -210,7 +210,7 @@ begin
   # List all Reports
   result = api_instance.list_all_reports(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->list_all_reports: #{e}"
 end
 ```
@@ -228,7 +228,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAllReports200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->list_all_reports_with_http_info: #{e}"
 end
 ```
@@ -269,14 +269,14 @@ Prints a report in PDF format.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ReportsApi.new
+api_instance = PersonaAPIClient::ReportsApi.new
 report_id = 'report_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -288,7 +288,7 @@ begin
   # Print Report PDF
   result = api_instance.print_report_pdf(report_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->print_report_pdf: #{e}"
 end
 ```
@@ -306,7 +306,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Null>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->print_report_pdf_with_http_info: #{e}"
 end
 ```
@@ -346,14 +346,14 @@ Permanently deletes personally identifiable information (PII) for a Report.  Thi
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ReportsApi.new
+api_instance = PersonaAPIClient::ReportsApi.new
 report_id = 'report_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -366,7 +366,7 @@ begin
   # Redact a Report
   result = api_instance.redact_a_report(report_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->redact_a_report: #{e}"
 end
 ```
@@ -384,7 +384,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAReport201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->redact_a_report_with_http_info: #{e}"
 end
 ```
@@ -425,14 +425,14 @@ Pauses continuous monitoring on a report. Requires additional permissions.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ReportsApi.new
+api_instance = PersonaAPIClient::ReportsApi.new
 report_id = 'report_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -445,7 +445,7 @@ begin
   # Report Action: Pause Continuous Monitoring
   result = api_instance.report_action_pause_continuous_monitoring(report_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->report_action_pause_continuous_monitoring: #{e}"
 end
 ```
@@ -463,7 +463,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAReport201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->report_action_pause_continuous_monitoring_with_http_info: #{e}"
 end
 ```
@@ -504,14 +504,14 @@ Re-runs a continuously monitored report immediately, outside of its existing rec
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ReportsApi.new
+api_instance = PersonaAPIClient::ReportsApi.new
 report_id = 'report_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -524,7 +524,7 @@ begin
   # Report Action: Re-run Report
   result = api_instance.report_action_re_run_report(report_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->report_action_re_run_report: #{e}"
 end
 ```
@@ -542,7 +542,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAReport201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->report_action_re_run_report_with_http_info: #{e}"
 end
 ```
@@ -583,14 +583,14 @@ Resumes continuous monitoring on paused report. Requires additional permissions.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ReportsApi.new
+api_instance = PersonaAPIClient::ReportsApi.new
 report_id = 'report_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -603,7 +603,7 @@ begin
   # Report Action: Resume Continuous Monitoring
   result = api_instance.report_action_resume_continuous_monitoring(report_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->report_action_resume_continuous_monitoring: #{e}"
 end
 ```
@@ -621,7 +621,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAReport201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->report_action_resume_continuous_monitoring_with_http_info: #{e}"
 end
 ```
@@ -662,28 +662,28 @@ Adds a new tag to the Report
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ReportsApi.new
+api_instance = PersonaAPIClient::ReportsApi.new
 report_id = 'report_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  reports_add_tag_request: OpenapiClient::ReportsAddTagRequest.new # ReportsAddTagRequest | 
+  reports_add_tag_request: PersonaAPIClient::ReportsAddTagRequest.new # ReportsAddTagRequest | 
 }
 
 begin
   # Add tag to a Report
   result = api_instance.reports_add_tag(report_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->reports_add_tag: #{e}"
 end
 ```
@@ -701,7 +701,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAReport201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->reports_add_tag_with_http_info: #{e}"
 end
 ```
@@ -743,28 +743,28 @@ Removes an existing tag from a Report.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ReportsApi.new
+api_instance = PersonaAPIClient::ReportsApi.new
 report_id = 'report_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  reports_remove_tag_request: OpenapiClient::ReportsRemoveTagRequest.new # ReportsRemoveTagRequest | 
+  reports_remove_tag_request: PersonaAPIClient::ReportsRemoveTagRequest.new # ReportsRemoveTagRequest | 
 }
 
 begin
   # Remove tag from a Report
   result = api_instance.reports_remove_tag(report_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->reports_remove_tag: #{e}"
 end
 ```
@@ -782,7 +782,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAReport201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->reports_remove_tag_with_http_info: #{e}"
 end
 ```
@@ -824,28 +824,28 @@ Sets all tags on a Report. Any tags that are not provided in the request will be
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ReportsApi.new
+api_instance = PersonaAPIClient::ReportsApi.new
 report_id = 'report_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  reports_set_all_tags_request: OpenapiClient::ReportsSetAllTagsRequest.new # ReportsSetAllTagsRequest | 
+  reports_set_all_tags_request: PersonaAPIClient::ReportsSetAllTagsRequest.new # ReportsSetAllTagsRequest | 
 }
 
 begin
   # Set tags on a Report
   result = api_instance.reports_set_all_tags(report_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->reports_set_all_tags: #{e}"
 end
 ```
@@ -863,7 +863,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAReport201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->reports_set_all_tags_with_http_info: #{e}"
 end
 ```
@@ -905,14 +905,14 @@ Retrieves the details of an existing Report.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ReportsApi.new
+api_instance = PersonaAPIClient::ReportsApi.new
 report_id = 'report_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -925,7 +925,7 @@ begin
   # Retrieve a Report
   result = api_instance.retrieve_a_report(report_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->retrieve_a_report: #{e}"
 end
 ```
@@ -943,7 +943,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAReport201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ReportsApi->retrieve_a_report_with_http_info: #{e}"
 end
 ```

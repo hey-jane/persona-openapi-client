@@ -1,4 +1,4 @@
-# OpenapiClient::WebhookRequestAttributes
+# PersonaAPIClient::WebhookRequestAttributes
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::WebhookRequestAttributes.new(
+instance = PersonaAPIClient::WebhookRequestAttributes.new(
   url: null,
   enabled_events: null,
   api_version: null,

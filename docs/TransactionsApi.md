@@ -1,4 +1,4 @@
-# OpenapiClient::TransactionsApi
+# PersonaAPIClient::TransactionsApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -28,27 +28,27 @@ Creates a new <<glossary:Transaction>> for a specific <<glossary:transaction typ
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::TransactionsApi.new
+api_instance = PersonaAPIClient::TransactionsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_transaction_request: OpenapiClient::CreateATransactionRequest.new # CreateATransactionRequest | 
+  create_a_transaction_request: PersonaAPIClient::CreateATransactionRequest.new # CreateATransactionRequest | 
 }
 
 begin
   # Create a Transaction
   result = api_instance.create_a_transaction(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->create_a_transaction: #{e}"
 end
 ```
@@ -66,7 +66,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateATransaction200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->create_a_transaction_with_http_info: #{e}"
 end
 ```
@@ -107,28 +107,28 @@ Create a new label for an existing <<glossary:Transaction>>.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::TransactionsApi.new
+api_instance = PersonaAPIClient::TransactionsApi.new
 transaction_id = 'transaction_id_example' # String | ID of the transaction to create a label for.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_transaction_label_request: OpenapiClient::CreateATransactionLabelRequest.new # CreateATransactionLabelRequest | 
+  create_a_transaction_label_request: PersonaAPIClient::CreateATransactionLabelRequest.new # CreateATransactionLabelRequest | 
 }
 
 begin
   # Create a Transaction label
   result = api_instance.create_a_transaction_label(transaction_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->create_a_transaction_label: #{e}"
 end
 ```
@@ -146,7 +146,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UpdateATransaction200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->create_a_transaction_label_with_http_info: #{e}"
 end
 ```
@@ -188,19 +188,19 @@ Returns a list of your organization's transactions. Note that this endpoint aggr
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::TransactionsApi.new
+api_instance = PersonaAPIClient::TransactionsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
-  page: OpenapiClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
+  page: PersonaAPIClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
   filter: { key: { key: 3.56}} # ListAllTransactionsFilterParameter | 
 }
 
@@ -208,7 +208,7 @@ begin
   # List all Transactions
   result = api_instance.list_all_transactions(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->list_all_transactions: #{e}"
 end
 ```
@@ -226,7 +226,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAllTransactions200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->list_all_transactions_with_http_info: #{e}"
 end
 ```
@@ -267,14 +267,14 @@ Permanently deletes personally identifiable information (PII) for a <<glossary:T
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::TransactionsApi.new
+api_instance = PersonaAPIClient::TransactionsApi.new
 transaction_id = 'transaction_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -287,7 +287,7 @@ begin
   # Redact a Transaction
   result = api_instance.redact_a_transaction(transaction_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->redact_a_transaction: #{e}"
 end
 ```
@@ -305,7 +305,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateATransaction200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->redact_a_transaction_with_http_info: #{e}"
 end
 ```
@@ -346,14 +346,14 @@ Permanently deletes biometric data for a <<glossary:Transaction>> AND all its as
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::TransactionsApi.new
+api_instance = PersonaAPIClient::TransactionsApi.new
 transaction_id = 'transaction_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -366,7 +366,7 @@ begin
   # Redact Transaction biometrics
   result = api_instance.redact_transaction_biometrics(transaction_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->redact_transaction_biometrics: #{e}"
 end
 ```
@@ -384,7 +384,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateATransaction200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->redact_transaction_biometrics_with_http_info: #{e}"
 end
 ```
@@ -425,14 +425,14 @@ Retrieves the details of an existing <<glossary:Transaction>>.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::TransactionsApi.new
+api_instance = PersonaAPIClient::TransactionsApi.new
 transaction_id = 'transaction_id_example' # String | ID of the transaction to retrieve.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -445,7 +445,7 @@ begin
   # Retrieve a Transaction
   result = api_instance.retrieve_a_transaction(transaction_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->retrieve_a_transaction: #{e}"
 end
 ```
@@ -463,7 +463,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveATransaction200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->retrieve_a_transaction_with_http_info: #{e}"
 end
 ```
@@ -504,28 +504,28 @@ Adds a tag to a Transaction. Create a new tag if the tag does not already exist.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::TransactionsApi.new
+api_instance = PersonaAPIClient::TransactionsApi.new
 transaction_id = 'transaction_id_example' # String | ID of the transaction to add tag on.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  transactions_add_tag_request: OpenapiClient::TransactionsAddTagRequest.new # TransactionsAddTagRequest | 
+  transactions_add_tag_request: PersonaAPIClient::TransactionsAddTagRequest.new # TransactionsAddTagRequest | 
 }
 
 begin
   # Add tag to Transaction
   result = api_instance.transactions_add_tag(transaction_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->transactions_add_tag: #{e}"
 end
 ```
@@ -543,7 +543,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateATransaction200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->transactions_add_tag_with_http_info: #{e}"
 end
 ```
@@ -585,28 +585,28 @@ Remove a tag from a transaction. No effect if the transaction does not have the 
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::TransactionsApi.new
+api_instance = PersonaAPIClient::TransactionsApi.new
 transaction_id = 'transaction_id_example' # String | ID of the transaction to remove tag from.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  transactions_add_tag_request: OpenapiClient::TransactionsAddTagRequest.new # TransactionsAddTagRequest | 
+  transactions_add_tag_request: PersonaAPIClient::TransactionsAddTagRequest.new # TransactionsAddTagRequest | 
 }
 
 begin
   # Remove tag from a Transaction
   result = api_instance.transactions_remove_tag(transaction_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->transactions_remove_tag: #{e}"
 end
 ```
@@ -624,7 +624,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateATransaction200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->transactions_remove_tag_with_http_info: #{e}"
 end
 ```
@@ -666,28 +666,28 @@ Set the list of tags on a transaction. Remove all tags on the transaction that d
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::TransactionsApi.new
+api_instance = PersonaAPIClient::TransactionsApi.new
 transaction_id = 'transaction_id_example' # String | ID of the transaction to set tags on.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  transactions_set_tags_request: OpenapiClient::TransactionsSetTagsRequest.new # TransactionsSetTagsRequest | 
+  transactions_set_tags_request: PersonaAPIClient::TransactionsSetTagsRequest.new # TransactionsSetTagsRequest | 
 }
 
 begin
   # Sets tags on a Transaction
   result = api_instance.transactions_set_tags(transaction_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->transactions_set_tags: #{e}"
 end
 ```
@@ -705,7 +705,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateATransaction200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->transactions_set_tags_with_http_info: #{e}"
 end
 ```
@@ -747,28 +747,28 @@ Updates a <<glossary:Transaction>> that has been previously created.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::TransactionsApi.new
+api_instance = PersonaAPIClient::TransactionsApi.new
 transaction_id = 'transaction_id_example' # String | ID of the transaction to update.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  update_a_transaction_request: OpenapiClient::UpdateATransactionRequest.new # UpdateATransactionRequest | 
+  update_a_transaction_request: PersonaAPIClient::UpdateATransactionRequest.new # UpdateATransactionRequest | 
 }
 
 begin
   # Update a Transaction
   result = api_instance.update_a_transaction(transaction_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->update_a_transaction: #{e}"
 end
 ```
@@ -786,7 +786,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UpdateATransaction200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling TransactionsApi->update_a_transaction_with_http_info: #{e}"
 end
 ```

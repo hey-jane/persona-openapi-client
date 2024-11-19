@@ -1,4 +1,4 @@
-# OpenapiClient::InquiryTemplateVersionAttributes
+# PersonaAPIClient::InquiryTemplateVersionAttributes
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::InquiryTemplateVersionAttributes.new(
+instance = PersonaAPIClient::InquiryTemplateVersionAttributes.new(
   name_display: null,
   status: null,
   enabled_locales: null,

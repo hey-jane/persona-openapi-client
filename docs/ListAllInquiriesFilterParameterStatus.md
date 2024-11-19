@@ -1,4 +1,4 @@
-# OpenapiClient::ListAllInquiriesFilterParameterStatus
+# PersonaAPIClient::ListAllInquiriesFilterParameterStatus
 
 ## Class instance methods
 
@@ -9,9 +9,9 @@ Returns the list of classes defined in oneOf.
 #### Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-OpenapiClient::ListAllInquiriesFilterParameterStatus.openapi_one_of
+PersonaAPIClient::ListAllInquiriesFilterParameterStatus.openapi_one_of
 # =>
 # [
 #   :'Array<String>',
@@ -26,12 +26,12 @@ Find the appropriate object from the `openapi_one_of` list and casts the data in
 #### Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-OpenapiClient::ListAllInquiriesFilterParameterStatus.build(data)
+PersonaAPIClient::ListAllInquiriesFilterParameterStatus.build(data)
 # => #<Array<String>:0x00007fdd4aab02a0>
 
-OpenapiClient::ListAllInquiriesFilterParameterStatus.build(data_that_doesnt_match)
+PersonaAPIClient::ListAllInquiriesFilterParameterStatus.build(data_that_doesnt_match)
 # => nil
 ```
 

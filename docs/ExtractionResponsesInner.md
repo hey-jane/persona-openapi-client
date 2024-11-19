@@ -1,4 +1,4 @@
-# OpenapiClient::ExtractionResponsesInner
+# PersonaAPIClient::ExtractionResponsesInner
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ExtractionResponsesInner.new(
+instance = PersonaAPIClient::ExtractionResponsesInner.new(
   extraction_type: null,
   field_name: null,
   results: null

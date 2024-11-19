@@ -1,4 +1,4 @@
-# OpenapiClient::VerificationDocumentRelationships
+# PersonaAPIClient::VerificationDocumentRelationships
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::VerificationDocumentRelationships.new(
+instance = PersonaAPIClient::VerificationDocumentRelationships.new(
   inquiry: null,
   template: null,
   inquiry_template_version: null,

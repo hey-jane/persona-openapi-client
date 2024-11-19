@@ -1,4 +1,4 @@
-# OpenapiClient::InquiriesPerformSimulateActionsRequest
+# PersonaAPIClient::InquiriesPerformSimulateActionsRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::InquiriesPerformSimulateActionsRequest.new(
+instance = PersonaAPIClient::InquiriesPerformSimulateActionsRequest.new(
   meta: null
 )
 ```

@@ -1,4 +1,4 @@
-# OpenapiClient::GenerateAOneTimeLink200ResponseMeta
+# PersonaAPIClient::GenerateAOneTimeLink200ResponseMeta
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::GenerateAOneTimeLink200ResponseMeta.new(
+instance = PersonaAPIClient::GenerateAOneTimeLink200ResponseMeta.new(
   one_time_link: null,
   one_time_link_short: null
 )

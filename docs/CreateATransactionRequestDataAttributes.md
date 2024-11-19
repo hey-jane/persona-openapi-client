@@ -1,4 +1,4 @@
-# OpenapiClient::CreateATransactionRequestDataAttributes
+# PersonaAPIClient::CreateATransactionRequestDataAttributes
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateATransactionRequestDataAttributes.new(
+instance = PersonaAPIClient::CreateATransactionRequestDataAttributes.new(
   transaction_type_id: null,
   fields: null,
   reference_id: null,

@@ -1,4 +1,4 @@
-# OpenapiClient::ReportProfileRequestAttributesAllOfQuery
+# PersonaAPIClient::ReportProfileRequestAttributesAllOfQuery
 
 ## Properties
 
@@ -19,9 +19,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportProfileRequestAttributesAllOfQuery.new(
+instance = PersonaAPIClient::ReportProfileRequestAttributesAllOfQuery.new(
   name_first: John,
   name_last: Doe,
   birthdate: 1970-01-01,

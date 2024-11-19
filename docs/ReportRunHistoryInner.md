@@ -1,4 +1,4 @@
-# OpenapiClient::ReportRunHistoryInner
+# PersonaAPIClient::ReportRunHistoryInner
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportRunHistoryInner.new(
+instance = PersonaAPIClient::ReportRunHistoryInner.new(
   scheduled_at: 2023-08-11T20:36:04.291Z,
   completed_at: 2023-08-11T20:36:04.291Z,
   type: scheduled,

@@ -1,4 +1,4 @@
-# OpenapiClient::ListAllTransactionsFilterParameterIdentifier
+# PersonaAPIClient::ListAllTransactionsFilterParameterIdentifier
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ListAllTransactionsFilterParameterIdentifier.new(
+instance = PersonaAPIClient::ListAllTransactionsFilterParameterIdentifier.new(
   key: null,
   value: null
 )

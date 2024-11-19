@@ -1,4 +1,4 @@
-# OpenapiClient::ReportTemplateSharedAttributes
+# PersonaAPIClient::ReportTemplateSharedAttributes
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportTemplateSharedAttributes.new(
+instance = PersonaAPIClient::ReportTemplateSharedAttributes.new(
   name: null,
   created_at: null,
   updated_at: null

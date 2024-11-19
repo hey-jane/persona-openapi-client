@@ -1,4 +1,4 @@
-# OpenapiClient::ImportEmailAddressListsRequest1
+# PersonaAPIClient::ImportEmailAddressListsRequest1
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ImportEmailAddressListsRequest1.new(
+instance = PersonaAPIClient::ImportEmailAddressListsRequest1.new(
   data: null
 )
 ```

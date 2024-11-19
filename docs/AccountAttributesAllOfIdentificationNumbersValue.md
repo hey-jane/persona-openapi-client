@@ -1,4 +1,4 @@
-# OpenapiClient::AccountAttributesAllOfIdentificationNumbersValue
+# PersonaAPIClient::AccountAttributesAllOfIdentificationNumbersValue
 
 ## Properties
 
@@ -8,8 +8,8 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::AccountAttributesAllOfIdentificationNumbersValue.new()
+instance = PersonaAPIClient::AccountAttributesAllOfIdentificationNumbersValue.new()
 ```
 

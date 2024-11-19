@@ -1,4 +1,4 @@
-# OpenapiClient::DocumentFile
+# PersonaAPIClient::DocumentFile
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::DocumentFile.new(
+instance = PersonaAPIClient::DocumentFile.new(
   type: null,
   id: null,
   attributes: null

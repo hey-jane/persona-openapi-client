@@ -1,4 +1,4 @@
-# OpenapiClient::ReportWatchlistAttributesAllOfIgnoreListInnerMatchEntitiesInner
+# PersonaAPIClient::ReportWatchlistAttributesAllOfIgnoreListInnerMatchEntitiesInner
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportWatchlistAttributesAllOfIgnoreListInnerMatchEntitiesInner.new(
+instance = PersonaAPIClient::ReportWatchlistAttributesAllOfIgnoreListInnerMatchEntitiesInner.new(
   name: Won Ho Ri,
   alias_type: primary_name,
   birthdates: null,

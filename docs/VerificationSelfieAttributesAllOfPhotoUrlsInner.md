@@ -1,4 +1,4 @@
-# OpenapiClient::VerificationSelfieAttributesAllOfPhotoUrlsInner
+# PersonaAPIClient::VerificationSelfieAttributesAllOfPhotoUrlsInner
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::VerificationSelfieAttributesAllOfPhotoUrlsInner.new(
+instance = PersonaAPIClient::VerificationSelfieAttributesAllOfPhotoUrlsInner.new(
   byte_size: 316802,
   page: null,
   url: https://files.withpersona.com/...

@@ -1,4 +1,4 @@
-# OpenapiClient::ListsIpAddresses
+# PersonaAPIClient::ListsIpAddresses
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ListsIpAddresses.new(
+instance = PersonaAPIClient::ListsIpAddresses.new(
   type: null,
   id: null,
   attributes: null,

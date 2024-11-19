@@ -1,4 +1,4 @@
-# OpenapiClient::ReportBusinessWatchlistAttributesAllOfWarningListInner
+# PersonaAPIClient::ReportBusinessWatchlistAttributesAllOfWarningListInner
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportBusinessWatchlistAttributesAllOfWarningListInner.new(
+instance = PersonaAPIClient::ReportBusinessWatchlistAttributesAllOfWarningListInner.new(
   name: null,
   url: null
 )

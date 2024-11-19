@@ -1,4 +1,4 @@
-# OpenapiClient::ExpireAnApiKeyRequest
+# PersonaAPIClient::ExpireAnApiKeyRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ExpireAnApiKeyRequest.new(
+instance = PersonaAPIClient::ExpireAnApiKeyRequest.new(
   meta: null
 )
 ```

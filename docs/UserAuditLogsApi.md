@@ -1,4 +1,4 @@
-# OpenapiClient::UserAuditLogsApi
+# PersonaAPIClient::UserAuditLogsApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -20,26 +20,26 @@ Returns a list of your organization’s user audit logs for up to the most recen
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::UserAuditLogsApi.new
+api_instance = PersonaAPIClient::UserAuditLogsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
-  page: OpenapiClient::ListAllAccountsPageParameter.new # ListAllAccountsPageParameter | 
+  page: PersonaAPIClient::ListAllAccountsPageParameter.new # ListAllAccountsPageParameter | 
 }
 
 begin
   # List all User Audit Logs
   result = api_instance.list_all_user_audit_logs(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling UserAuditLogsApi->list_all_user_audit_logs: #{e}"
 end
 ```
@@ -57,7 +57,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAllUserAuditLogs200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling UserAuditLogsApi->list_all_user_audit_logs_with_http_info: #{e}"
 end
 ```
@@ -97,14 +97,14 @@ Retrieves the details of an existing user audit logs for up to the most recent 6
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::UserAuditLogsApi.new
+api_instance = PersonaAPIClient::UserAuditLogsApi.new
 user_audit_log_id = 'user_audit_log_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -117,7 +117,7 @@ begin
   # Retrieve an User Audit Log
   result = api_instance.retrieve_an_user_audit_log(user_audit_log_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling UserAuditLogsApi->retrieve_an_user_audit_log: #{e}"
 end
 ```
@@ -135,7 +135,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveAnUserAuditLog200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling UserAuditLogsApi->retrieve_an_user_audit_log_with_http_info: #{e}"
 end
 ```

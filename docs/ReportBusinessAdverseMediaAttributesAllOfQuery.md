@@ -1,4 +1,4 @@
-# OpenapiClient::ReportBusinessAdverseMediaAttributesAllOfQuery
+# PersonaAPIClient::ReportBusinessAdverseMediaAttributesAllOfQuery
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportBusinessAdverseMediaAttributesAllOfQuery.new(
+instance = PersonaAPIClient::ReportBusinessAdverseMediaAttributesAllOfQuery.new(
   business_name: null,
   address_street: null,
   address_city: null,

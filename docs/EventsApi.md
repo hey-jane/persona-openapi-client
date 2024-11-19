@@ -1,4 +1,4 @@
-# OpenapiClient::EventsApi
+# PersonaAPIClient::EventsApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -20,19 +20,19 @@ Returns a list of your organization's events.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::EventsApi.new
+api_instance = PersonaAPIClient::EventsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
-  page: OpenapiClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
+  page: PersonaAPIClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
   filter: { key: { key: 3.56}} # ListAllEventsFilterParameter | 
 }
 
@@ -40,7 +40,7 @@ begin
   # List all Events
   result = api_instance.list_all_events(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling EventsApi->list_all_events: #{e}"
 end
 ```
@@ -58,7 +58,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAllEvents200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling EventsApi->list_all_events_with_http_info: #{e}"
 end
 ```
@@ -99,14 +99,14 @@ Retrieves the details of an existing event.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::EventsApi.new
+api_instance = PersonaAPIClient::EventsApi.new
 event_id = 'event_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -119,7 +119,7 @@ begin
   # Retrieve an Event
   result = api_instance.retrieve_an_event(event_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling EventsApi->retrieve_an_event: #{e}"
 end
 ```
@@ -137,7 +137,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveAnEvent200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling EventsApi->retrieve_an_event_with_http_info: #{e}"
 end
 ```

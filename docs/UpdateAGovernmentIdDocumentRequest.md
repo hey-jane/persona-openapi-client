@@ -1,4 +1,4 @@
-# OpenapiClient::UpdateAGovernmentIdDocumentRequest
+# PersonaAPIClient::UpdateAGovernmentIdDocumentRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::UpdateAGovernmentIdDocumentRequest.new(
+instance = PersonaAPIClient::UpdateAGovernmentIdDocumentRequest.new(
   data: null
 )
 ```

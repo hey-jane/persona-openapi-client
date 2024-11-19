@@ -1,4 +1,4 @@
-# OpenapiClient::ReportCryptoAddressWatchlistRequestAttributesAllOfQuery
+# PersonaAPIClient::ReportCryptoAddressWatchlistRequestAttributesAllOfQuery
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportCryptoAddressWatchlistRequestAttributesAllOfQuery.new(
+instance = PersonaAPIClient::ReportCryptoAddressWatchlistRequestAttributesAllOfQuery.new(
   crypto_address: 1Fz29BQp82pE3vXXcsZoMNQ3KSHfMzfMe3
 )
 ```

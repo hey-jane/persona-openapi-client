@@ -1,4 +1,4 @@
-# OpenapiClient::CasesApi
+# PersonaAPIClient::CasesApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -29,28 +29,28 @@ Adds Persona objects (such as inquiries, accounts, or reports) to a <<glossary:C
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::CasesApi.new
+api_instance = PersonaAPIClient::CasesApi.new
 case_id = 'case_id_example' # String | ID of the case to update
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  add_persona_objects_request: OpenapiClient::AddPersonaObjectsRequest.new # AddPersonaObjectsRequest | 
+  add_persona_objects_request: PersonaAPIClient::AddPersonaObjectsRequest.new # AddPersonaObjectsRequest | 
 }
 
 begin
   # Add Persona objects to a Case
   result = api_instance.add_persona_objects(case_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->add_persona_objects: #{e}"
 end
 ```
@@ -68,7 +68,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateACase201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->add_persona_objects_with_http_info: #{e}"
 end
 ```
@@ -110,28 +110,28 @@ Adds a new tag to a <<glossary:Case>>
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::CasesApi.new
+api_instance = PersonaAPIClient::CasesApi.new
 case_id = 'case_id_example' # String | ID of the case to update.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  add_tag_request: OpenapiClient::AddTagRequest.new # AddTagRequest | 
+  add_tag_request: PersonaAPIClient::AddTagRequest.new # AddTagRequest | 
 }
 
 begin
   # Add tag to a Case
   result = api_instance.add_tag(case_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->add_tag: #{e}"
 end
 ```
@@ -149,7 +149,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateACase201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->add_tag_with_http_info: #{e}"
 end
 ```
@@ -191,28 +191,28 @@ Assigns a <<glossary:Case>> to a Persona user.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::CasesApi.new
+api_instance = PersonaAPIClient::CasesApi.new
 case_id = 'case_id_example' # String | ID of the case to update
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  assign_a_case_request: OpenapiClient::AssignACaseRequest.new({meta: OpenapiClient::AssignACaseRequestMeta.new({user_email_address: 'user_email_address_example'})}) # AssignACaseRequest | 
+  assign_a_case_request: PersonaAPIClient::AssignACaseRequest.new({meta: PersonaAPIClient::AssignACaseRequestMeta.new({user_email_address: 'user_email_address_example'})}) # AssignACaseRequest | 
 }
 
 begin
   # Assign a Case
   result = api_instance.assign_a_case(case_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->assign_a_case: #{e}"
 end
 ```
@@ -230,7 +230,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateACase201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->assign_a_case_with_http_info: #{e}"
 end
 ```
@@ -272,27 +272,27 @@ Creates a new case in your organization.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::CasesApi.new
+api_instance = PersonaAPIClient::CasesApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_case_request: OpenapiClient::CreateACaseRequest.new({data: OpenapiClient::CreateACaseRequestData.new}) # CreateACaseRequest | 
+  create_a_case_request: PersonaAPIClient::CreateACaseRequest.new({data: PersonaAPIClient::CreateACaseRequestData.new}) # CreateACaseRequest | 
 }
 
 begin
   # Create a Case
   result = api_instance.create_a_case(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->create_a_case: #{e}"
 end
 ```
@@ -310,7 +310,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateACase201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->create_a_case_with_http_info: #{e}"
 end
 ```
@@ -351,19 +351,19 @@ Returns a list of your organization's cases.  Note that this endpoint aggregates
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::CasesApi.new
+api_instance = PersonaAPIClient::CasesApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
-  page: OpenapiClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
+  page: PersonaAPIClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
   filter: { key: { key: 3.56}} # ListAllCasesFilterParameter | 
 }
 
@@ -371,7 +371,7 @@ begin
   # List all Cases
   result = api_instance.list_all_cases(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->list_all_cases: #{e}"
 end
 ```
@@ -389,7 +389,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAllCases200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->list_all_cases_with_http_info: #{e}"
 end
 ```
@@ -430,14 +430,14 @@ Permanently redacts a <<glossary:Case>> and its fields. Case objects must be red
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::CasesApi.new
+api_instance = PersonaAPIClient::CasesApi.new
 case_id = 'case_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -450,7 +450,7 @@ begin
   # Redact a Case
   result = api_instance.redact_a_case(case_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->redact_a_case: #{e}"
 end
 ```
@@ -468,7 +468,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateACase201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->redact_a_case_with_http_info: #{e}"
 end
 ```
@@ -509,28 +509,28 @@ Removes an existing tag from a <<glossary:Case>>
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::CasesApi.new
+api_instance = PersonaAPIClient::CasesApi.new
 case_id = 'case_id_example' # String | ID of the case to update.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  remove_tag_request: OpenapiClient::RemoveTagRequest.new # RemoveTagRequest | 
+  remove_tag_request: PersonaAPIClient::RemoveTagRequest.new # RemoveTagRequest | 
 }
 
 begin
   # Remove tag from a Case
   result = api_instance.remove_tag(case_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->remove_tag: #{e}"
 end
 ```
@@ -548,7 +548,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateACase201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->remove_tag_with_http_info: #{e}"
 end
 ```
@@ -590,14 +590,14 @@ Retrieves the details of an existing <<glossary:Case>>.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::CasesApi.new
+api_instance = PersonaAPIClient::CasesApi.new
 case_id = 'case_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -610,7 +610,7 @@ begin
   # Retrieve a Case
   result = api_instance.retrieve_case(case_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->retrieve_case: #{e}"
 end
 ```
@@ -628,7 +628,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateACase201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->retrieve_case_with_http_info: #{e}"
 end
 ```
@@ -669,28 +669,28 @@ Sets the status of a Case.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::CasesApi.new
+api_instance = PersonaAPIClient::CasesApi.new
 case_id = 'case_id_example' # String | ID of the case to update status
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  set_status_for_a_case_request: OpenapiClient::SetStatusForACaseRequest.new # SetStatusForACaseRequest | 
+  set_status_for_a_case_request: PersonaAPIClient::SetStatusForACaseRequest.new # SetStatusForACaseRequest | 
 }
 
 begin
   # Set status on a Case
   result = api_instance.set_status_for_a_case(case_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->set_status_for_a_case: #{e}"
 end
 ```
@@ -708,7 +708,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateACase201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->set_status_for_a_case_with_http_info: #{e}"
 end
 ```
@@ -750,28 +750,28 @@ Sets all tags on a <<glossary:Case>>. Any tags that are not provided in the requ
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::CasesApi.new
+api_instance = PersonaAPIClient::CasesApi.new
 case_id = 'case_id_example' # String | ID of the case to update.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  set_tags_request: OpenapiClient::SetTagsRequest.new # SetTagsRequest | 
+  set_tags_request: PersonaAPIClient::SetTagsRequest.new # SetTagsRequest | 
 }
 
 begin
   # Set tags on a Case
   result = api_instance.set_tags(case_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->set_tags: #{e}"
 end
 ```
@@ -789,7 +789,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateACase201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->set_tags_with_http_info: #{e}"
 end
 ```
@@ -831,28 +831,28 @@ Updates the fields and add attachments on a <<glossary:Case>> that has been prev
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::CasesApi.new
+api_instance = PersonaAPIClient::CasesApi.new
 case_id = 'case_id_example' # String | ID of the case to update
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  update_a_case_request: OpenapiClient::UpdateACaseRequest.new # UpdateACaseRequest | 
+  update_a_case_request: PersonaAPIClient::UpdateACaseRequest.new # UpdateACaseRequest | 
 }
 
 begin
   # Update a Case
   result = api_instance.update_a_case(case_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->update_a_case: #{e}"
 end
 ```
@@ -870,7 +870,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateACase201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling CasesApi->update_a_case_with_http_info: #{e}"
 end
 ```

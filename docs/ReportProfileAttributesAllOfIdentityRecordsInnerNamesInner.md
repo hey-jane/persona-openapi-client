@@ -1,4 +1,4 @@
-# OpenapiClient::ReportProfileAttributesAllOfIdentityRecordsInnerNamesInner
+# PersonaAPIClient::ReportProfileAttributesAllOfIdentityRecordsInnerNamesInner
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportProfileAttributesAllOfIdentityRecordsInnerNamesInner.new(
+instance = PersonaAPIClient::ReportProfileAttributesAllOfIdentityRecordsInnerNamesInner.new(
   name_full: null,
   name_first: null,
   name_middle: null,

@@ -1,4 +1,4 @@
-# OpenapiClient::ConsolidateIntoAnAccountRequestMeta
+# PersonaAPIClient::ConsolidateIntoAnAccountRequestMeta
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ConsolidateIntoAnAccountRequestMeta.new(
+instance = PersonaAPIClient::ConsolidateIntoAnAccountRequestMeta.new(
   source_account_ids: null
 )
 ```

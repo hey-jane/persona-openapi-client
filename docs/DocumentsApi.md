@@ -1,4 +1,4 @@
-# OpenapiClient::DocumentsApi
+# PersonaAPIClient::DocumentsApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -27,27 +27,27 @@ Creates a new generic document.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::DocumentsApi.new
+api_instance = PersonaAPIClient::DocumentsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_document_request: OpenapiClient::CreateADocumentRequest.new({data: OpenapiClient::CreateADocumentRequestData.new}) # CreateADocumentRequest | 
+  create_a_document_request: PersonaAPIClient::CreateADocumentRequest.new({data: PersonaAPIClient::CreateADocumentRequestData.new}) # CreateADocumentRequest | 
 }
 
 begin
   # Create a Generic Document
   result = api_instance.create_a_document(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->create_a_document: #{e}"
 end
 ```
@@ -65,7 +65,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateADocument201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->create_a_document_with_http_info: #{e}"
 end
 ```
@@ -106,27 +106,27 @@ Creates a new government ID document
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::DocumentsApi.new
+api_instance = PersonaAPIClient::DocumentsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_government_id_document_request: OpenapiClient::CreateAGovernmentIdDocumentRequest.new({data: OpenapiClient::CreateAGovernmentIdDocumentRequestData.new}) # CreateAGovernmentIdDocumentRequest | 
+  create_a_government_id_document_request: PersonaAPIClient::CreateAGovernmentIdDocumentRequest.new({data: PersonaAPIClient::CreateAGovernmentIdDocumentRequestData.new}) # CreateAGovernmentIdDocumentRequest | 
 }
 
 begin
   # Create a Government ID Document
   result = api_instance.create_a_government_id_document(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->create_a_government_id_document: #{e}"
 end
 ```
@@ -144,7 +144,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAGovernmentIdDocument201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->create_a_government_id_document_with_http_info: #{e}"
 end
 ```
@@ -185,14 +185,14 @@ Retrieves the details of a Document.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::DocumentsApi.new
+api_instance = PersonaAPIClient::DocumentsApi.new
 document_id = 'document_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -205,7 +205,7 @@ begin
   # Retrieve a Document
   result = api_instance.retrieve_a_document(document_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->retrieve_a_document: #{e}"
 end
 ```
@@ -223,7 +223,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveADocument200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->retrieve_a_document_with_http_info: #{e}"
 end
 ```
@@ -264,14 +264,14 @@ Retrieves the details of a generic document that has been previously created.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::DocumentsApi.new
+api_instance = PersonaAPIClient::DocumentsApi.new
 document_id = 'document_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -284,7 +284,7 @@ begin
   # Retrieve a Generic Document
   result = api_instance.retrieve_a_generic_document(document_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->retrieve_a_generic_document: #{e}"
 end
 ```
@@ -302,7 +302,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateADocument201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->retrieve_a_generic_document_with_http_info: #{e}"
 end
 ```
@@ -343,14 +343,14 @@ Retrieves the details of a government-id document that has been previously creat
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::DocumentsApi.new
+api_instance = PersonaAPIClient::DocumentsApi.new
 document_id = 'document_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -363,7 +363,7 @@ begin
   # Retrieve a Government Id Document
   result = api_instance.retrieve_a_government_id_document(document_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->retrieve_a_government_id_document: #{e}"
 end
 ```
@@ -381,7 +381,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveAGovernmentIdDocument200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->retrieve_a_government_id_document_with_http_info: #{e}"
 end
 ```
@@ -422,14 +422,14 @@ Submits a generic document for processing. Can only submit `initiated` documents
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::DocumentsApi.new
+api_instance = PersonaAPIClient::DocumentsApi.new
 document_id = 'document_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -442,7 +442,7 @@ begin
   # Submit a Generic Document
   result = api_instance.submit_a_document(document_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->submit_a_document: #{e}"
 end
 ```
@@ -460,7 +460,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateADocument201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->submit_a_document_with_http_info: #{e}"
 end
 ```
@@ -501,14 +501,14 @@ Submits a government ID document for processing. Can only submit `initiated` doc
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::DocumentsApi.new
+api_instance = PersonaAPIClient::DocumentsApi.new
 document_id = 'document_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -521,7 +521,7 @@ begin
   # Submit a Government ID Document
   result = api_instance.submit_a_government_id_document(document_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->submit_a_government_id_document: #{e}"
 end
 ```
@@ -539,7 +539,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAGovernmentIdDocument201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->submit_a_government_id_document_with_http_info: #{e}"
 end
 ```
@@ -580,28 +580,28 @@ Updates an existing generic document. Can only update `initiated` documents.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::DocumentsApi.new
+api_instance = PersonaAPIClient::DocumentsApi.new
 document_id = 'document_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  update_a_document_request: OpenapiClient::UpdateADocumentRequest.new({data: OpenapiClient::UpdateADocumentRequestData.new}) # UpdateADocumentRequest | 
+  update_a_document_request: PersonaAPIClient::UpdateADocumentRequest.new({data: PersonaAPIClient::UpdateADocumentRequestData.new}) # UpdateADocumentRequest | 
 }
 
 begin
   # Update a Generic Document
   result = api_instance.update_a_document(document_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->update_a_document: #{e}"
 end
 ```
@@ -619,7 +619,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateADocument201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->update_a_document_with_http_info: #{e}"
 end
 ```
@@ -661,28 +661,28 @@ Updates an existing government ID document. Can only update `initiated` document
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::DocumentsApi.new
+api_instance = PersonaAPIClient::DocumentsApi.new
 document_id = 'document_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  update_a_government_id_document_request: OpenapiClient::UpdateAGovernmentIdDocumentRequest.new({data: OpenapiClient::UpdateAGovernmentIdDocumentRequestData.new}) # UpdateAGovernmentIdDocumentRequest | 
+  update_a_government_id_document_request: PersonaAPIClient::UpdateAGovernmentIdDocumentRequest.new({data: PersonaAPIClient::UpdateAGovernmentIdDocumentRequestData.new}) # UpdateAGovernmentIdDocumentRequest | 
 }
 
 begin
   # Update a Government ID Document
   result = api_instance.update_a_government_id_document(document_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->update_a_government_id_document: #{e}"
 end
 ```
@@ -700,7 +700,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAGovernmentIdDocument201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DocumentsApi->update_a_government_id_document_with_http_info: #{e}"
 end
 ```

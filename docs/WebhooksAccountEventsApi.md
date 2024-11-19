@@ -1,4 +1,4 @@
-# OpenapiClient::WebhooksAccountEventsApi
+# PersonaAPIClient::WebhooksAccountEventsApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -25,14 +25,14 @@ Webhook for the `account.archived` event. For more info see [Webhooks Overview](
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WebhooksAccountEventsApi.new
+api_instance = PersonaAPIClient::WebhooksAccountEventsApi.new
 opts = {
   persona_signature: , # String | Header. An HMAC that you should use to check that requests are authentic. Compare this value with your own digest, computed from the request body and your webhook secret. For more info see [Webhook Best Practices](https://docs.withpersona.com/docs/webhooks-best-practices).
   persona_webhook_attempts_made: , # Integer | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful.
@@ -44,7 +44,7 @@ opts = {
 begin
   # Account archived
   api_instance.webhook_account_archived(opts)
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksAccountEventsApi->webhook_account_archived: #{e}"
 end
 ```
@@ -62,7 +62,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksAccountEventsApi->webhook_account_archived_with_http_info: #{e}"
 end
 ```
@@ -103,14 +103,14 @@ Webhook for the `account.consolidated` event. For more info see [Webhooks Overvi
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WebhooksAccountEventsApi.new
+api_instance = PersonaAPIClient::WebhooksAccountEventsApi.new
 opts = {
   persona_signature: , # String | Header. An HMAC that you should use to check that requests are authentic. Compare this value with your own digest, computed from the request body and your webhook secret. For more info see [Webhook Best Practices](https://docs.withpersona.com/docs/webhooks-best-practices).
   persona_webhook_attempts_made: , # Integer | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful.
@@ -122,7 +122,7 @@ opts = {
 begin
   # Account consolidated
   api_instance.webhook_account_consolidated(opts)
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksAccountEventsApi->webhook_account_consolidated: #{e}"
 end
 ```
@@ -140,7 +140,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksAccountEventsApi->webhook_account_consolidated_with_http_info: #{e}"
 end
 ```
@@ -181,14 +181,14 @@ Webhook for the `account.created` event. For more info see [Webhooks Overview](h
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WebhooksAccountEventsApi.new
+api_instance = PersonaAPIClient::WebhooksAccountEventsApi.new
 opts = {
   persona_signature: , # String | Header. An HMAC that you should use to check that requests are authentic. Compare this value with your own digest, computed from the request body and your webhook secret. For more info see [Webhook Best Practices](https://docs.withpersona.com/docs/webhooks-best-practices).
   persona_webhook_attempts_made: , # Integer | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful.
@@ -200,7 +200,7 @@ opts = {
 begin
   # Account created
   api_instance.webhook_account_created(opts)
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksAccountEventsApi->webhook_account_created: #{e}"
 end
 ```
@@ -218,7 +218,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksAccountEventsApi->webhook_account_created_with_http_info: #{e}"
 end
 ```
@@ -259,14 +259,14 @@ Webhook for the `account.redacted` event. For more info see [Webhooks Overview](
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WebhooksAccountEventsApi.new
+api_instance = PersonaAPIClient::WebhooksAccountEventsApi.new
 opts = {
   persona_signature: , # String | Header. An HMAC that you should use to check that requests are authentic. Compare this value with your own digest, computed from the request body and your webhook secret. For more info see [Webhook Best Practices](https://docs.withpersona.com/docs/webhooks-best-practices).
   persona_webhook_attempts_made: , # Integer | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful.
@@ -278,7 +278,7 @@ opts = {
 begin
   # Account redacted
   api_instance.webhook_account_redacted(opts)
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksAccountEventsApi->webhook_account_redacted: #{e}"
 end
 ```
@@ -296,7 +296,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksAccountEventsApi->webhook_account_redacted_with_http_info: #{e}"
 end
 ```
@@ -337,14 +337,14 @@ Webhook for the `account.restored` event. For more info see [Webhooks Overview](
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WebhooksAccountEventsApi.new
+api_instance = PersonaAPIClient::WebhooksAccountEventsApi.new
 opts = {
   persona_signature: , # String | Header. An HMAC that you should use to check that requests are authentic. Compare this value with your own digest, computed from the request body and your webhook secret. For more info see [Webhook Best Practices](https://docs.withpersona.com/docs/webhooks-best-practices).
   persona_webhook_attempts_made: , # Integer | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful.
@@ -356,7 +356,7 @@ opts = {
 begin
   # Account restored
   api_instance.webhook_account_restored(opts)
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksAccountEventsApi->webhook_account_restored: #{e}"
 end
 ```
@@ -374,7 +374,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksAccountEventsApi->webhook_account_restored_with_http_info: #{e}"
 end
 ```
@@ -415,14 +415,14 @@ Webhook for the `account.tag-added` event. For more info see [Webhooks Overview]
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WebhooksAccountEventsApi.new
+api_instance = PersonaAPIClient::WebhooksAccountEventsApi.new
 opts = {
   persona_signature: , # String | Header. An HMAC that you should use to check that requests are authentic. Compare this value with your own digest, computed from the request body and your webhook secret. For more info see [Webhook Best Practices](https://docs.withpersona.com/docs/webhooks-best-practices).
   persona_webhook_attempts_made: , # Integer | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful.
@@ -434,7 +434,7 @@ opts = {
 begin
   # Account tag added
   api_instance.webhook_account_tag_added(opts)
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksAccountEventsApi->webhook_account_tag_added: #{e}"
 end
 ```
@@ -452,7 +452,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksAccountEventsApi->webhook_account_tag_added_with_http_info: #{e}"
 end
 ```
@@ -493,14 +493,14 @@ Webhook for the `account.tag-removed` event. For more info see [Webhooks Overvie
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WebhooksAccountEventsApi.new
+api_instance = PersonaAPIClient::WebhooksAccountEventsApi.new
 opts = {
   persona_signature: , # String | Header. An HMAC that you should use to check that requests are authentic. Compare this value with your own digest, computed from the request body and your webhook secret. For more info see [Webhook Best Practices](https://docs.withpersona.com/docs/webhooks-best-practices).
   persona_webhook_attempts_made: , # Integer | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful.
@@ -512,7 +512,7 @@ opts = {
 begin
   # Account tag removed
   api_instance.webhook_account_tag_removed(opts)
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksAccountEventsApi->webhook_account_tag_removed: #{e}"
 end
 ```
@@ -530,7 +530,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksAccountEventsApi->webhook_account_tag_removed_with_http_info: #{e}"
 end
 ```

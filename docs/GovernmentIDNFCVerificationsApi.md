@@ -1,4 +1,4 @@
-# OpenapiClient::GovernmentIDNFCVerificationsApi
+# PersonaAPIClient::GovernmentIDNFCVerificationsApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -19,14 +19,14 @@ Retrieve a Government ID NFC verification
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::GovernmentIDNFCVerificationsApi.new
+api_instance = PersonaAPIClient::GovernmentIDNFCVerificationsApi.new
 verification_id = 'verification_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -39,7 +39,7 @@ begin
   # Retrieve a Government Id NFC Verification
   result = api_instance.retrieve_a_government_id_nfc_verification(verification_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling GovernmentIDNFCVerificationsApi->retrieve_a_government_id_nfc_verification: #{e}"
 end
 ```
@@ -57,7 +57,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveAGovernmentIdNfcVerification200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling GovernmentIDNFCVerificationsApi->retrieve_a_government_id_nfc_verification_with_http_info: #{e}"
 end
 ```

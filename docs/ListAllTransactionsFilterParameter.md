@@ -1,4 +1,4 @@
-# OpenapiClient::ListAllTransactionsFilterParameter
+# PersonaAPIClient::ListAllTransactionsFilterParameter
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ListAllTransactionsFilterParameter.new(
+instance = PersonaAPIClient::ListAllTransactionsFilterParameter.new(
   reference_id: null,
   transaction_type_id: null,
   identifier: null

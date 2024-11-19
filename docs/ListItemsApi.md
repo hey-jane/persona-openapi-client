@@ -1,4 +1,4 @@
-# OpenapiClient::ListItemsApi
+# PersonaAPIClient::ListItemsApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -51,14 +51,14 @@ Archived items are not matched against new inquiries.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -71,7 +71,7 @@ begin
   # Archive a Browser Fingerprint List Item
   result = api_instance.archive_a_browser_fingerprint_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_browser_fingerprint_list_item: #{e}"
 end
 ```
@@ -89,7 +89,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateABrowserFingerprintListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_browser_fingerprint_list_item_with_http_info: #{e}"
 end
 ```
@@ -130,14 +130,14 @@ Archived items are not matched against new inquiries.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -150,7 +150,7 @@ begin
   # Archive a Country List Item
   result = api_instance.archive_a_country_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_country_list_item: #{e}"
 end
 ```
@@ -168,7 +168,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateACountryListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_country_list_item_with_http_info: #{e}"
 end
 ```
@@ -209,14 +209,14 @@ Archived items are not matched against new inquiries.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -229,7 +229,7 @@ begin
   # Archive a Device Fingerprint List Item
   result = api_instance.archive_a_device_fingerprint_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_device_fingerprint_list_item: #{e}"
 end
 ```
@@ -247,7 +247,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateADeviceFingerprintListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_device_fingerprint_list_item_with_http_info: #{e}"
 end
 ```
@@ -288,14 +288,14 @@ Archived items are not matched against new inquiries.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -308,7 +308,7 @@ begin
   # Archive a Field List Item
   result = api_instance.archive_a_field_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_field_list_item: #{e}"
 end
 ```
@@ -326,7 +326,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAFieldListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_field_list_item_with_http_info: #{e}"
 end
 ```
@@ -367,14 +367,14 @@ Archived items are not matched against new inquiries.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -387,7 +387,7 @@ begin
   # Archive a Geolocation List Item
   result = api_instance.archive_a_geolocation_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_geolocation_list_item: #{e}"
 end
 ```
@@ -405,7 +405,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAGeolocationListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_geolocation_list_item_with_http_info: #{e}"
 end
 ```
@@ -446,14 +446,14 @@ Archived items are not matched against new inquiries.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -466,7 +466,7 @@ begin
   # Archive a Government ID Number List Item
   result = api_instance.archive_a_government_id_number_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_government_id_number_list_item: #{e}"
 end
 ```
@@ -484,7 +484,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAGovernmentIdNumberListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_government_id_number_list_item_with_http_info: #{e}"
 end
 ```
@@ -525,14 +525,14 @@ Archived items are not matched against new inquiries.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -545,7 +545,7 @@ begin
   # Archive a Name List Item
   result = api_instance.archive_a_name_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_name_list_item: #{e}"
 end
 ```
@@ -563,7 +563,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateANameListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_name_list_item_with_http_info: #{e}"
 end
 ```
@@ -604,14 +604,14 @@ Archived items are not matched against new inquiries.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -624,7 +624,7 @@ begin
   # Archive a Phone Number List Item
   result = api_instance.archive_a_phone_number_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_phone_number_list_item: #{e}"
 end
 ```
@@ -642,7 +642,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAPhoneNumberListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_phone_number_list_item_with_http_info: #{e}"
 end
 ```
@@ -683,14 +683,14 @@ Archived items are not matched against new inquiries.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -703,7 +703,7 @@ begin
   # Archive a String List Item
   result = api_instance.archive_a_string_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_string_list_item: #{e}"
 end
 ```
@@ -721,7 +721,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAStringListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_a_string_list_item_with_http_info: #{e}"
 end
 ```
@@ -762,14 +762,14 @@ Archived items are not matched against new inquiries.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -782,7 +782,7 @@ begin
   # Archive an Email Address List Item
   result = api_instance.archive_an_email_address_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_an_email_address_list_item: #{e}"
 end
 ```
@@ -800,7 +800,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnEmailAddressListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_an_email_address_list_item_with_http_info: #{e}"
 end
 ```
@@ -841,14 +841,14 @@ Archived items are not matched against new inquiries.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -861,7 +861,7 @@ begin
   # Archive an IP Address List Item
   result = api_instance.archive_an_ip_address_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_an_ip_address_list_item: #{e}"
 end
 ```
@@ -879,7 +879,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnIpAddressListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->archive_an_ip_address_list_item_with_http_info: #{e}"
 end
 ```
@@ -920,27 +920,27 @@ Create a new item in a <<glossary:list>>.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_browser_fingerprint_list_item_request: OpenapiClient::CreateABrowserFingerprintListItemRequest.new # CreateABrowserFingerprintListItemRequest | 
+  create_a_browser_fingerprint_list_item_request: PersonaAPIClient::CreateABrowserFingerprintListItemRequest.new # CreateABrowserFingerprintListItemRequest | 
 }
 
 begin
   # Create a Browser Fingerprint List Item
   result = api_instance.create_a_browser_fingerprint_list_item(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_browser_fingerprint_list_item: #{e}"
 end
 ```
@@ -958,7 +958,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateABrowserFingerprintListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_browser_fingerprint_list_item_with_http_info: #{e}"
 end
 ```
@@ -999,27 +999,27 @@ Create a new item in a <<glossary:list>>.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_country_list_item_request: OpenapiClient::CreateACountryListItemRequest.new # CreateACountryListItemRequest | 
+  create_a_country_list_item_request: PersonaAPIClient::CreateACountryListItemRequest.new # CreateACountryListItemRequest | 
 }
 
 begin
   # Create a Country List Item
   result = api_instance.create_a_country_list_item(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_country_list_item: #{e}"
 end
 ```
@@ -1037,7 +1037,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateACountryListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_country_list_item_with_http_info: #{e}"
 end
 ```
@@ -1078,27 +1078,27 @@ Create a new item in a <<glossary:list>>.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_device_fingerprint_list_item_request: OpenapiClient::CreateADeviceFingerprintListItemRequest.new # CreateADeviceFingerprintListItemRequest | 
+  create_a_device_fingerprint_list_item_request: PersonaAPIClient::CreateADeviceFingerprintListItemRequest.new # CreateADeviceFingerprintListItemRequest | 
 }
 
 begin
   # Create a Device Fingerprint List Item
   result = api_instance.create_a_device_fingerprint_list_item(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_device_fingerprint_list_item: #{e}"
 end
 ```
@@ -1116,7 +1116,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateADeviceFingerprintListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_device_fingerprint_list_item_with_http_info: #{e}"
 end
 ```
@@ -1157,27 +1157,27 @@ Create a new item in a <<glossary:list>>.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_field_list_item_request: OpenapiClient::CreateAFieldListItemRequest.new # CreateAFieldListItemRequest | 
+  create_a_field_list_item_request: PersonaAPIClient::CreateAFieldListItemRequest.new # CreateAFieldListItemRequest | 
 }
 
 begin
   # Create a Field List Item
   result = api_instance.create_a_field_list_item(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_field_list_item: #{e}"
 end
 ```
@@ -1195,7 +1195,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAFieldListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_field_list_item_with_http_info: #{e}"
 end
 ```
@@ -1236,27 +1236,27 @@ Create a new item in a <<glossary:list>>.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_geolocation_list_item_request: OpenapiClient::CreateAGeolocationListItemRequest.new # CreateAGeolocationListItemRequest | 
+  create_a_geolocation_list_item_request: PersonaAPIClient::CreateAGeolocationListItemRequest.new # CreateAGeolocationListItemRequest | 
 }
 
 begin
   # Create a Geolocation List Item
   result = api_instance.create_a_geolocation_list_item(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_geolocation_list_item: #{e}"
 end
 ```
@@ -1274,7 +1274,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAGeolocationListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_geolocation_list_item_with_http_info: #{e}"
 end
 ```
@@ -1315,27 +1315,27 @@ Create a new item in a <<glossary:list>>.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_government_id_number_list_item_request: OpenapiClient::CreateAGovernmentIdNumberListItemRequest.new # CreateAGovernmentIdNumberListItemRequest | 
+  create_a_government_id_number_list_item_request: PersonaAPIClient::CreateAGovernmentIdNumberListItemRequest.new # CreateAGovernmentIdNumberListItemRequest | 
 }
 
 begin
   # Create a Government ID Number List Item
   result = api_instance.create_a_government_id_number_list_item(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_government_id_number_list_item: #{e}"
 end
 ```
@@ -1353,7 +1353,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAGovernmentIdNumberListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_government_id_number_list_item_with_http_info: #{e}"
 end
 ```
@@ -1394,27 +1394,27 @@ Create a new item in a <<glossary:list>>.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_name_list_item_request: OpenapiClient::CreateANameListItemRequest.new # CreateANameListItemRequest | 
+  create_a_name_list_item_request: PersonaAPIClient::CreateANameListItemRequest.new # CreateANameListItemRequest | 
 }
 
 begin
   # Create a Name List Item
   result = api_instance.create_a_name_list_item(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_name_list_item: #{e}"
 end
 ```
@@ -1432,7 +1432,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateANameListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_name_list_item_with_http_info: #{e}"
 end
 ```
@@ -1473,27 +1473,27 @@ Create a new item in a <<glossary:list>>.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_phone_number_list_item_request: OpenapiClient::CreateAPhoneNumberListItemRequest.new # CreateAPhoneNumberListItemRequest | 
+  create_a_phone_number_list_item_request: PersonaAPIClient::CreateAPhoneNumberListItemRequest.new # CreateAPhoneNumberListItemRequest | 
 }
 
 begin
   # Create a Phone Number List Item
   result = api_instance.create_a_phone_number_list_item(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_phone_number_list_item: #{e}"
 end
 ```
@@ -1511,7 +1511,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAPhoneNumberListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_phone_number_list_item_with_http_info: #{e}"
 end
 ```
@@ -1552,27 +1552,27 @@ Create a new item in a <<glossary:list>>.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_string_list_item_request: OpenapiClient::CreateAStringListItemRequest.new # CreateAStringListItemRequest | 
+  create_a_string_list_item_request: PersonaAPIClient::CreateAStringListItemRequest.new # CreateAStringListItemRequest | 
 }
 
 begin
   # Create a String List Item
   result = api_instance.create_a_string_list_item(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_string_list_item: #{e}"
 end
 ```
@@ -1590,7 +1590,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAStringListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_a_string_list_item_with_http_info: #{e}"
 end
 ```
@@ -1631,27 +1631,27 @@ Create a new item in a <<glossary:list>>.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_an_email_address_list_item_request: OpenapiClient::CreateAnEmailAddressListItemRequest.new # CreateAnEmailAddressListItemRequest | 
+  create_an_email_address_list_item_request: PersonaAPIClient::CreateAnEmailAddressListItemRequest.new # CreateAnEmailAddressListItemRequest | 
 }
 
 begin
   # Create an Email Address List Item
   result = api_instance.create_an_email_address_list_item(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_an_email_address_list_item: #{e}"
 end
 ```
@@ -1669,7 +1669,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnEmailAddressListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_an_email_address_list_item_with_http_info: #{e}"
 end
 ```
@@ -1710,27 +1710,27 @@ Create a new item in a <<glossary:list>>.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_an_ip_address_list_item_request: OpenapiClient::CreateAnIpAddressListItemRequest.new # CreateAnIpAddressListItemRequest | 
+  create_an_ip_address_list_item_request: PersonaAPIClient::CreateAnIpAddressListItemRequest.new # CreateAnIpAddressListItemRequest | 
 }
 
 begin
   # Create an IP Address List Item
   result = api_instance.create_an_ip_address_list_item(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_an_ip_address_list_item: #{e}"
 end
 ```
@@ -1748,7 +1748,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnIpAddressListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->create_an_ip_address_list_item_with_http_info: #{e}"
 end
 ```
@@ -1789,14 +1789,14 @@ Retrieves the details of an existing browser fingerprint List Item.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to retrieve.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -1809,7 +1809,7 @@ begin
   # Retrieve a Browser Fingerprint List Item
   result = api_instance.retrieve_a_browser_fingerprint_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_browser_fingerprint_list_item: #{e}"
 end
 ```
@@ -1827,7 +1827,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateABrowserFingerprintListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_browser_fingerprint_list_item_with_http_info: #{e}"
 end
 ```
@@ -1868,14 +1868,14 @@ Retrieves the details of an existing country List Item.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -1888,7 +1888,7 @@ begin
   # Retrieve a Country List Item
   result = api_instance.retrieve_a_country_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_country_list_item: #{e}"
 end
 ```
@@ -1906,7 +1906,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateACountryListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_country_list_item_with_http_info: #{e}"
 end
 ```
@@ -1947,14 +1947,14 @@ Retrieves the details of an existing device fingerprint List Item.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to retrieve.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -1967,7 +1967,7 @@ begin
   # Retrieve a Device Fingerprint List Item
   result = api_instance.retrieve_a_device_fingerprint_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_device_fingerprint_list_item: #{e}"
 end
 ```
@@ -1985,7 +1985,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateADeviceFingerprintListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_device_fingerprint_list_item_with_http_info: #{e}"
 end
 ```
@@ -2026,14 +2026,14 @@ Retrieves the details of an existing field List Item.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -2046,7 +2046,7 @@ begin
   # Retrieve a Field List Item
   result = api_instance.retrieve_a_field_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_field_list_item: #{e}"
 end
 ```
@@ -2064,7 +2064,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAFieldListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_field_list_item_with_http_info: #{e}"
 end
 ```
@@ -2105,14 +2105,14 @@ Retrieves the details of an existing geolocation List Item.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -2125,7 +2125,7 @@ begin
   # Retrieve a Geolocation List Item
   result = api_instance.retrieve_a_geolocation_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_geolocation_list_item: #{e}"
 end
 ```
@@ -2143,7 +2143,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAGeolocationListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_geolocation_list_item_with_http_info: #{e}"
 end
 ```
@@ -2184,14 +2184,14 @@ Retrieves the details of an existing government ID number List Item.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -2204,7 +2204,7 @@ begin
   # Retrieve a Government ID Number List Item
   result = api_instance.retrieve_a_government_id_number_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_government_id_number_list_item: #{e}"
 end
 ```
@@ -2222,7 +2222,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAGovernmentIdNumberListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_government_id_number_list_item_with_http_info: #{e}"
 end
 ```
@@ -2263,14 +2263,14 @@ Retrieves the details of an existing name List Item.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -2283,7 +2283,7 @@ begin
   # Retrieve a Name List Item
   result = api_instance.retrieve_a_name_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_name_list_item: #{e}"
 end
 ```
@@ -2301,7 +2301,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateANameListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_name_list_item_with_http_info: #{e}"
 end
 ```
@@ -2342,14 +2342,14 @@ Retrieves the details of an existing phone number List Item.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -2362,7 +2362,7 @@ begin
   # Retrieve a Phone Number List Item
   result = api_instance.retrieve_a_phone_number_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_phone_number_list_item: #{e}"
 end
 ```
@@ -2380,7 +2380,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAPhoneNumberListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_phone_number_list_item_with_http_info: #{e}"
 end
 ```
@@ -2421,14 +2421,14 @@ Retrieves the details of an existing string List Item.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -2441,7 +2441,7 @@ begin
   # Retrieve a String List Item
   result = api_instance.retrieve_a_string_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_string_list_item: #{e}"
 end
 ```
@@ -2459,7 +2459,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAStringListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_a_string_list_item_with_http_info: #{e}"
 end
 ```
@@ -2500,14 +2500,14 @@ Retrieves the details of an existing email address List Item.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -2520,7 +2520,7 @@ begin
   # Retrieve an Email Address List Item
   result = api_instance.retrieve_an_email_address_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_an_email_address_list_item: #{e}"
 end
 ```
@@ -2538,7 +2538,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnEmailAddressListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_an_email_address_list_item_with_http_info: #{e}"
 end
 ```
@@ -2579,14 +2579,14 @@ Retrieves the details of an existing IP address List Item.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ListItemsApi.new
+api_instance = PersonaAPIClient::ListItemsApi.new
 list_item_id = 'list_item_id_example' # String | ID of list item to archive.
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -2599,7 +2599,7 @@ begin
   # Retrieve an IP Address List Item
   result = api_instance.retrieve_an_ip_address_list_item(list_item_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_an_ip_address_list_item: #{e}"
 end
 ```
@@ -2617,7 +2617,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnIpAddressListItem201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ListItemsApi->retrieve_an_ip_address_list_item_with_http_info: #{e}"
 end
 ```

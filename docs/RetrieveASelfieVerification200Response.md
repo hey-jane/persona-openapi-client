@@ -1,4 +1,4 @@
-# OpenapiClient::RetrieveASelfieVerification200Response
+# PersonaAPIClient::RetrieveASelfieVerification200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::RetrieveASelfieVerification200Response.new(
+instance = PersonaAPIClient::RetrieveASelfieVerification200Response.new(
   data: null
 )
 ```

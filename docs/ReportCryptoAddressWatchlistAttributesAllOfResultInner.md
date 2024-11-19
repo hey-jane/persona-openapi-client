@@ -1,4 +1,4 @@
-# OpenapiClient::ReportCryptoAddressWatchlistAttributesAllOfResultInner
+# PersonaAPIClient::ReportCryptoAddressWatchlistAttributesAllOfResultInner
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportCryptoAddressWatchlistAttributesAllOfResultInner.new(
+instance = PersonaAPIClient::ReportCryptoAddressWatchlistAttributesAllOfResultInner.new(
   name: US - OFAC - Specially Designated Nationals and Blocked Persons (SDN),
   url: https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists,
   list_type: sanction,

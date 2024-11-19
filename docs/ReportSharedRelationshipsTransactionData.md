@@ -1,4 +1,4 @@
-# OpenapiClient::ReportSharedRelationshipsTransactionData
+# PersonaAPIClient::ReportSharedRelationshipsTransactionData
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportSharedRelationshipsTransactionData.new(
+instance = PersonaAPIClient::ReportSharedRelationshipsTransactionData.new(
   id: txn_9e3yoAUApTRMjgNoPAC7TNtz,
   type: null
 )

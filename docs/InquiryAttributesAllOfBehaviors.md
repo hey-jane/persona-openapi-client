@@ -1,4 +1,4 @@
-# OpenapiClient::InquiryAttributesAllOfBehaviors
+# PersonaAPIClient::InquiryAttributesAllOfBehaviors
 
 ## Properties
 
@@ -22,9 +22,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::InquiryAttributesAllOfBehaviors.new(
+instance = PersonaAPIClient::InquiryAttributesAllOfBehaviors.new(
   autofill_cancels: null,
   autofill_starts: null,
   behavior_threat_level: null,

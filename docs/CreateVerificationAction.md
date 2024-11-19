@@ -1,4 +1,4 @@
-# OpenapiClient::CreateVerificationAction
+# PersonaAPIClient::CreateVerificationAction
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateVerificationAction.new(
+instance = PersonaAPIClient::CreateVerificationAction.new(
   type: null,
   data: null
 )

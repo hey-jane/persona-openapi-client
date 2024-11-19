@@ -1,4 +1,4 @@
-# OpenapiClient::WebhookRequestAttributesCustomHttpHeaders
+# PersonaAPIClient::WebhookRequestAttributesCustomHttpHeaders
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::WebhookRequestAttributesCustomHttpHeaders.new(
+instance = PersonaAPIClient::WebhookRequestAttributesCustomHttpHeaders.new(
   authorization: null,
   calling_application: null,
   cf_access_client_id: null,

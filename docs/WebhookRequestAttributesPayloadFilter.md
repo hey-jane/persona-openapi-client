@@ -1,4 +1,4 @@
-# OpenapiClient::WebhookRequestAttributesPayloadFilter
+# PersonaAPIClient::WebhookRequestAttributesPayloadFilter
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::WebhookRequestAttributesPayloadFilter.new(
+instance = PersonaAPIClient::WebhookRequestAttributesPayloadFilter.new(
   data: null
 )
 ```

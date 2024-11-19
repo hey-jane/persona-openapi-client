@@ -1,4 +1,4 @@
-# OpenapiClient::CaseCommentAttributes
+# PersonaAPIClient::CaseCommentAttributes
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CaseCommentAttributes.new(
+instance = PersonaAPIClient::CaseCommentAttributes.new(
   message: null,
   created_at: null,
   updated_at: null,

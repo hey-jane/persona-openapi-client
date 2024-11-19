@@ -1,4 +1,4 @@
-# OpenapiClient::CreateAPhoneNumberList201Response
+# PersonaAPIClient::CreateAPhoneNumberList201Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateAPhoneNumberList201Response.new(
+instance = PersonaAPIClient::CreateAPhoneNumberList201Response.new(
   data: null
 )
 ```

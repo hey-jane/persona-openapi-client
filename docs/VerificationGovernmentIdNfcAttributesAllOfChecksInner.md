@@ -1,4 +1,4 @@
-# OpenapiClient::VerificationGovernmentIdNfcAttributesAllOfChecksInner
+# PersonaAPIClient::VerificationGovernmentIdNfcAttributesAllOfChecksInner
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::VerificationGovernmentIdNfcAttributesAllOfChecksInner.new(
+instance = PersonaAPIClient::VerificationGovernmentIdNfcAttributesAllOfChecksInner.new(
   metadata: null,
   name: null,
   reasons: null,

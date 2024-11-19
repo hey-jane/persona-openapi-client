@@ -1,4 +1,4 @@
-# OpenapiClient::UpdateACaseRequestDataAttributesAttachmentsInner
+# PersonaAPIClient::UpdateACaseRequestDataAttributesAttachmentsInner
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::UpdateACaseRequestDataAttributesAttachmentsInner.new(
+instance = PersonaAPIClient::UpdateACaseRequestDataAttributesAttachmentsInner.new(
   data: null,
   filename: null
 )

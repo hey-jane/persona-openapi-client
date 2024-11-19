@@ -1,4 +1,4 @@
-# OpenapiClient::ResumeAnInquiry200ResponseMeta
+# PersonaAPIClient::ResumeAnInquiry200ResponseMeta
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ResumeAnInquiry200ResponseMeta.new(
+instance = PersonaAPIClient::ResumeAnInquiry200ResponseMeta.new(
   session_token: null
 )
 ```

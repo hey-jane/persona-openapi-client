@@ -1,4 +1,4 @@
-# OpenapiClient::CaseRelationshipsReports
+# PersonaAPIClient::CaseRelationshipsReports
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CaseRelationshipsReports.new(
+instance = PersonaAPIClient::CaseRelationshipsReports.new(
   data: null
 )
 ```

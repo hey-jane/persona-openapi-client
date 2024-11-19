@@ -1,4 +1,4 @@
-# OpenapiClient::CreateAnIpAddressListItemRequestDataAttributes
+# PersonaAPIClient::CreateAnIpAddressListItemRequestDataAttributes
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateAnIpAddressListItemRequestDataAttributes.new(
+instance = PersonaAPIClient::CreateAnIpAddressListItemRequestDataAttributes.new(
   list_id: null,
   value: null
 )

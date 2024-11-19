@@ -1,4 +1,4 @@
-# OpenapiClient::DismissMatchesRequestDataAttributes
+# PersonaAPIClient::DismissMatchesRequestDataAttributes
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::DismissMatchesRequestDataAttributes.new(
+instance = PersonaAPIClient::DismissMatchesRequestDataAttributes.new(
   dismiss_type: null,
   entity_id: null,
   reason: null

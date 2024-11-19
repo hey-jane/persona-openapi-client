@@ -1,4 +1,4 @@
-# OpenapiClient::ReportAdverseMediaAttributesAllOfRelatedSourcesInnerMediaInner
+# PersonaAPIClient::ReportAdverseMediaAttributesAllOfRelatedSourcesInnerMediaInner
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportAdverseMediaAttributesAllOfRelatedSourcesInnerMediaInner.new(
+instance = PersonaAPIClient::ReportAdverseMediaAttributesAllOfRelatedSourcesInnerMediaInner.new(
   date: 2022-11-12,
   snippet: Joe Doe was ordered to jail on Friday after a judge revoked his bail for alleged witness tampering.,
   url: https://www.example.com/,

@@ -1,4 +1,4 @@
-# OpenapiClient::ReportSocialMedia
+# PersonaAPIClient::ReportSocialMedia
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportSocialMedia.new(
+instance = PersonaAPIClient::ReportSocialMedia.new(
   type: null,
   id: rep_7WNzPaNcroBKLarNHBjYDLAp,
   attributes: null,

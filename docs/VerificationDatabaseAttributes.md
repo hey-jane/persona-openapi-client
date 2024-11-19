@@ -1,4 +1,4 @@
-# OpenapiClient::VerificationDatabaseAttributes
+# PersonaAPIClient::VerificationDatabaseAttributes
 
 ## Properties
 
@@ -38,9 +38,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::VerificationDatabaseAttributes.new(
+instance = PersonaAPIClient::VerificationDatabaseAttributes.new(
   status: null,
   created_at: 2023-11-16T01:31:16.000Z,
   created_at_ts: 1700098276,

@@ -1,4 +1,4 @@
-# OpenapiClient::DocumentGovernmentIdNfc
+# PersonaAPIClient::DocumentGovernmentIdNfc
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::DocumentGovernmentIdNfc.new(
+instance = PersonaAPIClient::DocumentGovernmentIdNfc.new(
   id: null,
   type: null,
   attributes: null,

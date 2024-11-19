@@ -1,4 +1,4 @@
-# OpenapiClient::APILogsApi
+# PersonaAPIClient::APILogsApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -20,26 +20,26 @@ Returns a list of your organization's API Logs.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::APILogsApi.new
+api_instance = PersonaAPIClient::APILogsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
-  page: OpenapiClient::ListAllAccountsPageParameter.new # ListAllAccountsPageParameter | 
+  page: PersonaAPIClient::ListAllAccountsPageParameter.new # ListAllAccountsPageParameter | 
 }
 
 begin
   # List all API Logs
   result = api_instance.list_all_api_logs(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling APILogsApi->list_all_api_logs: #{e}"
 end
 ```
@@ -57,7 +57,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAllApiLogs200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling APILogsApi->list_all_api_logs_with_http_info: #{e}"
 end
 ```
@@ -97,14 +97,14 @@ Retrieves the details of an existing API Log.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::APILogsApi.new
+api_instance = PersonaAPIClient::APILogsApi.new
 api_log_id = 'api_log_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -117,7 +117,7 @@ begin
   # Retrieve an API Log
   result = api_instance.retrieve_an_api_log(api_log_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling APILogsApi->retrieve_an_api_log: #{e}"
 end
 ```
@@ -135,7 +135,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveAnApiLog200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling APILogsApi->retrieve_an_api_log_with_http_info: #{e}"
 end
 ```

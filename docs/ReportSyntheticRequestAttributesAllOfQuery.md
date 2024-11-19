@@ -1,4 +1,4 @@
-# OpenapiClient::ReportSyntheticRequestAttributesAllOfQuery
+# PersonaAPIClient::ReportSyntheticRequestAttributesAllOfQuery
 
 ## Properties
 
@@ -21,9 +21,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportSyntheticRequestAttributesAllOfQuery.new(
+instance = PersonaAPIClient::ReportSyntheticRequestAttributesAllOfQuery.new(
   name_first: John,
   name_last: Doe,
   birthdate: 1980-07-15,

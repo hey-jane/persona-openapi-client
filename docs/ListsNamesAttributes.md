@@ -1,4 +1,4 @@
-# OpenapiClient::ListsNamesAttributes
+# PersonaAPIClient::ListsNamesAttributes
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ListsNamesAttributes.new(
+instance = PersonaAPIClient::ListsNamesAttributes.new(
   name: null,
   status: null,
   archived_at: null,

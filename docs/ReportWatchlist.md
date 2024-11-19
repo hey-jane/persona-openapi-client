@@ -1,4 +1,4 @@
-# OpenapiClient::ReportWatchlist
+# PersonaAPIClient::ReportWatchlist
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportWatchlist.new(
+instance = PersonaAPIClient::ReportWatchlist.new(
   type: null,
   id: rep_7WNzPaNcroBKLarNHBjYDLAp,
   attributes: null,

@@ -1,4 +1,4 @@
-# OpenapiClient::TransactionRelationshipsReviewer
+# PersonaAPIClient::TransactionRelationshipsReviewer
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::TransactionRelationshipsReviewer.new(
+instance = PersonaAPIClient::TransactionRelationshipsReviewer.new(
   data: null
 )
 ```

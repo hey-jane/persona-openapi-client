@@ -1,4 +1,4 @@
-# OpenapiClient::CreateACountryListItemRequestDataAttributes
+# PersonaAPIClient::CreateACountryListItemRequestDataAttributes
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateACountryListItemRequestDataAttributes.new(
+instance = PersonaAPIClient::CreateACountryListItemRequestDataAttributes.new(
   country_code: null,
   list_id: null
 )

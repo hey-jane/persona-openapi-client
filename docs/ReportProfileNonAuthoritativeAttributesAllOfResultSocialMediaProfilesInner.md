@@ -1,4 +1,4 @@
-# OpenapiClient::ReportProfileNonAuthoritativeAttributesAllOfResultSocialMediaProfilesInner
+# PersonaAPIClient::ReportProfileNonAuthoritativeAttributesAllOfResultSocialMediaProfilesInner
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportProfileNonAuthoritativeAttributesAllOfResultSocialMediaProfilesInner.new(
+instance = PersonaAPIClient::ReportProfileNonAuthoritativeAttributesAllOfResultSocialMediaProfilesInner.new(
   network: linkedin,
   url: linkedin.com/in/person-a,
   username: persona

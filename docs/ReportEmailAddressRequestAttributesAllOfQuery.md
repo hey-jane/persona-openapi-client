@@ -1,4 +1,4 @@
-# OpenapiClient::ReportEmailAddressRequestAttributesAllOfQuery
+# PersonaAPIClient::ReportEmailAddressRequestAttributesAllOfQuery
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportEmailAddressRequestAttributesAllOfQuery.new(
+instance = PersonaAPIClient::ReportEmailAddressRequestAttributesAllOfQuery.new(
   email_address: example@domain.com
 )
 ```

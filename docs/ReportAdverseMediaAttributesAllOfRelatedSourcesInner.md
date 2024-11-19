@@ -1,4 +1,4 @@
-# OpenapiClient::ReportAdverseMediaAttributesAllOfRelatedSourcesInner
+# PersonaAPIClient::ReportAdverseMediaAttributesAllOfRelatedSourcesInner
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportAdverseMediaAttributesAllOfRelatedSourcesInner.new(
+instance = PersonaAPIClient::ReportAdverseMediaAttributesAllOfRelatedSourcesInner.new(
   akas: null,
   birthdates: null,
   match_types: null,

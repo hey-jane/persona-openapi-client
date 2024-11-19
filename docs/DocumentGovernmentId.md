@@ -1,4 +1,4 @@
-# OpenapiClient::DocumentGovernmentId
+# PersonaAPIClient::DocumentGovernmentId
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::DocumentGovernmentId.new(
+instance = PersonaAPIClient::DocumentGovernmentId.new(
   id: null,
   type: null,
   attributes: null,

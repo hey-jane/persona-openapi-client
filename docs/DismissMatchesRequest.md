@@ -1,4 +1,4 @@
-# OpenapiClient::DismissMatchesRequest
+# PersonaAPIClient::DismissMatchesRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::DismissMatchesRequest.new(
+instance = PersonaAPIClient::DismissMatchesRequest.new(
   data: null
 )
 ```

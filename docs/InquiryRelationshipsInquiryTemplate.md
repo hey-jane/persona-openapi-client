@@ -1,4 +1,4 @@
-# OpenapiClient::InquiryRelationshipsInquiryTemplate
+# PersonaAPIClient::InquiryRelationshipsInquiryTemplate
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::InquiryRelationshipsInquiryTemplate.new(
+instance = PersonaAPIClient::InquiryRelationshipsInquiryTemplate.new(
   data: null
 )
 ```

@@ -1,4 +1,4 @@
-# OpenapiClient::VerificationGovernmentIdAttributesAllOfSelfiePhoto
+# PersonaAPIClient::VerificationGovernmentIdAttributesAllOfSelfiePhoto
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::VerificationGovernmentIdAttributesAllOfSelfiePhoto.new(
+instance = PersonaAPIClient::VerificationGovernmentIdAttributesAllOfSelfiePhoto.new(
   byte_size: null,
   url: null
 )

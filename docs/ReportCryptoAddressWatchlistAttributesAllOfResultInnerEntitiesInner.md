@@ -1,4 +1,4 @@
-# OpenapiClient::ReportCryptoAddressWatchlistAttributesAllOfResultInnerEntitiesInner
+# PersonaAPIClient::ReportCryptoAddressWatchlistAttributesAllOfResultInnerEntitiesInner
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportCryptoAddressWatchlistAttributesAllOfResultInnerEntitiesInner.new(
+instance = PersonaAPIClient::ReportCryptoAddressWatchlistAttributesAllOfResultInnerEntitiesInner.new(
   name: ANDREYEV, Anton Nikolaeyvich,
   alias_type: primary_name,
   birthdates: null,

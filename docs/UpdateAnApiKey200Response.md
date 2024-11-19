@@ -1,4 +1,4 @@
-# OpenapiClient::UpdateAnApiKey200Response
+# PersonaAPIClient::UpdateAnApiKey200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::UpdateAnApiKey200Response.new(
+instance = PersonaAPIClient::UpdateAnApiKey200Response.new(
   data: null,
   included: null
 )

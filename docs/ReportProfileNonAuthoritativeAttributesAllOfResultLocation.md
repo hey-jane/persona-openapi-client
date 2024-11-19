@@ -1,4 +1,4 @@
-# OpenapiClient::ReportProfileNonAuthoritativeAttributesAllOfResultLocation
+# PersonaAPIClient::ReportProfileNonAuthoritativeAttributesAllOfResultLocation
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportProfileNonAuthoritativeAttributesAllOfResultLocation.new(
+instance = PersonaAPIClient::ReportProfileNonAuthoritativeAttributesAllOfResultLocation.new(
   locality: san francisco,
   region: california,
   country: united states,
