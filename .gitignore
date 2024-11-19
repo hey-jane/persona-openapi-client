@@ -2,6 +2,7 @@
 #
 
 *.gem
+*.idea
 *.rbc
 /.config
 /coverage/
