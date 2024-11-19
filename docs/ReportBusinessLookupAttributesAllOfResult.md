@@ -1,4 +1,4 @@
-# OpenapiClient::ReportBusinessLookupAttributesAllOfResult
+# PersonaAPIClient::ReportBusinessLookupAttributesAllOfResult
 
 ## Properties
 
@@ -23,9 +23,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportBusinessLookupAttributesAllOfResult.new(
+instance = PersonaAPIClient::ReportBusinessLookupAttributesAllOfResult.new(
   name: Coffee Shop, LLC DBA Coffee Shop,
   aliases: null,
   description: null,

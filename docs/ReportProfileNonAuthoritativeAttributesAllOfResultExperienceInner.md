@@ -1,4 +1,4 @@
-# OpenapiClient::ReportProfileNonAuthoritativeAttributesAllOfResultExperienceInner
+# PersonaAPIClient::ReportProfileNonAuthoritativeAttributesAllOfResultExperienceInner
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportProfileNonAuthoritativeAttributesAllOfResultExperienceInner.new(
+instance = PersonaAPIClient::ReportProfileNonAuthoritativeAttributesAllOfResultExperienceInner.new(
   end_date: 2021,
   start_date: 2017,
   company_name: persona,

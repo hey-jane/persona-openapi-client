@@ -1,4 +1,4 @@
-# OpenapiClient::VerificationSharedAttributesChecksInner
+# PersonaAPIClient::VerificationSharedAttributesChecksInner
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::VerificationSharedAttributesChecksInner.new(
+instance = PersonaAPIClient::VerificationSharedAttributesChecksInner.new(
   name: null,
   status: null,
   reasons: null,

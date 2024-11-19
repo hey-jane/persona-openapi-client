@@ -1,4 +1,4 @@
-# OpenapiClient::DocumentSharedRelationships
+# PersonaAPIClient::DocumentSharedRelationships
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::DocumentSharedRelationships.new(
+instance = PersonaAPIClient::DocumentSharedRelationships.new(
   inquiry: null,
   template: null,
   inquiry_template_version: null,

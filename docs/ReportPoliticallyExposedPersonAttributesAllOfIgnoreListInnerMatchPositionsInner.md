@@ -1,4 +1,4 @@
-# OpenapiClient::ReportPoliticallyExposedPersonAttributesAllOfIgnoreListInnerMatchPositionsInner
+# PersonaAPIClient::ReportPoliticallyExposedPersonAttributesAllOfIgnoreListInnerMatchPositionsInner
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportPoliticallyExposedPersonAttributesAllOfIgnoreListInnerMatchPositionsInner.new(
+instance = PersonaAPIClient::ReportPoliticallyExposedPersonAttributesAllOfIgnoreListInnerMatchPositionsInner.new(
   pep_class: null,
   source_key: null,
   name: null

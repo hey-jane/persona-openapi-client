@@ -1,4 +1,4 @@
-# OpenapiClient::ReportPoliticallyExposedPersonAttributesAllOfResultInner
+# PersonaAPIClient::ReportPoliticallyExposedPersonAttributesAllOfResultInner
 
 ## Properties
 
@@ -23,9 +23,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportPoliticallyExposedPersonAttributesAllOfResultInner.new(
+instance = PersonaAPIClient::ReportPoliticallyExposedPersonAttributesAllOfResultInner.new(
   entity_id: MV9IPWV13KYS0A9,
   name: Joe Doe,
   birthdates: null,

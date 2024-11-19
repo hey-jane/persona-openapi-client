@@ -1,4 +1,4 @@
-# OpenapiClient::ApiLogAttributesResponse
+# PersonaAPIClient::ApiLogAttributesResponse
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ApiLogAttributesResponse.new(
+instance = PersonaAPIClient::ApiLogAttributesResponse.new(
   status: null,
   headers: null
 )

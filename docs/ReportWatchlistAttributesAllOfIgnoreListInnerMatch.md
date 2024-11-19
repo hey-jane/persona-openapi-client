@@ -1,4 +1,4 @@
-# OpenapiClient::ReportWatchlistAttributesAllOfIgnoreListInnerMatch
+# PersonaAPIClient::ReportWatchlistAttributesAllOfIgnoreListInnerMatch
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportWatchlistAttributesAllOfIgnoreListInnerMatch.new(
+instance = PersonaAPIClient::ReportWatchlistAttributesAllOfIgnoreListInnerMatch.new(
   name: EU - EC - Programme PRK - North Korea,
   url: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri&#x3D;CELEX:32017R1509&amp;from&#x3D;EN,
   list_type: sanction,

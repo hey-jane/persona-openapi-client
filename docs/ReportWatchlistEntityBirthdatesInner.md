@@ -1,4 +1,4 @@
-# OpenapiClient::ReportWatchlistEntityBirthdatesInner
+# PersonaAPIClient::ReportWatchlistEntityBirthdatesInner
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportWatchlistEntityBirthdatesInner.new(
+instance = PersonaAPIClient::ReportWatchlistEntityBirthdatesInner.new(
   day: 17,
   year: 1964,
   month: 07,

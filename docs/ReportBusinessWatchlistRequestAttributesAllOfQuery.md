@@ -1,4 +1,4 @@
-# OpenapiClient::ReportBusinessWatchlistRequestAttributesAllOfQuery
+# PersonaAPIClient::ReportBusinessWatchlistRequestAttributesAllOfQuery
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportBusinessWatchlistRequestAttributesAllOfQuery.new(
+instance = PersonaAPIClient::ReportBusinessWatchlistRequestAttributesAllOfQuery.new(
   term: Acme Corporation,
   address_country_code: US
 )

@@ -1,4 +1,4 @@
-# OpenapiClient::CreateATransactionLabelRequestMeta
+# PersonaAPIClient::CreateATransactionLabelRequestMeta
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateATransactionLabelRequestMeta.new(
+instance = PersonaAPIClient::CreateATransactionLabelRequestMeta.new(
   label: null,
   score: null,
   model_version: null

@@ -1,4 +1,4 @@
-# OpenapiClient::DocumentSharedAttributes
+# PersonaAPIClient::DocumentSharedAttributes
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::DocumentSharedAttributes.new(
+instance = PersonaAPIClient::DocumentSharedAttributes.new(
   status: null,
   created_at: null,
   processed_at: null,

@@ -1,4 +1,4 @@
-# OpenapiClient::AccountAttributesAllOfIdentificationNumbersValueItems
+# PersonaAPIClient::AccountAttributesAllOfIdentificationNumbersValueItems
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::AccountAttributesAllOfIdentificationNumbersValueItems.new(
+instance = PersonaAPIClient::AccountAttributesAllOfIdentificationNumbersValueItems.new(
   issuing_country: null,
   identification_class: null,
   identification_number: null,

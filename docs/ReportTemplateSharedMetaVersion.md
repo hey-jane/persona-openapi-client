@@ -1,4 +1,4 @@
-# OpenapiClient::ReportTemplateSharedMetaVersion
+# PersonaAPIClient::ReportTemplateSharedMetaVersion
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportTemplateSharedMetaVersion.new(
+instance = PersonaAPIClient::ReportTemplateSharedMetaVersion.new(
   name: null,
   created_at: null,
   updated_at: null

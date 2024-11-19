@@ -1,4 +1,4 @@
-# OpenapiClient::CaseRelationshipsTxnsDataInner
+# PersonaAPIClient::CaseRelationshipsTxnsDataInner
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CaseRelationshipsTxnsDataInner.new(
+instance = PersonaAPIClient::CaseRelationshipsTxnsDataInner.new(
   id: null,
   type: null
 )

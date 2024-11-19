@@ -1,4 +1,4 @@
-# OpenapiClient::DefaultFields
+# PersonaAPIClient::DefaultFields
 
 ## Properties
 
@@ -19,9 +19,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::DefaultFields.new(
+instance = PersonaAPIClient::DefaultFields.new(
   address_street_1: null,
   address_street_2: null,
   address_city: null,

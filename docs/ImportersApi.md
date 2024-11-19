@@ -1,4 +1,4 @@
-# OpenapiClient::ImportersApi
+# PersonaAPIClient::ImportersApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -27,15 +27,15 @@ Bulk import accounts by uploading a CSV file.  Each row should be the details fo
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ImportersApi.new
-data = OpenapiClient::ImportAnAccountRequestData.new({attributes: OpenapiClient::ImportAnAccountRequestDataAttributes.new({file: 'file_example'})}) # ImportAnAccountRequestData | 
+api_instance = PersonaAPIClient::ImportersApi.new
+data = PersonaAPIClient::ImportAnAccountRequestData.new({attributes: PersonaAPIClient::ImportAnAccountRequestDataAttributes.new({file: 'file_example'})}) # ImportAnAccountRequestData | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
@@ -47,7 +47,7 @@ begin
   # Import Accounts
   result = api_instance.import_an_account(data, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->import_an_account: #{e}"
 end
 ```
@@ -65,7 +65,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ImportAnAccount201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->import_an_account_with_http_info: #{e}"
 end
 ```
@@ -106,15 +106,15 @@ Bulk import email address List Items by uploading a CSV file.  Each row should b
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ImportersApi.new
-data = OpenapiClient::ImportEmailAddressListsRequestData.new({attributes: OpenapiClient::ImportEmailAddressListsRequestDataAttributes.new({file: 'file_example', list_id: 'list_id_example'})}) # ImportEmailAddressListsRequestData | 
+api_instance = PersonaAPIClient::ImportersApi.new
+data = PersonaAPIClient::ImportEmailAddressListsRequestData.new({attributes: PersonaAPIClient::ImportEmailAddressListsRequestDataAttributes.new({file: 'file_example', list_id: 'list_id_example'})}) # ImportEmailAddressListsRequestData | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
@@ -126,7 +126,7 @@ begin
   # Import Email Address Lists
   result = api_instance.import_email_address_lists(data, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->import_email_address_lists: #{e}"
 end
 ```
@@ -144,7 +144,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ImportEmailAddressLists201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->import_email_address_lists_with_http_info: #{e}"
 end
 ```
@@ -185,15 +185,15 @@ Bulk import geolocation List Items by uploading a CSV file.  Each row should be 
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ImportersApi.new
-data = OpenapiClient::ImportEmailAddressListsRequestData.new({attributes: OpenapiClient::ImportEmailAddressListsRequestDataAttributes.new({file: 'file_example', list_id: 'list_id_example'})}) # ImportEmailAddressListsRequestData | 
+api_instance = PersonaAPIClient::ImportersApi.new
+data = PersonaAPIClient::ImportEmailAddressListsRequestData.new({attributes: PersonaAPIClient::ImportEmailAddressListsRequestDataAttributes.new({file: 'file_example', list_id: 'list_id_example'})}) # ImportEmailAddressListsRequestData | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
@@ -205,7 +205,7 @@ begin
   # Import Geolocation Lists
   result = api_instance.import_geolocation_lists(data, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->import_geolocation_lists: #{e}"
 end
 ```
@@ -223,7 +223,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ImportGeolocationLists201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->import_geolocation_lists_with_http_info: #{e}"
 end
 ```
@@ -264,15 +264,15 @@ Bulk import government ID number List Items by uploading a CSV file.  Each row s
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ImportersApi.new
-data = OpenapiClient::ImportEmailAddressListsRequestData.new({attributes: OpenapiClient::ImportEmailAddressListsRequestDataAttributes.new({file: 'file_example', list_id: 'list_id_example'})}) # ImportEmailAddressListsRequestData | 
+api_instance = PersonaAPIClient::ImportersApi.new
+data = PersonaAPIClient::ImportEmailAddressListsRequestData.new({attributes: PersonaAPIClient::ImportEmailAddressListsRequestDataAttributes.new({file: 'file_example', list_id: 'list_id_example'})}) # ImportEmailAddressListsRequestData | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
@@ -284,7 +284,7 @@ begin
   # Import Government ID Number Lists
   result = api_instance.import_government_id_number_lists(data, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->import_government_id_number_lists: #{e}"
 end
 ```
@@ -302,7 +302,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ImportGovernmentIdNumberLists201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->import_government_id_number_lists_with_http_info: #{e}"
 end
 ```
@@ -343,15 +343,15 @@ Bulk import IP address List Items by uploading a CSV file.  Each row should be t
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ImportersApi.new
-data = OpenapiClient::ImportEmailAddressListsRequestData.new({attributes: OpenapiClient::ImportEmailAddressListsRequestDataAttributes.new({file: 'file_example', list_id: 'list_id_example'})}) # ImportEmailAddressListsRequestData | 
+api_instance = PersonaAPIClient::ImportersApi.new
+data = PersonaAPIClient::ImportEmailAddressListsRequestData.new({attributes: PersonaAPIClient::ImportEmailAddressListsRequestDataAttributes.new({file: 'file_example', list_id: 'list_id_example'})}) # ImportEmailAddressListsRequestData | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
@@ -363,7 +363,7 @@ begin
   # Import IP Address Lists
   result = api_instance.import_ip_address_lists(data, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->import_ip_address_lists: #{e}"
 end
 ```
@@ -381,7 +381,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ImportIpAddressLists201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->import_ip_address_lists_with_http_info: #{e}"
 end
 ```
@@ -422,15 +422,15 @@ Bulk import name List Items by uploading a CSV file.  Each row should be the det
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ImportersApi.new
-data = OpenapiClient::ImportEmailAddressListsRequestData.new({attributes: OpenapiClient::ImportEmailAddressListsRequestDataAttributes.new({file: 'file_example', list_id: 'list_id_example'})}) # ImportEmailAddressListsRequestData | 
+api_instance = PersonaAPIClient::ImportersApi.new
+data = PersonaAPIClient::ImportEmailAddressListsRequestData.new({attributes: PersonaAPIClient::ImportEmailAddressListsRequestDataAttributes.new({file: 'file_example', list_id: 'list_id_example'})}) # ImportEmailAddressListsRequestData | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
@@ -442,7 +442,7 @@ begin
   # Import Name Lists
   result = api_instance.import_name_lists(data, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->import_name_lists: #{e}"
 end
 ```
@@ -460,7 +460,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ImportNameLists201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->import_name_lists_with_http_info: #{e}"
 end
 ```
@@ -501,15 +501,15 @@ Bulk import phone number List Items by uploading a CSV file.  Each row should be
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ImportersApi.new
-data = OpenapiClient::ImportEmailAddressListsRequestData.new({attributes: OpenapiClient::ImportEmailAddressListsRequestDataAttributes.new({file: 'file_example', list_id: 'list_id_example'})}) # ImportEmailAddressListsRequestData | 
+api_instance = PersonaAPIClient::ImportersApi.new
+data = PersonaAPIClient::ImportEmailAddressListsRequestData.new({attributes: PersonaAPIClient::ImportEmailAddressListsRequestDataAttributes.new({file: 'file_example', list_id: 'list_id_example'})}) # ImportEmailAddressListsRequestData | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
@@ -521,7 +521,7 @@ begin
   # Import Phone Number Lists
   result = api_instance.import_phone_number_lists(data, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->import_phone_number_lists: #{e}"
 end
 ```
@@ -539,7 +539,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ImportPhoneNumberLists201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->import_phone_number_lists_with_http_info: #{e}"
 end
 ```
@@ -580,26 +580,26 @@ Returns a list of your organization's importers.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ImportersApi.new
+api_instance = PersonaAPIClient::ImportersApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
-  page: OpenapiClient::ListAllAccountsPageParameter.new # ListAllAccountsPageParameter | 
+  page: PersonaAPIClient::ListAllAccountsPageParameter.new # ListAllAccountsPageParameter | 
 }
 
 begin
   # List all Importers
   result = api_instance.list_all_importers(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->list_all_importers: #{e}"
 end
 ```
@@ -617,7 +617,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAllImporters200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->list_all_importers_with_http_info: #{e}"
 end
 ```
@@ -657,14 +657,14 @@ Retrieve the details of an existing importer.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::ImportersApi.new
+api_instance = PersonaAPIClient::ImportersApi.new
 importer_id = 'importer_id_example' # String | String ID of the importer to fetch
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -677,7 +677,7 @@ begin
   # Retrieve an Importer
   result = api_instance.retrieve_an_importer(importer_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->retrieve_an_importer: #{e}"
 end
 ```
@@ -695,7 +695,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveAnImporter200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling ImportersApi->retrieve_an_importer_with_http_info: #{e}"
 end
 ```

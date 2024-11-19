@@ -1,4 +1,4 @@
-# OpenapiClient::VerificationSelfieAttributesAllOfCenterPhotoFaceCoordinates
+# PersonaAPIClient::VerificationSelfieAttributesAllOfCenterPhotoFaceCoordinates
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::VerificationSelfieAttributesAllOfCenterPhotoFaceCoordinates.new(
+instance = PersonaAPIClient::VerificationSelfieAttributesAllOfCenterPhotoFaceCoordinates.new(
   top_left: [0.2, 0.5],
   top_right: [0.5, 0.5],
   bottom_left: [0.2, 0.7],

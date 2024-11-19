@@ -1,4 +1,4 @@
-# OpenapiClient::ApproveAnInquiryRequestMeta
+# PersonaAPIClient::ApproveAnInquiryRequestMeta
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ApproveAnInquiryRequestMeta.new(
+instance = PersonaAPIClient::ApproveAnInquiryRequestMeta.new(
   comment: null
 )
 ```

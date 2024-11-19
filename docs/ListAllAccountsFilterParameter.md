@@ -1,4 +1,4 @@
-# OpenapiClient::ListAllAccountsFilterParameter
+# PersonaAPIClient::ListAllAccountsFilterParameter
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ListAllAccountsFilterParameter.new(
+instance = PersonaAPIClient::ListAllAccountsFilterParameter.new(
   reference_id: null
 )
 ```

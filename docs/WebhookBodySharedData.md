@@ -1,4 +1,4 @@
-# OpenapiClient::WebhookBodySharedData
+# PersonaAPIClient::WebhookBodySharedData
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::WebhookBodySharedData.new(
+instance = PersonaAPIClient::WebhookBodySharedData.new(
   type: null,
   id: null
 )

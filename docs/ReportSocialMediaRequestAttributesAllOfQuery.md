@@ -1,4 +1,4 @@
-# OpenapiClient::ReportSocialMediaRequestAttributesAllOfQuery
+# PersonaAPIClient::ReportSocialMediaRequestAttributesAllOfQuery
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportSocialMediaRequestAttributesAllOfQuery.new(
+instance = PersonaAPIClient::ReportSocialMediaRequestAttributesAllOfQuery.new(
   name_first: Jane,
   name_last: Doe,
   birthdate: 1991-10-07,

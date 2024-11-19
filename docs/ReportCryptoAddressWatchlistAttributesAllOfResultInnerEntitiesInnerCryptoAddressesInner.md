@@ -1,4 +1,4 @@
-# OpenapiClient::ReportCryptoAddressWatchlistAttributesAllOfResultInnerEntitiesInnerCryptoAddressesInner
+# PersonaAPIClient::ReportCryptoAddressWatchlistAttributesAllOfResultInnerEntitiesInnerCryptoAddressesInner
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportCryptoAddressWatchlistAttributesAllOfResultInnerEntitiesInnerCryptoAddressesInner.new(
+instance = PersonaAPIClient::ReportCryptoAddressWatchlistAttributesAllOfResultInnerEntitiesInnerCryptoAddressesInner.new(
   type: XBT,
   address: 1Fz29BQp82pE3vXXcsZoMNQ3KSHfMzfMe3
 )

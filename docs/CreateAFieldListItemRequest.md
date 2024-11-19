@@ -1,4 +1,4 @@
-# OpenapiClient::CreateAFieldListItemRequest
+# PersonaAPIClient::CreateAFieldListItemRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateAFieldListItemRequest.new(
+instance = PersonaAPIClient::CreateAFieldListItemRequest.new(
   data: null
 )
 ```

@@ -1,4 +1,4 @@
-# OpenapiClient::ReportProfileNonAuthoritativeAttributesAllOfQuery
+# PersonaAPIClient::ReportProfileNonAuthoritativeAttributesAllOfQuery
 
 ## Properties
 
@@ -20,9 +20,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportProfileNonAuthoritativeAttributesAllOfQuery.new(
+instance = PersonaAPIClient::ReportProfileNonAuthoritativeAttributesAllOfQuery.new(
   name_first: Joe,
   name_middle: N,
   name_last: Doe,

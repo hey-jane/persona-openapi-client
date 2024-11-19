@@ -1,4 +1,4 @@
-# OpenapiClient::SelfieRelationships
+# PersonaAPIClient::SelfieRelationships
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::SelfieRelationships.new(
+instance = PersonaAPIClient::SelfieRelationships.new(
   inquiry: null
 )
 ```

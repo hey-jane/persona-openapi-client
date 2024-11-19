@@ -1,4 +1,4 @@
-# OpenapiClient::ListAllAccountsPageParameter
+# PersonaAPIClient::ListAllAccountsPageParameter
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ListAllAccountsPageParameter.new(
+instance = PersonaAPIClient::ListAllAccountsPageParameter.new(
   after: null,
   before: null,
   size: null

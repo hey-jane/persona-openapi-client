@@ -1,4 +1,4 @@
-# OpenapiClient::ReportBusinessLookupAttributesAllOfResultIndustryClassificationsInner
+# PersonaAPIClient::ReportBusinessLookupAttributesAllOfResultIndustryClassificationsInner
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportBusinessLookupAttributesAllOfResultIndustryClassificationsInner.new(
+instance = PersonaAPIClient::ReportBusinessLookupAttributesAllOfResultIndustryClassificationsInner.new(
   code: 789456,
   title: Snack and Nonalcoholic Beverage Bars,
   type: NAICS_2017

@@ -1,4 +1,4 @@
-# OpenapiClient::DocumentSharedRelationshipsTransaction
+# PersonaAPIClient::DocumentSharedRelationshipsTransaction
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::DocumentSharedRelationshipsTransaction.new(
+instance = PersonaAPIClient::DocumentSharedRelationshipsTransaction.new(
   data: null
 )
 ```

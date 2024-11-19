@@ -1,4 +1,4 @@
-# OpenapiClient::CreateAuthorization201Response
+# PersonaAPIClient::CreateAuthorization201Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateAuthorization201Response.new(
+instance = PersonaAPIClient::CreateAuthorization201Response.new(
   code: null,
   expires_in: null
 )

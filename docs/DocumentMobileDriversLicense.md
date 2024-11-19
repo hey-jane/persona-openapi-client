@@ -1,4 +1,4 @@
-# OpenapiClient::DocumentMobileDriversLicense
+# PersonaAPIClient::DocumentMobileDriversLicense
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::DocumentMobileDriversLicense.new(
+instance = PersonaAPIClient::DocumentMobileDriversLicense.new(
   id: null,
   type: null,
   attributes: null,

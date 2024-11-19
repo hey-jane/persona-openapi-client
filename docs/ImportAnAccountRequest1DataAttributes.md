@@ -1,4 +1,4 @@
-# OpenapiClient::ImportAnAccountRequest1DataAttributes
+# PersonaAPIClient::ImportAnAccountRequest1DataAttributes
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ImportAnAccountRequest1DataAttributes.new(
+instance = PersonaAPIClient::ImportAnAccountRequest1DataAttributes.new(
   file: null
 )
 ```

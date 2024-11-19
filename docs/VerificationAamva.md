@@ -1,4 +1,4 @@
-# OpenapiClient::VerificationAamva
+# PersonaAPIClient::VerificationAamva
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::VerificationAamva.new(
+instance = PersonaAPIClient::VerificationAamva.new(
   type: null,
   id: ver_ABC123,
   attributes: null,

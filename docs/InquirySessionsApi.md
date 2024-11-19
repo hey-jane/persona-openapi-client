@@ -1,4 +1,4 @@
-# OpenapiClient::InquirySessionsApi
+# PersonaAPIClient::InquirySessionsApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -24,27 +24,27 @@ Creates a new Inquiry Session. By default, we only allow up to 25 sessions per I
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquirySessionsApi.new
+api_instance = PersonaAPIClient::InquirySessionsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_an_inquiry_session_request: OpenapiClient::CreateAnInquirySessionRequest.new # CreateAnInquirySessionRequest | 
+  create_an_inquiry_session_request: PersonaAPIClient::CreateAnInquirySessionRequest.new # CreateAnInquirySessionRequest | 
 }
 
 begin
   # Create an Inquiry Session
   result = api_instance.create_an_inquiry_session(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquirySessionsApi->create_an_inquiry_session: #{e}"
 end
 ```
@@ -62,7 +62,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnInquirySession201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquirySessionsApi->create_an_inquiry_session_with_http_info: #{e}"
 end
 ```
@@ -103,14 +103,14 @@ Expires a specific Inquiry Session.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquirySessionsApi.new
+api_instance = PersonaAPIClient::InquirySessionsApi.new
 inquiry_session_id = 'inquiry_session_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -123,7 +123,7 @@ begin
   # Expire an Inquiry Session
   result = api_instance.expire_an_inquiry_session(inquiry_session_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquirySessionsApi->expire_an_inquiry_session: #{e}"
 end
 ```
@@ -141,7 +141,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnInquirySession201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquirySessionsApi->expire_an_inquiry_session_with_http_info: #{e}"
 end
 ```
@@ -182,27 +182,27 @@ Expires all active Inquiry Sessions for a given set of Inquiries.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquirySessionsApi.new
+api_instance = PersonaAPIClient::InquirySessionsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  expire_inquiry_sessions_request: OpenapiClient::ExpireInquirySessionsRequest.new # ExpireInquirySessionsRequest | 
+  expire_inquiry_sessions_request: PersonaAPIClient::ExpireInquirySessionsRequest.new # ExpireInquirySessionsRequest | 
 }
 
 begin
   # Expire Inquiry Sessions
   result = api_instance.expire_inquiry_sessions(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquirySessionsApi->expire_inquiry_sessions: #{e}"
 end
 ```
@@ -220,7 +220,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ExpireInquirySessions200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquirySessionsApi->expire_inquiry_sessions_with_http_info: #{e}"
 end
 ```
@@ -261,14 +261,14 @@ Generates a one-time link for a specific Inquiry Session.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquirySessionsApi.new
+api_instance = PersonaAPIClient::InquirySessionsApi.new
 inquiry_session_id = 'inquiry_session_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -281,7 +281,7 @@ begin
   # Generate a one-time link for Inquiry Session
   result = api_instance.generate_a_one_time_link_for_an_inquiry_session(inquiry_session_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquirySessionsApi->generate_a_one_time_link_for_an_inquiry_session: #{e}"
 end
 ```
@@ -299,7 +299,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GenerateAOneTimeLinkForAnInquirySession200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquirySessionsApi->generate_a_one_time_link_for_an_inquiry_session_with_http_info: #{e}"
 end
 ```
@@ -340,14 +340,14 @@ Retrieves a list of Inquiry Sessions.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquirySessionsApi.new
+api_instance = PersonaAPIClient::InquirySessionsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
@@ -359,7 +359,7 @@ begin
   # List all Inquiry Sessions
   result = api_instance.list_all_inquiry_sessions(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquirySessionsApi->list_all_inquiry_sessions: #{e}"
 end
 ```
@@ -377,7 +377,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAllInquirySessions200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquirySessionsApi->list_all_inquiry_sessions_with_http_info: #{e}"
 end
 ```
@@ -417,14 +417,14 @@ Retrieves details of a specific Inquiry Session.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquirySessionsApi.new
+api_instance = PersonaAPIClient::InquirySessionsApi.new
 inquiry_session_id = 'inquiry_session_id_example' # String | Inquiry session ID
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -437,7 +437,7 @@ begin
   # Retrieve an Inquiry Session
   result = api_instance.retrieve_an_inquiry_session(inquiry_session_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquirySessionsApi->retrieve_an_inquiry_session: #{e}"
 end
 ```
@@ -455,7 +455,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnInquirySession201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquirySessionsApi->retrieve_an_inquiry_session_with_http_info: #{e}"
 end
 ```

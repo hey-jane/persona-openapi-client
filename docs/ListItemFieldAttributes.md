@@ -1,4 +1,4 @@
-# OpenapiClient::ListItemFieldAttributes
+# PersonaAPIClient::ListItemFieldAttributes
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ListItemFieldAttributes.new(
+instance = PersonaAPIClient::ListItemFieldAttributes.new(
   status: null,
   archived_at: null,
   updated_at: null,

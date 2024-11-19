@@ -1,4 +1,4 @@
-# OpenapiClient::AddPersonaObjectsRequestMeta
+# PersonaAPIClient::AddPersonaObjectsRequestMeta
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::AddPersonaObjectsRequestMeta.new(
+instance = PersonaAPIClient::AddPersonaObjectsRequestMeta.new(
   object_ids: null
 )
 ```

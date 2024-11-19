@@ -1,4 +1,4 @@
-# OpenapiClient::InquiryAttributesAllOfFieldsNameFirst
+# PersonaAPIClient::InquiryAttributesAllOfFieldsNameFirst
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::InquiryAttributesAllOfFieldsNameFirst.new(
+instance = PersonaAPIClient::InquiryAttributesAllOfFieldsNameFirst.new(
   type: null,
   value: null
 )

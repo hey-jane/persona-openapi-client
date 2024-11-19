@@ -1,4 +1,4 @@
-# OpenapiClient::ReportPhoneRisk
+# PersonaAPIClient::ReportPhoneRisk
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportPhoneRisk.new(
+instance = PersonaAPIClient::ReportPhoneRisk.new(
   type: null,
   id: rep_7WNzPaNcroBKLarNHBjYDLAp,
   attributes: null,

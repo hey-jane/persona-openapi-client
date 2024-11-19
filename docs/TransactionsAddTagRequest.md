@@ -1,4 +1,4 @@
-# OpenapiClient::TransactionsAddTagRequest
+# PersonaAPIClient::TransactionsAddTagRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::TransactionsAddTagRequest.new(
+instance = PersonaAPIClient::TransactionsAddTagRequest.new(
   meta: null
 )
 ```

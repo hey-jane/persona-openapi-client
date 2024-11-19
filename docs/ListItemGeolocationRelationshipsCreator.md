@@ -1,4 +1,4 @@
-# OpenapiClient::ListItemGeolocationRelationshipsCreator
+# PersonaAPIClient::ListItemGeolocationRelationshipsCreator
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ListItemGeolocationRelationshipsCreator.new(
+instance = PersonaAPIClient::ListItemGeolocationRelationshipsCreator.new(
   data: null
 )
 ```

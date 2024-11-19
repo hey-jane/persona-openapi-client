@@ -1,4 +1,4 @@
-# OpenapiClient::ReportPoliticallyExposedPersonAttributesAllOfResultInnerAffiliationsInner
+# PersonaAPIClient::ReportPoliticallyExposedPersonAttributesAllOfResultInnerAffiliationsInner
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportPoliticallyExposedPersonAttributesAllOfResultInnerAffiliationsInner.new(
+instance = PersonaAPIClient::ReportPoliticallyExposedPersonAttributesAllOfResultInnerAffiliationsInner.new(
   source_key: north-atlantic-treaty-organisation,
   name: North Atlantic Treaty Organization Member Countries Representation
 )

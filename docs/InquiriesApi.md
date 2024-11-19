@@ -1,4 +1,4 @@
-# OpenapiClient::InquiriesApi
+# PersonaAPIClient::InquiriesApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -33,28 +33,28 @@ Approves an <<glossary:Inquiry>>.  Note that this action will trigger any associ
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquiriesApi.new
+api_instance = PersonaAPIClient::InquiriesApi.new
 inquiry_id = 'inquiry_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  approve_an_inquiry_request: OpenapiClient::ApproveAnInquiryRequest.new # ApproveAnInquiryRequest | 
+  approve_an_inquiry_request: PersonaAPIClient::ApproveAnInquiryRequest.new # ApproveAnInquiryRequest | 
 }
 
 begin
   # Approve an Inquiry
   result = api_instance.approve_an_inquiry(inquiry_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->approve_an_inquiry: #{e}"
 end
 ```
@@ -72,7 +72,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnInquiry201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->approve_an_inquiry_with_http_info: #{e}"
 end
 ```
@@ -114,27 +114,27 @@ Creates a new inquiry with optional pre-filled attributes.  See [Sessions](https
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquiriesApi.new
+api_instance = PersonaAPIClient::InquiriesApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_an_inquiry_request: OpenapiClient::CreateAnInquiryRequest.new({data: OpenapiClient::CreateAnInquiryRequestData.new({attributes: OpenapiClient::CreateAnInquiryRequestDataAttributes.new})}) # CreateAnInquiryRequest | 
+  create_an_inquiry_request: PersonaAPIClient::CreateAnInquiryRequest.new({data: PersonaAPIClient::CreateAnInquiryRequestData.new({attributes: PersonaAPIClient::CreateAnInquiryRequestDataAttributes.new})}) # CreateAnInquiryRequest | 
 }
 
 begin
   # Create an Inquiry
   result = api_instance.create_an_inquiry(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->create_an_inquiry: #{e}"
 end
 ```
@@ -152,7 +152,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnInquiry201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->create_an_inquiry_with_http_info: #{e}"
 end
 ```
@@ -193,28 +193,28 @@ Declines an <<glossary:Inquiry>>. Note that this action will trigger any associa
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquiriesApi.new
+api_instance = PersonaAPIClient::InquiriesApi.new
 inquiry_id = 'inquiry_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  approve_an_inquiry_request: OpenapiClient::ApproveAnInquiryRequest.new # ApproveAnInquiryRequest | 
+  approve_an_inquiry_request: PersonaAPIClient::ApproveAnInquiryRequest.new # ApproveAnInquiryRequest | 
 }
 
 begin
   # Decline an Inquiry
   result = api_instance.decline_an_inquiry(inquiry_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->decline_an_inquiry: #{e}"
 end
 ```
@@ -232,7 +232,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnInquiry201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->decline_an_inquiry_with_http_info: #{e}"
 end
 ```
@@ -274,14 +274,14 @@ Expires an Inquiry and all sessions on the Inquiry. Cancels any pending Verifica
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquiriesApi.new
+api_instance = PersonaAPIClient::InquiriesApi.new
 inquiry_id = 'inquiry_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -294,7 +294,7 @@ begin
   # Expire an Inquiry
   result = api_instance.expire_an_inquiry(inquiry_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->expire_an_inquiry: #{e}"
 end
 ```
@@ -312,7 +312,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnInquiry201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->expire_an_inquiry_with_http_info: #{e}"
 end
 ```
@@ -353,28 +353,28 @@ Creates a new inquiry session and returns `meta.one-time-link`.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquiriesApi.new
+api_instance = PersonaAPIClient::InquiriesApi.new
 inquiry_id = 'inquiry_id_example' # String | Inquiry ID (starts with \"inq_\")
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  generate_a_one_time_link_request: OpenapiClient::GenerateAOneTimeLinkRequest.new # GenerateAOneTimeLinkRequest | 
+  generate_a_one_time_link_request: PersonaAPIClient::GenerateAOneTimeLinkRequest.new # GenerateAOneTimeLinkRequest | 
 }
 
 begin
   # Generate a one-time link for an Inquiry
   result = api_instance.generate_a_one_time_link(inquiry_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->generate_a_one_time_link: #{e}"
 end
 ```
@@ -392,7 +392,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GenerateAOneTimeLink200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->generate_a_one_time_link_with_http_info: #{e}"
 end
 ```
@@ -434,28 +434,28 @@ Adds a new tag to an Inquiry.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquiriesApi.new
+api_instance = PersonaAPIClient::InquiriesApi.new
 inquiry_id = 'inquiry_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  inquiries_add_tag_request: OpenapiClient::InquiriesAddTagRequest.new # InquiriesAddTagRequest | 
+  inquiries_add_tag_request: PersonaAPIClient::InquiriesAddTagRequest.new # InquiriesAddTagRequest | 
 }
 
 begin
   # Add tag to an Inquiry
   result = api_instance.inquiries_add_tag(inquiry_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->inquiries_add_tag: #{e}"
 end
 ```
@@ -473,7 +473,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnInquiry201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->inquiries_add_tag_with_http_info: #{e}"
 end
 ```
@@ -515,28 +515,28 @@ Performs a series of simulated actions on a Sandbox Inquiry.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquiriesApi.new
+api_instance = PersonaAPIClient::InquiriesApi.new
 inquiry_id = 'inquiry_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  inquiries_perform_simulate_actions_request: OpenapiClient::InquiriesPerformSimulateActionsRequest.new({meta: OpenapiClient::InquiriesPerformSimulateActionsRequestMeta.new({simulate_actions: [{"type": "start_inquiry"}, {"type": "create_failed_verification", "data": {"verification-template-id": "vtmpl_CCLT7pvBZM8z5fumdb3QvW5cSrdr"}}, {"type": "create_passed_verification", "data": {"verification-template-id": "vtmpl_CCLT7pvBZM8z5fumdb3QvW5cSrdr"}}, {"type": "complete_inquiry"}, {"type": "approve_inquiry"}]})}) # InquiriesPerformSimulateActionsRequest | 
+  inquiries_perform_simulate_actions_request: PersonaAPIClient::InquiriesPerformSimulateActionsRequest.new({meta: PersonaAPIClient::InquiriesPerformSimulateActionsRequestMeta.new({simulate_actions: [{"type": "start_inquiry"}, {"type": "create_failed_verification", "data": {"verification-template-id": "vtmpl_CCLT7pvBZM8z5fumdb3QvW5cSrdr"}}, {"type": "create_passed_verification", "data": {"verification-template-id": "vtmpl_CCLT7pvBZM8z5fumdb3QvW5cSrdr"}}, {"type": "complete_inquiry"}, {"type": "approve_inquiry"}]})}) # InquiriesPerformSimulateActionsRequest | 
 }
 
 begin
   # Perform Simulate Actions
   result = api_instance.inquiries_perform_simulate_actions(inquiry_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->inquiries_perform_simulate_actions: #{e}"
 end
 ```
@@ -554,7 +554,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnInquiry201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->inquiries_perform_simulate_actions_with_http_info: #{e}"
 end
 ```
@@ -596,28 +596,28 @@ Removes an existing tag from an Inquiry.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquiriesApi.new
+api_instance = PersonaAPIClient::InquiriesApi.new
 inquiry_id = 'inquiry_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  inquiries_add_tag_request: OpenapiClient::InquiriesAddTagRequest.new # InquiriesAddTagRequest | 
+  inquiries_add_tag_request: PersonaAPIClient::InquiriesAddTagRequest.new # InquiriesAddTagRequest | 
 }
 
 begin
   # Remove tag from an Inquiry
   result = api_instance.inquiries_remove_tag(inquiry_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->inquiries_remove_tag: #{e}"
 end
 ```
@@ -635,7 +635,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnInquiry201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->inquiries_remove_tag_with_http_info: #{e}"
 end
 ```
@@ -677,28 +677,28 @@ Sets all tags on an Inquiry. Any tags that are not provided in the request will 
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquiriesApi.new
+api_instance = PersonaAPIClient::InquiriesApi.new
 inquiry_id = 'inquiry_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  inquiries_set_all_tags_request: OpenapiClient::InquiriesSetAllTagsRequest.new # InquiriesSetAllTagsRequest | 
+  inquiries_set_all_tags_request: PersonaAPIClient::InquiriesSetAllTagsRequest.new # InquiriesSetAllTagsRequest | 
 }
 
 begin
   # Set tags on an Inquiry
   result = api_instance.inquiries_set_all_tags(inquiry_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->inquiries_set_all_tags: #{e}"
 end
 ```
@@ -716,7 +716,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnInquiry201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->inquiries_set_all_tags_with_http_info: #{e}"
 end
 ```
@@ -758,19 +758,19 @@ Returns a list of your organization's inquiries.  Note that this endpoint aggreg
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquiriesApi.new
+api_instance = PersonaAPIClient::InquiriesApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
-  page: OpenapiClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
+  page: PersonaAPIClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
   filter: { key: { key: 3.56}} # ListAllInquiriesFilterParameter | 
 }
 
@@ -778,7 +778,7 @@ begin
   # List all Inquiries
   result = api_instance.list_all_inquiries(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->list_all_inquiries: #{e}"
 end
 ```
@@ -796,7 +796,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAllInquiries200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->list_all_inquiries_with_http_info: #{e}"
 end
 ```
@@ -837,14 +837,14 @@ Prints an Inquiry as PDF.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquiriesApi.new
+api_instance = PersonaAPIClient::InquiriesApi.new
 inquiry_id = 'inquiry_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -856,7 +856,7 @@ begin
   # Print Inquiry PDF
   result = api_instance.print_an_inquiry_pdf(inquiry_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->print_an_inquiry_pdf: #{e}"
 end
 ```
@@ -874,7 +874,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Null>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->print_an_inquiry_pdf_with_http_info: #{e}"
 end
 ```
@@ -914,14 +914,14 @@ Permanently deletes personally identifiable information (PII) for an Inquiry and
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquiriesApi.new
+api_instance = PersonaAPIClient::InquiriesApi.new
 inquiry_id = 'inquiry_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -934,7 +934,7 @@ begin
   # Redact an Inquiry
   result = api_instance.redact_an_inquiry(inquiry_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->redact_an_inquiry: #{e}"
 end
 ```
@@ -952,7 +952,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnInquiry201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->redact_an_inquiry_with_http_info: #{e}"
 end
 ```
@@ -993,14 +993,14 @@ Creates a session token that is returned as `meta.session-token`. If the inquiry
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquiriesApi.new
+api_instance = PersonaAPIClient::InquiriesApi.new
 inquiry_id = 'inquiry_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -1013,7 +1013,7 @@ begin
   # Resume an Inquiry
   result = api_instance.resume_an_inquiry(inquiry_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->resume_an_inquiry: #{e}"
 end
 ```
@@ -1031,7 +1031,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ResumeAnInquiry200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->resume_an_inquiry_with_http_info: #{e}"
 end
 ```
@@ -1072,14 +1072,14 @@ Retrieves the details of an existing Inquiry.  In the [Embedded Flow](https://do
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquiriesApi.new
+api_instance = PersonaAPIClient::InquiriesApi.new
 inquiry_id = 'inquiry_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -1092,7 +1092,7 @@ begin
   # Retrieve an Inquiry
   result = api_instance.retrieve_an_inquiry(inquiry_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->retrieve_an_inquiry: #{e}"
 end
 ```
@@ -1110,7 +1110,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnInquiry201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->retrieve_an_inquiry_with_http_info: #{e}"
 end
 ```
@@ -1151,28 +1151,28 @@ Updates an existing Inquiry.  Note that if you use webhooks, updates to inquirie
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::InquiriesApi.new
+api_instance = PersonaAPIClient::InquiriesApi.new
 inquiry_id = 'inquiry_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  update_an_inquiry_request: OpenapiClient::UpdateAnInquiryRequest.new # UpdateAnInquiryRequest | 
+  update_an_inquiry_request: PersonaAPIClient::UpdateAnInquiryRequest.new # UpdateAnInquiryRequest | 
 }
 
 begin
   # Update an Inquiry
   result = api_instance.update_an_inquiry(inquiry_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->update_an_inquiry: #{e}"
 end
 ```
@@ -1190,7 +1190,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnInquiry201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling InquiriesApi->update_an_inquiry_with_http_info: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# OpenapiClient::ReportSentilinkScoresAttributesAllOfResultScoresInner
+# PersonaAPIClient::ReportSentilinkScoresAttributesAllOfResultScoresInner
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportSentilinkScoresAttributesAllOfResultScoresInner.new(
+instance = PersonaAPIClient::ReportSentilinkScoresAttributesAllOfResultScoresInner.new(
   name: null,
   score: null,
   version: null,

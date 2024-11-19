@@ -1,4 +1,4 @@
-# OpenapiClient::CreateABrowserFingerprintListItemRequestDataAttributes
+# PersonaAPIClient::CreateABrowserFingerprintListItemRequestDataAttributes
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateABrowserFingerprintListItemRequestDataAttributes.new(
+instance = PersonaAPIClient::CreateABrowserFingerprintListItemRequestDataAttributes.new(
   list_id: null,
   value: null
 )

@@ -1,4 +1,4 @@
-# OpenapiClient::CreateAGovernmentIdDocumentRequestDataAttributesBackPhotoDataInner
+# PersonaAPIClient::CreateAGovernmentIdDocumentRequestDataAttributesBackPhotoDataInner
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateAGovernmentIdDocumentRequestDataAttributesBackPhotoDataInner.new(
+instance = PersonaAPIClient::CreateAGovernmentIdDocumentRequestDataAttributesBackPhotoDataInner.new(
   data: null,
   filename: null
 )

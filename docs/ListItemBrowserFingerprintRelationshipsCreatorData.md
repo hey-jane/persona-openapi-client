@@ -1,4 +1,4 @@
-# OpenapiClient::ListItemBrowserFingerprintRelationshipsCreatorData
+# PersonaAPIClient::ListItemBrowserFingerprintRelationshipsCreatorData
 
 ## Class instance methods
 
@@ -9,9 +9,9 @@ Returns the list of classes defined in oneOf.
 #### Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-OpenapiClient::ListItemBrowserFingerprintRelationshipsCreatorData.openapi_one_of
+PersonaAPIClient::ListItemBrowserFingerprintRelationshipsCreatorData.openapi_one_of
 # =>
 # [
 #   :'ListItemBrowserFingerprintRelationshipsCreatorDataOneOf',
@@ -29,12 +29,12 @@ Find the appropriate object from the `openapi_one_of` list and casts the data in
 #### Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-OpenapiClient::ListItemBrowserFingerprintRelationshipsCreatorData.build(data)
+PersonaAPIClient::ListItemBrowserFingerprintRelationshipsCreatorData.build(data)
 # => #<ListItemBrowserFingerprintRelationshipsCreatorDataOneOf:0x00007fdd4aab02a0>
 
-OpenapiClient::ListItemBrowserFingerprintRelationshipsCreatorData.build(data_that_doesnt_match)
+PersonaAPIClient::ListItemBrowserFingerprintRelationshipsCreatorData.build(data_that_doesnt_match)
 # => nil
 ```
 

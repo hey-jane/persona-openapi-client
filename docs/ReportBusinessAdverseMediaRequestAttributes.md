@@ -1,4 +1,4 @@
-# OpenapiClient::ReportBusinessAdverseMediaRequestAttributes
+# PersonaAPIClient::ReportBusinessAdverseMediaRequestAttributes
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportBusinessAdverseMediaRequestAttributes.new(
+instance = PersonaAPIClient::ReportBusinessAdverseMediaRequestAttributes.new(
   account_id: null,
   reference_id: null,
   report_template_id: null,

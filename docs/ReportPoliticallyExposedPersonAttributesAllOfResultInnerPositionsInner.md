@@ -1,4 +1,4 @@
-# OpenapiClient::ReportPoliticallyExposedPersonAttributesAllOfResultInnerPositionsInner
+# PersonaAPIClient::ReportPoliticallyExposedPersonAttributesAllOfResultInnerPositionsInner
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportPoliticallyExposedPersonAttributesAllOfResultInnerPositionsInner.new(
+instance = PersonaAPIClient::ReportPoliticallyExposedPersonAttributesAllOfResultInnerPositionsInner.new(
   pep_class: pep-class-1,
   source_key: united-states-head-of-state,
   name: President of the United States

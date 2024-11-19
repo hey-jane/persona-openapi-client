@@ -1,4 +1,4 @@
-# OpenapiClient::ReportAddressLookup
+# PersonaAPIClient::ReportAddressLookup
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportAddressLookup.new(
+instance = PersonaAPIClient::ReportAddressLookup.new(
   type: null,
   id: rep_7WNzPaNcroBKLarNHBjYDLAp,
   attributes: null,

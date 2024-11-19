@@ -1,4 +1,4 @@
-# OpenapiClient::InquiryStatusAction
+# PersonaAPIClient::InquiryStatusAction
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::InquiryStatusAction.new(
+instance = PersonaAPIClient::InquiryStatusAction.new(
   type: null
 )
 ```

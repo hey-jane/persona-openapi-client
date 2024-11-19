@@ -1,4 +1,4 @@
-# OpenapiClient::ListAllInquirySessionsFilterParameter
+# PersonaAPIClient::ListAllInquirySessionsFilterParameter
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ListAllInquirySessionsFilterParameter.new(
+instance = PersonaAPIClient::ListAllInquirySessionsFilterParameter.new(
   inquiry_id: inq_ABC123
 )
 ```

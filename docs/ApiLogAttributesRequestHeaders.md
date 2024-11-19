@@ -1,4 +1,4 @@
-# OpenapiClient::ApiLogAttributesRequestHeaders
+# PersonaAPIClient::ApiLogAttributesRequestHeaders
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ApiLogAttributesRequestHeaders.new(
+instance = PersonaAPIClient::ApiLogAttributesRequestHeaders.new(
   accept: null,
   authorization: null,
   host: null,

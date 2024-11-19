@@ -1,4 +1,4 @@
-# OpenapiClient::ListAllEventsFilterParameter
+# PersonaAPIClient::ListAllEventsFilterParameter
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ListAllEventsFilterParameter.new(
+instance = PersonaAPIClient::ListAllEventsFilterParameter.new(
   name: null,
   object_id: null,
   id: null

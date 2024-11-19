@@ -1,4 +1,4 @@
-# OpenapiClient::ReportTemplateSynthetic
+# PersonaAPIClient::ReportTemplateSynthetic
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportTemplateSynthetic.new(
+instance = PersonaAPIClient::ReportTemplateSynthetic.new(
   type: null,
   id: rptp_7WNzPaNcroBKLarNHBjYDLAp,
   attributes: null,

@@ -1,4 +1,4 @@
-# OpenapiClient::DocumentGovernmentIdAttributes
+# PersonaAPIClient::DocumentGovernmentIdAttributes
 
 ## Properties
 
@@ -41,9 +41,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::DocumentGovernmentIdAttributes.new(
+instance = PersonaAPIClient::DocumentGovernmentIdAttributes.new(
   status: null,
   created_at: null,
   processed_at: null,

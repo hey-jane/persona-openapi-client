@@ -1,4 +1,4 @@
-# OpenapiClient::CaseTemplate
+# PersonaAPIClient::CaseTemplate
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CaseTemplate.new(
+instance = PersonaAPIClient::CaseTemplate.new(
   type: null,
   id: null,
   attributes: null

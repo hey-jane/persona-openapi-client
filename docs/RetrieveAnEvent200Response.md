@@ -1,4 +1,4 @@
-# OpenapiClient::RetrieveAnEvent200Response
+# PersonaAPIClient::RetrieveAnEvent200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::RetrieveAnEvent200Response.new(
+instance = PersonaAPIClient::RetrieveAnEvent200Response.new(
   data: null,
   included: null
 )

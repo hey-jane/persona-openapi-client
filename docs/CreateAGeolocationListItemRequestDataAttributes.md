@@ -1,4 +1,4 @@
-# OpenapiClient::CreateAGeolocationListItemRequestDataAttributes
+# PersonaAPIClient::CreateAGeolocationListItemRequestDataAttributes
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateAGeolocationListItemRequestDataAttributes.new(
+instance = PersonaAPIClient::CreateAGeolocationListItemRequestDataAttributes.new(
   latitude: null,
   list_id: null,
   longitude: null,

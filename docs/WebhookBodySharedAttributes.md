@@ -1,4 +1,4 @@
-# OpenapiClient::WebhookBodySharedAttributes
+# PersonaAPIClient::WebhookBodySharedAttributes
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::WebhookBodySharedAttributes.new(
+instance = PersonaAPIClient::WebhookBodySharedAttributes.new(
   created_at: null
 )
 ```

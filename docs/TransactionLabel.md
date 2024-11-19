@@ -1,4 +1,4 @@
-# OpenapiClient::TransactionLabel
+# PersonaAPIClient::TransactionLabel
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::TransactionLabel.new(
+instance = PersonaAPIClient::TransactionLabel.new(
   type: null,
   id: null,
   attributes: null

@@ -1,4 +1,4 @@
-# OpenapiClient::CreateACaseRequestDataAttributes
+# PersonaAPIClient::CreateACaseRequestDataAttributes
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateACaseRequestDataAttributes.new(
+instance = PersonaAPIClient::CreateACaseRequestDataAttributes.new(
   case_template_id: null,
   creator_email_address: null,
   case_queue_id: null

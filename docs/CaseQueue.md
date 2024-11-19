@@ -1,4 +1,4 @@
-# OpenapiClient::CaseQueue
+# PersonaAPIClient::CaseQueue
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CaseQueue.new(
+instance = PersonaAPIClient::CaseQueue.new(
   type: null,
   id: null,
   attributes: null

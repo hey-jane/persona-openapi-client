@@ -1,4 +1,4 @@
-# OpenapiClient::VerificationPhoneNumberAttributesAllOfMetadata
+# PersonaAPIClient::VerificationPhoneNumberAttributesAllOfMetadata
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::VerificationPhoneNumberAttributesAllOfMetadata.new(
+instance = PersonaAPIClient::VerificationPhoneNumberAttributesAllOfMetadata.new(
   telesign_risk_score: 306
 )
 ```

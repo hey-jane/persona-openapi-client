@@ -1,4 +1,4 @@
-# OpenapiClient::ReportAddressLookupRequestAttributesAllOfQuery
+# PersonaAPIClient::ReportAddressLookupRequestAttributesAllOfQuery
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportAddressLookupRequestAttributesAllOfQuery.new(
+instance = PersonaAPIClient::ReportAddressLookupRequestAttributesAllOfQuery.new(
   addressee: Joe Doe,
   address_street_1: 1 Example Way,
   address_street_2: Ste 300,

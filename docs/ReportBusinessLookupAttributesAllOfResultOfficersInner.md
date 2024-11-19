@@ -1,4 +1,4 @@
-# OpenapiClient::ReportBusinessLookupAttributesAllOfResultOfficersInner
+# PersonaAPIClient::ReportBusinessLookupAttributesAllOfResultOfficersInner
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportBusinessLookupAttributesAllOfResultOfficersInner.new(
+instance = PersonaAPIClient::ReportBusinessLookupAttributesAllOfResultOfficersInner.new(
   name_full: JOHN DOE,
   name_first: JOHN,
   name_last: DOE,

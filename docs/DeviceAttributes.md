@@ -1,4 +1,4 @@
-# OpenapiClient::DeviceAttributes
+# PersonaAPIClient::DeviceAttributes
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::DeviceAttributes.new(
+instance = PersonaAPIClient::DeviceAttributes.new(
   device_vendor_id: null,
   device_fingerprint: null,
   browser_fingerprint: null

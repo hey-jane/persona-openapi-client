@@ -1,4 +1,4 @@
-# OpenapiClient::CreateAnEmailAddressListItemRequestDataAttributes
+# PersonaAPIClient::CreateAnEmailAddressListItemRequestDataAttributes
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateAnEmailAddressListItemRequestDataAttributes.new(
+instance = PersonaAPIClient::CreateAnEmailAddressListItemRequestDataAttributes.new(
   list_id: null,
   match_type: null,
   value: null

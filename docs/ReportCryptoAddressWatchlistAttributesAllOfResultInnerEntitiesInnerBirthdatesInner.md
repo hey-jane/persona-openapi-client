@@ -1,4 +1,4 @@
-# OpenapiClient::ReportCryptoAddressWatchlistAttributesAllOfResultInnerEntitiesInnerBirthdatesInner
+# PersonaAPIClient::ReportCryptoAddressWatchlistAttributesAllOfResultInnerEntitiesInnerBirthdatesInner
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportCryptoAddressWatchlistAttributesAllOfResultInnerEntitiesInnerBirthdatesInner.new(
+instance = PersonaAPIClient::ReportCryptoAddressWatchlistAttributesAllOfResultInnerEntitiesInnerBirthdatesInner.new(
   day: 03,
   year: 1985,
   month: 03,

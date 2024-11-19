@@ -1,4 +1,4 @@
-# OpenapiClient::ListItemField
+# PersonaAPIClient::ListItemField
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ListItemField.new(
+instance = PersonaAPIClient::ListItemField.new(
   id: null,
   type: null,
   attributes: null,

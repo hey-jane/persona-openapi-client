@@ -1,4 +1,4 @@
-# OpenapiClient::UserAuditLogAttributes
+# PersonaAPIClient::UserAuditLogAttributes
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::UserAuditLogAttributes.new(
+instance = PersonaAPIClient::UserAuditLogAttributes.new(
   path: null,
   method: null,
   get_params: null,

@@ -1,4 +1,4 @@
-# OpenapiClient::ReportWatchlistAttributesAllOfIgnoreListInner
+# PersonaAPIClient::ReportWatchlistAttributesAllOfIgnoreListInner
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportWatchlistAttributesAllOfIgnoreListInner.new(
+instance = PersonaAPIClient::ReportWatchlistAttributesAllOfIgnoreListInner.new(
   ignored_at: 2023-09-13T22:08:56.618Z,
   run_history_completed_at: 2023-08-11T20:36:04.291Z,
   match: null,

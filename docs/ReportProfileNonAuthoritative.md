@@ -1,4 +1,4 @@
-# OpenapiClient::ReportProfileNonAuthoritative
+# PersonaAPIClient::ReportProfileNonAuthoritative
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportProfileNonAuthoritative.new(
+instance = PersonaAPIClient::ReportProfileNonAuthoritative.new(
   type: null,
   id: rep_7WNzPaNcroBKLarNHBjYDLAp,
   attributes: null,

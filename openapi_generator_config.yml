@@ -1,0 +1,9 @@
+additionalProperties:
+  gemAuthor: "Hey Jane"
+  gemAuthorEmail: "eng_product@heyjane.co"
+  GemName: "persona_openapi_client"
+  gemVersion: "1.0.0"
+  library: "faraday"
+  gemRequiredRubyVersion: "3.3"
+  moduleName: "PersonaAPIClient"
+

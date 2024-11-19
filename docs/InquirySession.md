@@ -1,4 +1,4 @@
-# OpenapiClient::InquirySession
+# PersonaAPIClient::InquirySession
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::InquirySession.new(
+instance = PersonaAPIClient::InquirySession.new(
   type: null,
   id: null,
   attributes: null,

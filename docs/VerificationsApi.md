@@ -1,4 +1,4 @@
-# OpenapiClient::VerificationsApi
+# PersonaAPIClient::VerificationsApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -21,14 +21,14 @@ Prints a verification in PDF format.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::VerificationsApi.new
+api_instance = PersonaAPIClient::VerificationsApi.new
 verification_id = 'verification_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -40,7 +40,7 @@ begin
   # Print Verification PDF
   result = api_instance.print_a_verification_as_pdf(verification_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling VerificationsApi->print_a_verification_as_pdf: #{e}"
 end
 ```
@@ -58,7 +58,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Null>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling VerificationsApi->print_a_verification_as_pdf_with_http_info: #{e}"
 end
 ```
@@ -98,14 +98,14 @@ Permanently deletes personally identifiable information (PII) for a Verification
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::VerificationsApi.new
+api_instance = PersonaAPIClient::VerificationsApi.new
 verification_id = 'verification_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -117,7 +117,7 @@ begin
   # Redact a Verification
   result = api_instance.redact_a_verification(verification_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling VerificationsApi->redact_a_verification: #{e}"
 end
 ```
@@ -135,7 +135,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveAVerification200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling VerificationsApi->redact_a_verification_with_http_info: #{e}"
 end
 ```
@@ -175,14 +175,14 @@ Retrieves the details of an existing Verification.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::VerificationsApi.new
+api_instance = PersonaAPIClient::VerificationsApi.new
 verification_id = 'verification_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -195,7 +195,7 @@ begin
   # Retrieve a Verification
   result = api_instance.retrieve_a_verification(verification_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling VerificationsApi->retrieve_a_verification: #{e}"
 end
 ```
@@ -213,7 +213,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveAVerification200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling VerificationsApi->retrieve_a_verification_with_http_info: #{e}"
 end
 ```

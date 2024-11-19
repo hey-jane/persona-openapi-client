@@ -1,4 +1,4 @@
-# OpenapiClient::WebhooksApi
+# PersonaAPIClient::WebhooksApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -26,14 +26,14 @@ Archives a webhook.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WebhooksApi.new
+api_instance = PersonaAPIClient::WebhooksApi.new
 webhook_id = 'webhook_id_example' # String | Webhook's ID (starts with \"wbh_\")
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -46,7 +46,7 @@ begin
   # Archive a Webhook
   result = api_instance.archive_a_webhook(webhook_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksApi->archive_a_webhook: #{e}"
 end
 ```
@@ -64,7 +64,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UpdateAWebhook200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksApi->archive_a_webhook_with_http_info: #{e}"
 end
 ```
@@ -105,27 +105,27 @@ Creates a new webhook with response defaults.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WebhooksApi.new
+api_instance = PersonaAPIClient::WebhooksApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_webhook_request: OpenapiClient::CreateAWebhookRequest.new({data: OpenapiClient::CreateAWebhookRequestData.new({attributes: OpenapiClient::WebhookRequestAttributes.new})}) # CreateAWebhookRequest | 
+  create_a_webhook_request: PersonaAPIClient::CreateAWebhookRequest.new({data: PersonaAPIClient::CreateAWebhookRequestData.new({attributes: PersonaAPIClient::WebhookRequestAttributes.new})}) # CreateAWebhookRequest | 
 }
 
 begin
   # Create a Webhook
   result = api_instance.create_a_webhook(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksApi->create_a_webhook: #{e}"
 end
 ```
@@ -143,7 +143,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAWebhook201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksApi->create_a_webhook_with_http_info: #{e}"
 end
 ```
@@ -184,14 +184,14 @@ Disables a webhook.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WebhooksApi.new
+api_instance = PersonaAPIClient::WebhooksApi.new
 webhook_id = 'webhook_id_example' # String | Webhook's ID (starts with \"wbh_\")
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -204,7 +204,7 @@ begin
   # Disable a Webhook
   result = api_instance.disable_a_webhook(webhook_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksApi->disable_a_webhook: #{e}"
 end
 ```
@@ -222,7 +222,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UpdateAWebhook200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksApi->disable_a_webhook_with_http_info: #{e}"
 end
 ```
@@ -263,14 +263,14 @@ Enables a webhook.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WebhooksApi.new
+api_instance = PersonaAPIClient::WebhooksApi.new
 webhook_id = 'webhook_id_example' # String | Webhook's ID (starts with \"wbh_\")
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -283,7 +283,7 @@ begin
   # Enable a Webhook
   result = api_instance.enable_a_webhook(webhook_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksApi->enable_a_webhook: #{e}"
 end
 ```
@@ -301,7 +301,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UpdateAWebhook200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksApi->enable_a_webhook_with_http_info: #{e}"
 end
 ```
@@ -342,26 +342,26 @@ Returns a list of your environment's webhooks.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WebhooksApi.new
+api_instance = PersonaAPIClient::WebhooksApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
-  page: OpenapiClient::ListAllAccountsPageParameter.new # ListAllAccountsPageParameter | 
+  page: PersonaAPIClient::ListAllAccountsPageParameter.new # ListAllAccountsPageParameter | 
 }
 
 begin
   # List all Webhooks
   result = api_instance.list_all_webhooks(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksApi->list_all_webhooks: #{e}"
 end
 ```
@@ -379,7 +379,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAllWebhooks200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksApi->list_all_webhooks_with_http_info: #{e}"
 end
 ```
@@ -419,14 +419,14 @@ Retrieves the details of an existing webhook, including its secret.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WebhooksApi.new
+api_instance = PersonaAPIClient::WebhooksApi.new
 webhook_id = 'webhook_id_example' # String | Webhook's ID (starts with \"wbh_\")
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -439,7 +439,7 @@ begin
   # Retrieve a Webhook
   result = api_instance.retrieve_a_webhook(webhook_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksApi->retrieve_a_webhook: #{e}"
 end
 ```
@@ -457,7 +457,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAWebhook201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksApi->retrieve_a_webhook_with_http_info: #{e}"
 end
 ```
@@ -498,28 +498,28 @@ Rotates a webhook's secret.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WebhooksApi.new
+api_instance = PersonaAPIClient::WebhooksApi.new
 webhook_id = 'webhook_id_example' # String | Webhook's ID (starts with \"wbh_\")
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  rotate_a_webhook_secret_request: OpenapiClient::RotateAWebhookSecretRequest.new # RotateAWebhookSecretRequest | 
+  rotate_a_webhook_secret_request: PersonaAPIClient::RotateAWebhookSecretRequest.new # RotateAWebhookSecretRequest | 
 }
 
 begin
   # Rotate a Webhook's secret
   result = api_instance.rotate_a_webhook_secret(webhook_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksApi->rotate_a_webhook_secret: #{e}"
 end
 ```
@@ -537,7 +537,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAWebhook201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksApi->rotate_a_webhook_secret_with_http_info: #{e}"
 end
 ```
@@ -579,28 +579,28 @@ Updates an existing Webhook.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WebhooksApi.new
+api_instance = PersonaAPIClient::WebhooksApi.new
 webhook_id = 'webhook_id_example' # String | Webhook's ID (starts with \"wbh_\")
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  update_a_webhook_request: OpenapiClient::UpdateAWebhookRequest.new # UpdateAWebhookRequest | 
+  update_a_webhook_request: PersonaAPIClient::UpdateAWebhookRequest.new # UpdateAWebhookRequest | 
 }
 
 begin
   # Update a Webhook
   result = api_instance.update_a_webhook(webhook_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksApi->update_a_webhook: #{e}"
 end
 ```
@@ -618,7 +618,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UpdateAWebhook200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WebhooksApi->update_a_webhook_with_http_info: #{e}"
 end
 ```

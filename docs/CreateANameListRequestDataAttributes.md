@@ -1,4 +1,4 @@
-# OpenapiClient::CreateANameListRequestDataAttributes
+# PersonaAPIClient::CreateANameListRequestDataAttributes
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateANameListRequestDataAttributes.new(
+instance = PersonaAPIClient::CreateANameListRequestDataAttributes.new(
   allow_fuzzy_name_first: null,
   name: null
 )

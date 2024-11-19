@@ -1,4 +1,4 @@
-# OpenapiClient::ListItemBrowserFingerprintRelationshipsCreatorDataOneOf1
+# PersonaAPIClient::ListItemBrowserFingerprintRelationshipsCreatorDataOneOf1
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ListItemBrowserFingerprintRelationshipsCreatorDataOneOf1.new(
+instance = PersonaAPIClient::ListItemBrowserFingerprintRelationshipsCreatorDataOneOf1.new(
   type: null,
   id: null
 )

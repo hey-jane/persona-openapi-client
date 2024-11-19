@@ -1,4 +1,4 @@
-# OpenapiClient::ImportGeolocationLists201Response
+# PersonaAPIClient::ImportGeolocationLists201Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ImportGeolocationLists201Response.new(
+instance = PersonaAPIClient::ImportGeolocationLists201Response.new(
   data: null
 )
 ```

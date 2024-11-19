@@ -1,4 +1,4 @@
-# OpenapiClient::AccountsApi
+# PersonaAPIClient::AccountsApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -27,28 +27,28 @@ Adds a new tag to an Account
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::AccountsApi.new
+api_instance = PersonaAPIClient::AccountsApi.new
 account_id = 'account_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  accounts_add_tag_request: OpenapiClient::AccountsAddTagRequest.new # AccountsAddTagRequest | 
+  accounts_add_tag_request: PersonaAPIClient::AccountsAddTagRequest.new # AccountsAddTagRequest | 
 }
 
 begin
   # Add tag to an Account
   result = api_instance.accounts_add_tag(account_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->accounts_add_tag: #{e}"
 end
 ```
@@ -66,7 +66,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveAnAccount200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->accounts_add_tag_with_http_info: #{e}"
 end
 ```
@@ -108,28 +108,28 @@ Removes an existing tag from an Account
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::AccountsApi.new
+api_instance = PersonaAPIClient::AccountsApi.new
 account_id = 'account_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  accounts_remove_tag_request: OpenapiClient::AccountsRemoveTagRequest.new # AccountsRemoveTagRequest | 
+  accounts_remove_tag_request: PersonaAPIClient::AccountsRemoveTagRequest.new # AccountsRemoveTagRequest | 
 }
 
 begin
   # Remove tag from an Account
   result = api_instance.accounts_remove_tag(account_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->accounts_remove_tag: #{e}"
 end
 ```
@@ -147,7 +147,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveAnAccount200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->accounts_remove_tag_with_http_info: #{e}"
 end
 ```
@@ -189,28 +189,28 @@ Sets all tags on an Account. Any tags that are not provided in the request will 
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::AccountsApi.new
+api_instance = PersonaAPIClient::AccountsApi.new
 account_id = 'account_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  accounts_set_all_tags_request: OpenapiClient::AccountsSetAllTagsRequest.new # AccountsSetAllTagsRequest | 
+  accounts_set_all_tags_request: PersonaAPIClient::AccountsSetAllTagsRequest.new # AccountsSetAllTagsRequest | 
 }
 
 begin
   # Set tags on an Account
   result = api_instance.accounts_set_all_tags(account_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->accounts_set_all_tags: #{e}"
 end
 ```
@@ -228,7 +228,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveAnAccount200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->accounts_set_all_tags_with_http_info: #{e}"
 end
 ```
@@ -270,28 +270,28 @@ Consolidates several source Accounts' information into one target Account. Any P
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::AccountsApi.new
+api_instance = PersonaAPIClient::AccountsApi.new
 account_id = 'account_id_example' # String | Destination Account ID
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  consolidate_into_an_account_request: OpenapiClient::ConsolidateIntoAnAccountRequest.new # ConsolidateIntoAnAccountRequest | 
+  consolidate_into_an_account_request: PersonaAPIClient::ConsolidateIntoAnAccountRequest.new # ConsolidateIntoAnAccountRequest | 
 }
 
 begin
   # Consolidate Accounts
   result = api_instance.consolidate_into_an_account(account_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->consolidate_into_an_account: #{e}"
 end
 ```
@@ -309,7 +309,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveAnAccount200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->consolidate_into_an_account_with_http_info: #{e}"
 end
 ```
@@ -351,27 +351,27 @@ Creates a new Account for your organization.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::AccountsApi.new
+api_instance = PersonaAPIClient::AccountsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_an_account_request: OpenapiClient::CreateAnAccountRequest.new # CreateAnAccountRequest | 
+  create_an_account_request: PersonaAPIClient::CreateAnAccountRequest.new # CreateAnAccountRequest | 
 }
 
 begin
   # Create an Account
   result = api_instance.create_an_account(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->create_an_account: #{e}"
 end
 ```
@@ -389,7 +389,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnAccount200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->create_an_account_with_http_info: #{e}"
 end
 ```
@@ -430,19 +430,19 @@ Returns a list of your organization's <<glossary:account>>(s).
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::AccountsApi.new
+api_instance = PersonaAPIClient::AccountsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
-  page: OpenapiClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
+  page: PersonaAPIClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
   filter: { key: { key: 3.56}} # ListAllAccountsFilterParameter | 
 }
 
@@ -450,7 +450,7 @@ begin
   # List all Accounts
   result = api_instance.list_all_accounts(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->list_all_accounts: #{e}"
 end
 ```
@@ -468,7 +468,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAllAccounts200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->list_all_accounts_with_http_info: #{e}"
 end
 ```
@@ -509,14 +509,14 @@ Permanently deletes personally identifiable information (PII) for an Account and
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::AccountsApi.new
+api_instance = PersonaAPIClient::AccountsApi.new
 account_id = 'account_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -529,7 +529,7 @@ begin
   # Redact an Account
   result = api_instance.redact_an_account(account_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->redact_an_account: #{e}"
 end
 ```
@@ -547,7 +547,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveAnAccount200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->redact_an_account_with_http_info: #{e}"
 end
 ```
@@ -588,14 +588,14 @@ Retrieves the details of an existing Account.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::AccountsApi.new
+api_instance = PersonaAPIClient::AccountsApi.new
 account_id = 'account_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -608,7 +608,7 @@ begin
   # Retrieve an Account
   result = api_instance.retrieve_an_account(account_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->retrieve_an_account: #{e}"
 end
 ```
@@ -626,7 +626,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveAnAccount200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->retrieve_an_account_with_http_info: #{e}"
 end
 ```
@@ -667,28 +667,28 @@ Updates an existing Account.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::AccountsApi.new
+api_instance = PersonaAPIClient::AccountsApi.new
 account_id = 'account_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  update_an_account_request: OpenapiClient::UpdateAnAccountRequest.new # UpdateAnAccountRequest | 
+  update_an_account_request: PersonaAPIClient::UpdateAnAccountRequest.new # UpdateAnAccountRequest | 
 }
 
 begin
   # Update an Account
   result = api_instance.update_an_account(account_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->update_an_account: #{e}"
 end
 ```
@@ -706,7 +706,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveAnAccount200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling AccountsApi->update_an_account_with_http_info: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# OpenapiClient::WorkflowsApi
+# PersonaAPIClient::WorkflowsApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -21,28 +21,28 @@ Creates a new Workflow Run.  Note: The payload is arbitrary and defined by the W
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WorkflowsApi.new
+api_instance = PersonaAPIClient::WorkflowsApi.new
 workflow_id = 'workflow_id_example' # String | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_a_workflow_run_request: OpenapiClient::CreateAWorkflowRunRequest.new # CreateAWorkflowRunRequest | 
+  create_a_workflow_run_request: PersonaAPIClient::CreateAWorkflowRunRequest.new # CreateAWorkflowRunRequest | 
 }
 
 begin
   # Create a Workflow Run
   result = api_instance.create_a_workflow_run(workflow_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WorkflowsApi->create_a_workflow_run: #{e}"
 end
 ```
@@ -60,7 +60,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAWorkflowRun200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WorkflowsApi->create_a_workflow_run_with_http_info: #{e}"
 end
 ```
@@ -102,19 +102,19 @@ Returns a list of your environment's workflow runs.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WorkflowsApi.new
+api_instance = PersonaAPIClient::WorkflowsApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
-  page: OpenapiClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
+  page: PersonaAPIClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
   filter: { key: { key: 3.56}} # ListAllWorkflowRunsFilterParameter | 
 }
 
@@ -122,7 +122,7 @@ begin
   # List all Workflow Runs
   result = api_instance.list_all_workflow_runs(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WorkflowsApi->list_all_workflow_runs: #{e}"
 end
 ```
@@ -140,7 +140,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAllWorkflowRuns200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WorkflowsApi->list_all_workflow_runs_with_http_info: #{e}"
 end
 ```
@@ -181,14 +181,14 @@ Retrieves the details of an existing workflow run.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::WorkflowsApi.new
+api_instance = PersonaAPIClient::WorkflowsApi.new
 workflow_run_id = 'workflow_run_id_example' # String | Workflow Run's ID (starts with \"wfr_\")
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -201,7 +201,7 @@ begin
   # Retrieve a Workflow Run
   result = api_instance.retrieve_a_workflow_run(workflow_run_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WorkflowsApi->retrieve_a_workflow_run: #{e}"
 end
 ```
@@ -219,7 +219,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAWorkflowRun200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling WorkflowsApi->retrieve_a_workflow_run_with_http_info: #{e}"
 end
 ```

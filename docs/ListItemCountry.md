@@ -1,4 +1,4 @@
-# OpenapiClient::ListItemCountry
+# PersonaAPIClient::ListItemCountry
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ListItemCountry.new(
+instance = PersonaAPIClient::ListItemCountry.new(
   id: null,
   type: null,
   attributes: null,

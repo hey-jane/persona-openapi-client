@@ -1,4 +1,4 @@
-# OpenapiClient::CreateAPhoneNumberListItemRequestDataAttributes
+# PersonaAPIClient::CreateAPhoneNumberListItemRequestDataAttributes
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateAPhoneNumberListItemRequestDataAttributes.new(
+instance = PersonaAPIClient::CreateAPhoneNumberListItemRequestDataAttributes.new(
   list_id: null,
   value: null
 )

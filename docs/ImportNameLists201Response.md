@@ -1,4 +1,4 @@
-# OpenapiClient::ImportNameLists201Response
+# PersonaAPIClient::ImportNameLists201Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ImportNameLists201Response.new(
+instance = PersonaAPIClient::ImportNameLists201Response.new(
   data: null
 )
 ```

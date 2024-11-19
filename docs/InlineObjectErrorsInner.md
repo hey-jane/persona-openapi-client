@@ -1,4 +1,4 @@
-# OpenapiClient::InlineObjectErrorsInner
+# PersonaAPIClient::InlineObjectErrorsInner
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::InlineObjectErrorsInner.new(
+instance = PersonaAPIClient::InlineObjectErrorsInner.new(
   title: null,
   details: null
 )

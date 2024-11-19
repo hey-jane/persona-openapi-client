@@ -1,4 +1,4 @@
-# OpenapiClient::InquiryTemplateVersionAttributesTheme
+# PersonaAPIClient::InquiryTemplateVersionAttributesTheme
 
 ## Properties
 
@@ -96,9 +96,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::InquiryTemplateVersionAttributesTheme.new(
+instance = PersonaAPIClient::InquiryTemplateVersionAttributesTheme.new(
   border_radius: null,
   border_radius_input: null,
   border_radius_modal: null,

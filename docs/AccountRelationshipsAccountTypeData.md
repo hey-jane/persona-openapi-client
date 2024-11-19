@@ -1,4 +1,4 @@
-# OpenapiClient::AccountRelationshipsAccountTypeData
+# PersonaAPIClient::AccountRelationshipsAccountTypeData
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::AccountRelationshipsAccountTypeData.new(
+instance = PersonaAPIClient::AccountRelationshipsAccountTypeData.new(
   id: null,
   type: null
 )

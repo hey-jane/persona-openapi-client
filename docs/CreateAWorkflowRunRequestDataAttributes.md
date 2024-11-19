@@ -1,4 +1,4 @@
-# OpenapiClient::CreateAWorkflowRunRequestDataAttributes
+# PersonaAPIClient::CreateAWorkflowRunRequestDataAttributes
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateAWorkflowRunRequestDataAttributes.new(
+instance = PersonaAPIClient::CreateAWorkflowRunRequestDataAttributes.new(
   example_field_1: null,
   example_field_2: null
 )

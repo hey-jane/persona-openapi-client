@@ -1,4 +1,4 @@
-# OpenapiClient::WorkflowRunRelationshipsWorkflowData
+# PersonaAPIClient::WorkflowRunRelationshipsWorkflowData
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::WorkflowRunRelationshipsWorkflowData.new(
+instance = PersonaAPIClient::WorkflowRunRelationshipsWorkflowData.new(
   type: null,
   id: null
 )

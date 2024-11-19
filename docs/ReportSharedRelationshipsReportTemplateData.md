@@ -1,4 +1,4 @@
-# OpenapiClient::ReportSharedRelationshipsReportTemplateData
+# PersonaAPIClient::ReportSharedRelationshipsReportTemplateData
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportSharedRelationshipsReportTemplateData.new(
+instance = PersonaAPIClient::ReportSharedRelationshipsReportTemplateData.new(
   id: rptp_tQumELV14h7Vh9Qqm8Ytm5K1,
   type: report-template/watchlist
 )

@@ -1,4 +1,4 @@
-# OpenapiClient::ReportPoliticallyExposedPersonRequest
+# PersonaAPIClient::ReportPoliticallyExposedPersonRequest
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportPoliticallyExposedPersonRequest.new(
+instance = PersonaAPIClient::ReportPoliticallyExposedPersonRequest.new(
   type: null,
   attributes: null
 )

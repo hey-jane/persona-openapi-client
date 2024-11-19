@@ -1,4 +1,4 @@
-# OpenapiClient::VerificationSharedRelationshipsVerificationTemplate
+# PersonaAPIClient::VerificationSharedRelationshipsVerificationTemplate
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::VerificationSharedRelationshipsVerificationTemplate.new(
+instance = PersonaAPIClient::VerificationSharedRelationshipsVerificationTemplate.new(
   data: null
 )
 ```

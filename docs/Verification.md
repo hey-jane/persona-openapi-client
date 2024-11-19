@@ -1,4 +1,4 @@
-# OpenapiClient::Verification
+# PersonaAPIClient::Verification
 
 ## Class instance methods
 
@@ -9,9 +9,9 @@ Returns the list of classes defined in oneOf.
 #### Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-OpenapiClient::Verification.openapi_one_of
+PersonaAPIClient::Verification.openapi_one_of
 # =>
 # [
 #   :'VerificationAamva',
@@ -37,9 +37,9 @@ Returns the discriminator's property name.
 #### Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-OpenapiClient::Verification.openapi_discriminator_name
+PersonaAPIClient::Verification.openapi_discriminator_name
 # => :'type'
 ```
 
@@ -50,9 +50,9 @@ Returns the discriminator's mapping.
 #### Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-OpenapiClient::Verification.openapi_discriminator_mapping
+PersonaAPIClient::Verification.openapi_discriminator_mapping
 # =>
 # {
 #   :'verification/aamva' => :'VerificationAamva',
@@ -78,12 +78,12 @@ Find the appropriate object from the `openapi_one_of` list and casts the data in
 #### Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-OpenapiClient::Verification.build(data)
+PersonaAPIClient::Verification.build(data)
 # => #<VerificationAamva:0x00007fdd4aab02a0>
 
-OpenapiClient::Verification.build(data_that_doesnt_match)
+PersonaAPIClient::Verification.build(data_that_doesnt_match)
 # => nil
 ```
 

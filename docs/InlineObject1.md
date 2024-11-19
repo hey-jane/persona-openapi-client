@@ -1,4 +1,4 @@
-# OpenapiClient::InlineObject1
+# PersonaAPIClient::InlineObject1
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::InlineObject1.new(
+instance = PersonaAPIClient::InlineObject1.new(
   errors: null
 )
 ```

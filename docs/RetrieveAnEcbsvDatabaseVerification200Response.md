@@ -1,4 +1,4 @@
-# OpenapiClient::RetrieveAnEcbsvDatabaseVerification200Response
+# PersonaAPIClient::RetrieveAnEcbsvDatabaseVerification200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::RetrieveAnEcbsvDatabaseVerification200Response.new(
+instance = PersonaAPIClient::RetrieveAnEcbsvDatabaseVerification200Response.new(
   data: null
 )
 ```

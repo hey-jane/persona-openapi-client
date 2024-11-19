@@ -1,4 +1,4 @@
-# OpenapiClient::VerificationDatabaseSerpro
+# PersonaAPIClient::VerificationDatabaseSerpro
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::VerificationDatabaseSerpro.new(
+instance = PersonaAPIClient::VerificationDatabaseSerpro.new(
   type: null,
   id: ver_ABC123,
   attributes: null,

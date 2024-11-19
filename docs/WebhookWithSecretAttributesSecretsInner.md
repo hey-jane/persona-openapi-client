@@ -1,4 +1,4 @@
-# OpenapiClient::WebhookWithSecretAttributesSecretsInner
+# PersonaAPIClient::WebhookWithSecretAttributesSecretsInner
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::WebhookWithSecretAttributesSecretsInner.new(
+instance = PersonaAPIClient::WebhookWithSecretAttributesSecretsInner.new(
   value: null,
   expires_at: null
 )

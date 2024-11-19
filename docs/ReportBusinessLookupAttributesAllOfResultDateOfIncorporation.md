@@ -1,4 +1,4 @@
-# OpenapiClient::ReportBusinessLookupAttributesAllOfResultDateOfIncorporation
+# PersonaAPIClient::ReportBusinessLookupAttributesAllOfResultDateOfIncorporation
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportBusinessLookupAttributesAllOfResultDateOfIncorporation.new(
+instance = PersonaAPIClient::ReportBusinessLookupAttributesAllOfResultDateOfIncorporation.new(
   granularity: year,
   day: null,
   month: null,

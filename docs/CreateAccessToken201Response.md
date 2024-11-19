@@ -1,4 +1,4 @@
-# OpenapiClient::CreateAccessToken201Response
+# PersonaAPIClient::CreateAccessToken201Response
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateAccessToken201Response.new(
+instance = PersonaAPIClient::CreateAccessToken201Response.new(
   access_token: null,
   expires_in: null,
   scope: null,

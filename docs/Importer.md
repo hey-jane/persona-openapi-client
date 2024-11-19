@@ -1,4 +1,4 @@
-# OpenapiClient::Importer
+# PersonaAPIClient::Importer
 
 ## Class instance methods
 
@@ -9,9 +9,9 @@ Returns the list of classes defined in oneOf.
 #### Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-OpenapiClient::Importer.openapi_one_of
+PersonaAPIClient::Importer.openapi_one_of
 # =>
 # [
 #   :'ImporterAccount',
@@ -32,9 +32,9 @@ Returns the discriminator's property name.
 #### Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-OpenapiClient::Importer.openapi_discriminator_name
+PersonaAPIClient::Importer.openapi_discriminator_name
 # => :'type'
 ```
 
@@ -45,9 +45,9 @@ Returns the discriminator's mapping.
 #### Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-OpenapiClient::Importer.openapi_discriminator_mapping
+PersonaAPIClient::Importer.openapi_discriminator_mapping
 # =>
 # {
 #   :'importer/account' => :'ImporterAccount',
@@ -68,12 +68,12 @@ Find the appropriate object from the `openapi_one_of` list and casts the data in
 #### Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-OpenapiClient::Importer.build(data)
+PersonaAPIClient::Importer.build(data)
 # => #<ImporterAccount:0x00007fdd4aab02a0>
 
-OpenapiClient::Importer.build(data_that_doesnt_match)
+PersonaAPIClient::Importer.build(data_that_doesnt_match)
 # => nil
 ```
 

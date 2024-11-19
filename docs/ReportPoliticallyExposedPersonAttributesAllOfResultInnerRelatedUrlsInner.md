@@ -1,4 +1,4 @@
-# OpenapiClient::ReportPoliticallyExposedPersonAttributesAllOfResultInnerRelatedUrlsInner
+# PersonaAPIClient::ReportPoliticallyExposedPersonAttributesAllOfResultInnerRelatedUrlsInner
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportPoliticallyExposedPersonAttributesAllOfResultInnerRelatedUrlsInner.new(
+instance = PersonaAPIClient::ReportPoliticallyExposedPersonAttributesAllOfResultInnerRelatedUrlsInner.new(
   source_key: internal-data-source,
   name: https://www.example.org/
 )

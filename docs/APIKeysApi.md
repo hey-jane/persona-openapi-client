@@ -1,4 +1,4 @@
-# OpenapiClient::APIKeysApi
+# PersonaAPIClient::APIKeysApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -23,27 +23,27 @@ Creates a new API key with response defaults and permissions.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::APIKeysApi.new
+api_instance = PersonaAPIClient::APIKeysApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_an_api_key_request: OpenapiClient::CreateAnApiKeyRequest.new # CreateAnApiKeyRequest | 
+  create_an_api_key_request: PersonaAPIClient::CreateAnApiKeyRequest.new # CreateAnApiKeyRequest | 
 }
 
 begin
   # Create an API key
   result = api_instance.create_an_api_key(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling APIKeysApi->create_an_api_key: #{e}"
 end
 ```
@@ -61,7 +61,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnApiKey201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling APIKeysApi->create_an_api_key_with_http_info: #{e}"
 end
 ```
@@ -102,28 +102,28 @@ Deactivates an API key within some time period
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::APIKeysApi.new
+api_instance = PersonaAPIClient::APIKeysApi.new
 api_key_id = 'api_key_id_example' # String | API key's ID (starts with \"api_\")
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  expire_an_api_key_request: OpenapiClient::ExpireAnApiKeyRequest.new # ExpireAnApiKeyRequest | 
+  expire_an_api_key_request: PersonaAPIClient::ExpireAnApiKeyRequest.new # ExpireAnApiKeyRequest | 
 }
 
 begin
   # Expire an API key
   result = api_instance.expire_an_api_key(api_key_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling APIKeysApi->expire_an_api_key: #{e}"
 end
 ```
@@ -141,7 +141,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UpdateAnApiKey200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling APIKeysApi->expire_an_api_key_with_http_info: #{e}"
 end
 ```
@@ -183,19 +183,19 @@ Returns a list of your organization's API keys.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::APIKeysApi.new
+api_instance = PersonaAPIClient::APIKeysApi.new
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
-  page: OpenapiClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
+  page: PersonaAPIClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
   filter: { key: { key: 3.56}} # ListAllApiKeysFilterParameter | 
 }
 
@@ -203,7 +203,7 @@ begin
   # List all API keys
   result = api_instance.list_all_api_keys(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling APIKeysApi->list_all_api_keys: #{e}"
 end
 ```
@@ -221,7 +221,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAllApiKeys200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling APIKeysApi->list_all_api_keys_with_http_info: #{e}"
 end
 ```
@@ -262,14 +262,14 @@ Retrieves the information for an existing API key, including its value.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::APIKeysApi.new
+api_instance = PersonaAPIClient::APIKeysApi.new
 api_key_id = 'api_key_id_example' # String | API key's ID (starts with \"api_\")
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -282,7 +282,7 @@ begin
   # Retrieve an API key
   result = api_instance.retrieve_an_api_key(api_key_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling APIKeysApi->retrieve_an_api_key: #{e}"
 end
 ```
@@ -300,7 +300,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateAnApiKey201Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling APIKeysApi->retrieve_an_api_key_with_http_info: #{e}"
 end
 ```
@@ -341,28 +341,28 @@ Updates an existing API key.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::APIKeysApi.new
+api_instance = PersonaAPIClient::APIKeysApi.new
 api_key_id = 'api_key_id_example' # String | API key's ID (starts with \"api_\")
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
-  create_an_api_key_request: OpenapiClient::CreateAnApiKeyRequest.new # CreateAnApiKeyRequest | 
+  create_an_api_key_request: PersonaAPIClient::CreateAnApiKeyRequest.new # CreateAnApiKeyRequest | 
 }
 
 begin
   # Update an API key
   result = api_instance.update_an_api_key(api_key_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling APIKeysApi->update_an_api_key: #{e}"
 end
 ```
@@ -380,7 +380,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UpdateAnApiKey200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling APIKeysApi->update_an_api_key_with_http_info: #{e}"
 end
 ```

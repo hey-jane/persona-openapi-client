@@ -1,4 +1,4 @@
-# OpenapiClient::CreateAReportRequestMeta
+# PersonaAPIClient::CreateAReportRequestMeta
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::CreateAReportRequestMeta.new(
+instance = PersonaAPIClient::CreateAReportRequestMeta.new(
   auto_create_account: null,
   auto_create_account_type_id: null,
   auto_create_account_reference_id: null,

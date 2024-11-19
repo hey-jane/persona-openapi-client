@@ -1,4 +1,4 @@
-# OpenapiClient::ListAllApiKeys200ResponseLinks
+# PersonaAPIClient::ListAllApiKeys200ResponseLinks
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ListAllApiKeys200ResponseLinks.new(
+instance = PersonaAPIClient::ListAllApiKeys200ResponseLinks.new(
   _next: null,
   prev: null
 )

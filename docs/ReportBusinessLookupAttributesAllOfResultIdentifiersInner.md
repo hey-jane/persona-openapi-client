@@ -1,4 +1,4 @@
-# OpenapiClient::ReportBusinessLookupAttributesAllOfResultIdentifiersInner
+# PersonaAPIClient::ReportBusinessLookupAttributesAllOfResultIdentifiersInner
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ReportBusinessLookupAttributesAllOfResultIdentifiersInner.new(
+instance = PersonaAPIClient::ReportBusinessLookupAttributesAllOfResultIdentifiersInner.new(
   state: CA,
   country: US,
   issue_date: 2013-05-12,

@@ -1,4 +1,4 @@
-# OpenapiClient::UpdateAnInquiryRequestDataAttributes
+# PersonaAPIClient::UpdateAnInquiryRequestDataAttributes
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::UpdateAnInquiryRequestDataAttributes.new(
+instance = PersonaAPIClient::UpdateAnInquiryRequestDataAttributes.new(
   note: null,
   fields: null,
   tags: null

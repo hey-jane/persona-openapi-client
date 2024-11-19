@@ -1,4 +1,4 @@
-# OpenapiClient::ImporterSharedAttributes
+# PersonaAPIClient::ImporterSharedAttributes
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ImporterSharedAttributes.new(
+instance = PersonaAPIClient::ImporterSharedAttributes.new(
   completed_at: null,
   created_at: null,
   duplicate_count: null,

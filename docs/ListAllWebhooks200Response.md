@@ -1,4 +1,4 @@
-# OpenapiClient::ListAllWebhooks200Response
+# PersonaAPIClient::ListAllWebhooks200Response
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::ListAllWebhooks200Response.new(
+instance = PersonaAPIClient::ListAllWebhooks200Response.new(
   data: null,
   links: null,
   included: null

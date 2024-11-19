@@ -1,4 +1,4 @@
-# OpenapiClient::RotateAWebhookSecretRequest
+# PersonaAPIClient::RotateAWebhookSecretRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'persona_api_client'
 
-instance = OpenapiClient::RotateAWebhookSecretRequest.new(
+instance = PersonaAPIClient::RotateAWebhookSecretRequest.new(
   meta: null
 )
 ```

@@ -1,4 +1,4 @@
-# OpenapiClient::DevicesApi
+# PersonaAPIClient::DevicesApi
 
 All URIs are relative to *https://withpersona.com/api/v1*
 
@@ -20,14 +20,14 @@ Retrieves a list of Devices.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::DevicesApi.new
+api_instance = PersonaAPIClient::DevicesApi.new
 filter = { key: { key: 3.56}} # ListAllDevicesFilterParameter | 
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -39,7 +39,7 @@ begin
   # List all Devices
   result = api_instance.list_all_devices(filter, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DevicesApi->list_all_devices: #{e}"
 end
 ```
@@ -57,7 +57,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAllDevices200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DevicesApi->list_all_devices_with_http_info: #{e}"
 end
 ```
@@ -97,14 +97,14 @@ Retrieves details of a specific Device.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'persona_api_client'
 # setup authorization
-OpenapiClient.configure do |config|
+PersonaAPIClient.configure do |config|
   # Configure Bearer authorization: bearerAuth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::DevicesApi.new
+api_instance = PersonaAPIClient::DevicesApi.new
 device_id = 'device_id_example' # String | Device ID
 opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
@@ -117,7 +117,7 @@ begin
   # Retrieve a Device
   result = api_instance.retrieve_a_device(device_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DevicesApi->retrieve_a_device: #{e}"
 end
 ```
@@ -135,7 +135,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RetrieveADevice200Response>
-rescue OpenapiClient::ApiError => e
+rescue PersonaAPIClient::ApiError => e
   puts "Error when calling DevicesApi->retrieve_a_device_with_http_info: #{e}"
 end
 ```
