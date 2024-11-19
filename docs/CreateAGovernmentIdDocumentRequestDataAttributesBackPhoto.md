@@ -1,0 +1,18 @@
+# OpenapiClient::CreateAGovernmentIdDocumentRequestDataAttributesBackPhoto
+
+## Properties
+
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+| **data** | [**Array&lt;CreateAGovernmentIdDocumentRequestDataAttributesBackPhotoDataInner&gt;**](CreateAGovernmentIdDocumentRequestDataAttributesBackPhotoDataInner.md) |  | [optional] |
+
+## Example
+
+```ruby
+require 'openapi_client'
+
+instance = OpenapiClient::CreateAGovernmentIdDocumentRequestDataAttributesBackPhoto.new(
+  data: null
+)
+```
+

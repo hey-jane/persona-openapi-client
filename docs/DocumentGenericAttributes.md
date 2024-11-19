@@ -1,0 +1,36 @@
+# OpenapiClient::DocumentGenericAttributes
+
+## Properties
+
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+| **status** | **String** | Possible values: - initiated - submitted - processed - errored  Do not assume this is a static enumeration; Persona may add new values in the future without a versioned update. | [optional] |
+| **created_at** | **Time** |  | [optional] |
+| **processed_at** | **Time** |  | [optional] |
+| **processed_at_ts** | **Integer** |  | [optional] |
+| **kind** | **String** |  | [optional] |
+| **files** | **Array&lt;Object&gt;** | The files uploaded to the document for processing. | [optional] |
+| **files_normalized** | **Array&lt;Object&gt;** |  | [optional] |
+| **extraction_responses** | [**Array&lt;ExtractionResponsesInner&gt;**](ExtractionResponsesInner.md) | A list of extractions resulting from processing the uploaded documents corresponding to the document&#39;s extraction configuration. | [optional] |
+| **document_type** | **Object** | The classification of the document if detected. If unable to be detected, this will be other. | [optional] |
+| **fields** | **Object** | JSON key-value pairs of field name to field value. Exact schema depends on the configuration of your template. | [optional] |
+
+## Example
+
+```ruby
+require 'openapi_client'
+
+instance = OpenapiClient::DocumentGenericAttributes.new(
+  status: null,
+  created_at: null,
+  processed_at: null,
+  processed_at_ts: null,
+  kind: null,
+  files: null,
+  files_normalized: null,
+  extraction_responses: null,
+  document_type: null,
+  fields: null
+)
+```
+
