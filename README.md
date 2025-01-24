@@ -287,6 +287,7 @@ Class | Method | HTTP request | Description
  - [PersonaAPIClient::AccountTypeAttributes](docs/AccountTypeAttributes.md)
  - [PersonaAPIClient::AccountsAddTagRequest](docs/AccountsAddTagRequest.md)
  - [PersonaAPIClient::AccountsAddTagRequestMeta](docs/AccountsAddTagRequestMeta.md)
+ - [PersonaAPIClient::AccountsIncludedObjectsInner](docs/AccountsIncludedObjectsInner.md)
  - [PersonaAPIClient::AccountsRemoveTagRequest](docs/AccountsRemoveTagRequest.md)
  - [PersonaAPIClient::AccountsRemoveTagRequestMeta](docs/AccountsRemoveTagRequestMeta.md)
  - [PersonaAPIClient::AccountsSetAllTagsRequest](docs/AccountsSetAllTagsRequest.md)

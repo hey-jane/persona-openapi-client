@@ -36,7 +36,7 @@ module PersonaAPIClient
     def self.openapi_types
       {
         :'data' => :'Account',
-        :'included' => :'Array<AccountType>'
+        :'included' => :'Array<AccountsIncludedObjectsInner>'
       }
     end
 

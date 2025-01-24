@@ -1,4 +1,4 @@
-# PersonaAPIClient::Document
+# PersonaAPIClient::AccountsIncludedObjectsInner
 
 ## Class instance methods
 
@@ -11,13 +11,10 @@ Returns the list of classes defined in oneOf.
 ```ruby
 require 'persona_api_client'
 
-PersonaAPIClient::Document.openapi_one_of
+PersonaAPIClient::AccountsIncludedObjectsInner.openapi_one_of
 # =>
 # [
-#   :'DocumentGeneric',
-#   :'DocumentGovernmentId',
-#   :'DocumentGovernmentIdNfc',
-#   :'DocumentMobileDriversLicense'
+#   :'AccountType'
 # ]
 ```
 
@@ -30,7 +27,7 @@ Returns the discriminator's property name.
 ```ruby
 require 'persona_api_client'
 
-PersonaAPIClient::Document.openapi_discriminator_name
+PersonaAPIClient::AccountsIncludedObjectsInner.openapi_discriminator_name
 # => :'type'
 ```
 
@@ -43,13 +40,10 @@ Returns the discriminator's mapping.
 ```ruby
 require 'persona_api_client'
 
-PersonaAPIClient::Document.openapi_discriminator_mapping
+PersonaAPIClient::AccountsIncludedObjectsInner.openapi_discriminator_mapping
 # =>
 # {
-#   :'document/generic' => :'DocumentGeneric',
-#   :'document/government-id' => :'DocumentGovernmentId',
-#   :'document/government-id-nfc' => :'DocumentGovernmentIdNfc',
-#   :'document/mobile-drivers-license' => :'DocumentMobileDriversLicense'
+#   :'account-type' => :'AccountType'
 # }
 ```
 
@@ -62,10 +56,10 @@ Find the appropriate object from the `openapi_one_of` list and casts the data in
 ```ruby
 require 'persona_api_client'
 
-PersonaAPIClient::Document.build(data)
-# => #<DocumentGeneric:0x00007fdd4aab02a0>
+PersonaAPIClient::AccountsIncludedObjectsInner.build(data)
+# => #<AccountType:0x00007fdd4aab02a0>
 
-PersonaAPIClient::Document.build(data_that_doesnt_match)
+PersonaAPIClient::AccountsIncludedObjectsInner.build(data_that_doesnt_match)
 # => nil
 ```
 
@@ -77,9 +71,6 @@ PersonaAPIClient::Document.build(data_that_doesnt_match)
 
 #### Return type
 
-- `DocumentGeneric`
-- `DocumentGovernmentId`
-- `DocumentGovernmentIdNfc`
-- `DocumentMobileDriversLicense`
+- `AccountType`
 - `nil` (if no type matches)
 

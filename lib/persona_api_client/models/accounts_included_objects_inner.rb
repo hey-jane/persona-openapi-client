@@ -14,17 +14,12 @@ require 'date'
 require 'time'
 
 module PersonaAPIClient
-  module DocumentIncludedObjectsInner
+  module AccountsIncludedObjectsInner
     class << self
       # List of class defined in oneOf (OpenAPI v3)
       def openapi_one_of
         [
-          :'DocumentFile',
-          :'Inquiry',
-          :'InquiryTemplate',
-          :'InquiryTemplateVersion',
-          :'Template',
-          :'Transaction'
+          :'AccountType'
         ]
       end
 
@@ -36,12 +31,7 @@ module PersonaAPIClient
       # Discriminator's mapping (OpenAPI v3)
       def openapi_discriminator_mapping
         {
-          :'document-file' => :'DocumentFile',
-          :'inquiry' => :'Inquiry',
-          :'inquiry-template' => :'InquiryTemplate',
-          :'inquiry-template-version' => :'InquiryTemplateVersion',
-          :'template' => :'Template',
-          :'transaction' => :'Transaction'
+          :'account-type' => :'AccountType'
         }
       end
 

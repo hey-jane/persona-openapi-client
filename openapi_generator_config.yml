@@ -2,6 +2,7 @@
 
 # rm -rf *.gem docs lib spec
 # curl https://raw.githubusercontent.com/persona-id/persona-openapi/refs/heads/main/openapi-bundled.yaml -O
+# sed -i '' 's/anyOf:/oneOf:/' openapi-bundled.yaml
 # openapi-generator generate --config openapi_generator_config.yml
 
 inputSpec: openapi-bundled.yaml
