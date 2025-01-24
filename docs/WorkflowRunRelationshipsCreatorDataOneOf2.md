@@ -1,10 +1,10 @@
-# PersonaAPIClient::UserAuditLogRelationshipsUserData
+# PersonaAPIClient::WorkflowRunRelationshipsCreatorDataOneOf2
 
 ## Properties
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **type** | **String** | user | [optional] |
+| **type** | **String** | event | [optional] |
 | **id** | **String** |  | [optional] |
 
 ## Example
@@ -12,7 +12,7 @@
 ```ruby
 require 'persona_api_client'
 
-instance = PersonaAPIClient::UserAuditLogRelationshipsUserData.new(
+instance = PersonaAPIClient::WorkflowRunRelationshipsCreatorDataOneOf2.new(
   type: null,
   id: null
 )

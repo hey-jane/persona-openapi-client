@@ -5,7 +5,7 @@
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **id** | **String** |  | [optional] |
-| **type** | **String** |  | [optional] |
+| **type** | **String** | Will be either &#x60;user&#x60;, &#x60;workflow&#x60;, or &#x60;workflow-run&#x60;. | [optional] |
 
 ## Example
 

@@ -4,7 +4,7 @@
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **data** | [**UserAuditLogRelationshipsUserData**](UserAuditLogRelationshipsUserData.md) |  | [optional] |
+| **data** | [**WorkflowRunRelationshipsCreatorDataOneOf1**](WorkflowRunRelationshipsCreatorDataOneOf1.md) |  | [optional] |
 
 ## Example
 

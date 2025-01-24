@@ -15,9 +15,9 @@ PersonaAPIClient::WorkflowRunRelationshipsCreatorData.openapi_one_of
 # =>
 # [
 #   :'Object',
-#   :'UserAuditLogRelationshipsUserData',
 #   :'WorkflowRunRelationshipsCreatorDataOneOf',
-#   :'WorkflowRunRelationshipsCreatorDataOneOf1'
+#   :'WorkflowRunRelationshipsCreatorDataOneOf1',
+#   :'WorkflowRunRelationshipsCreatorDataOneOf2'
 # ]
 ```
 
@@ -46,8 +46,8 @@ PersonaAPIClient::WorkflowRunRelationshipsCreatorData.build(data_that_doesnt_mat
 #### Return type
 
 - `Object`
-- `UserAuditLogRelationshipsUserData`
 - `WorkflowRunRelationshipsCreatorDataOneOf`
 - `WorkflowRunRelationshipsCreatorDataOneOf1`
+- `WorkflowRunRelationshipsCreatorDataOneOf2`
 - `nil` (if no type matches)
 

@@ -1,6 +1,6 @@
 # PersonaAPIClient::CasesApi
 
-All URIs are relative to *https://withpersona.com/api/v1*
+All URIs are relative to *https://api.withpersona.com/api/v1*
 
 | Method | HTTP request | Description |
 | ------ | ------------ | ----------- |
@@ -43,6 +43,7 @@ opts = {
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
+  fields: 'fields_example', # String | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details.
   add_persona_objects_request: PersonaAPIClient::AddPersonaObjectsRequest.new # AddPersonaObjectsRequest | 
 }
 
@@ -82,6 +83,7 @@ end
 | **idempotency_key** | **String** | Ensures the request is idempotent | [optional] |
 | **persona_version** | **String** |  | [optional][default to &#39;2023-01-05&#39;] |
 | **include** | **String** | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the &#x60;included&#x60; key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details. | [optional] |
+| **fields** | **String** | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details. | [optional] |
 | **add_persona_objects_request** | [**AddPersonaObjectsRequest**](AddPersonaObjectsRequest.md) |  | [optional] |
 
 ### Return type
@@ -124,6 +126,7 @@ opts = {
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
+  fields: 'fields_example', # String | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details.
   add_tag_request: PersonaAPIClient::AddTagRequest.new # AddTagRequest | 
 }
 
@@ -163,6 +166,7 @@ end
 | **idempotency_key** | **String** | Ensures the request is idempotent | [optional] |
 | **persona_version** | **String** |  | [optional][default to &#39;2023-01-05&#39;] |
 | **include** | **String** | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the &#x60;included&#x60; key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details. | [optional] |
+| **fields** | **String** | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details. | [optional] |
 | **add_tag_request** | [**AddTagRequest**](AddTagRequest.md) |  | [optional] |
 
 ### Return type
@@ -205,6 +209,7 @@ opts = {
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
+  fields: 'fields_example', # String | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details.
   assign_a_case_request: PersonaAPIClient::AssignACaseRequest.new({meta: PersonaAPIClient::AssignACaseRequestMeta.new({user_email_address: 'user_email_address_example'})}) # AssignACaseRequest | 
 }
 
@@ -244,6 +249,7 @@ end
 | **idempotency_key** | **String** | Ensures the request is idempotent | [optional] |
 | **persona_version** | **String** |  | [optional][default to &#39;2023-01-05&#39;] |
 | **include** | **String** | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the &#x60;included&#x60; key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details. | [optional] |
+| **fields** | **String** | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details. | [optional] |
 | **assign_a_case_request** | [**AssignACaseRequest**](AssignACaseRequest.md) |  | [optional] |
 
 ### Return type
@@ -285,6 +291,7 @@ opts = {
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
+  fields: 'fields_example', # String | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details.
   create_a_case_request: PersonaAPIClient::CreateACaseRequest.new({data: PersonaAPIClient::CreateACaseRequestData.new}) # CreateACaseRequest | 
 }
 
@@ -323,6 +330,7 @@ end
 | **idempotency_key** | **String** | Ensures the request is idempotent | [optional] |
 | **persona_version** | **String** |  | [optional][default to &#39;2023-01-05&#39;] |
 | **include** | **String** | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the &#x60;included&#x60; key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details. | [optional] |
+| **fields** | **String** | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details. | [optional] |
 | **create_a_case_request** | [**CreateACaseRequest**](CreateACaseRequest.md) |  | [optional] |
 
 ### Return type
@@ -364,6 +372,7 @@ opts = {
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   page: PersonaAPIClient::ListAllAccountsPageParameter.new, # ListAllAccountsPageParameter | 
+  fields: 'fields_example', # String | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details.
   filter: { key: { key: 3.56}} # ListAllCasesFilterParameter | 
 }
 
@@ -402,6 +411,7 @@ end
 | **idempotency_key** | **String** | Ensures the request is idempotent | [optional] |
 | **persona_version** | **String** |  | [optional][default to &#39;2023-01-05&#39;] |
 | **page** | [**ListAllAccountsPageParameter**](.md) |  | [optional] |
+| **fields** | **String** | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details. | [optional] |
 | **filter** | [**ListAllCasesFilterParameter**](Object.md) |  | [optional] |
 
 ### Return type
@@ -443,7 +453,8 @@ opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
-  include: 'include_example' # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
+  include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
+  fields: 'fields_example' # String | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details.
 }
 
 begin
@@ -482,6 +493,7 @@ end
 | **idempotency_key** | **String** | Ensures the request is idempotent | [optional] |
 | **persona_version** | **String** |  | [optional][default to &#39;2023-01-05&#39;] |
 | **include** | **String** | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the &#x60;included&#x60; key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details. | [optional] |
+| **fields** | **String** | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details. | [optional] |
 
 ### Return type
 
@@ -523,6 +535,7 @@ opts = {
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
+  fields: 'fields_example', # String | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details.
   remove_tag_request: PersonaAPIClient::RemoveTagRequest.new # RemoveTagRequest | 
 }
 
@@ -562,6 +575,7 @@ end
 | **idempotency_key** | **String** | Ensures the request is idempotent | [optional] |
 | **persona_version** | **String** |  | [optional][default to &#39;2023-01-05&#39;] |
 | **include** | **String** | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the &#x60;included&#x60; key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details. | [optional] |
+| **fields** | **String** | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details. | [optional] |
 | **remove_tag_request** | [**RemoveTagRequest**](RemoveTagRequest.md) |  | [optional] |
 
 ### Return type
@@ -603,7 +617,8 @@ opts = {
   key_inflection: 'camel', # String | Determines casing for the API response
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
-  include: 'include_example' # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
+  include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
+  fields: 'fields_example' # String | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details.
 }
 
 begin
@@ -642,6 +657,7 @@ end
 | **idempotency_key** | **String** | Ensures the request is idempotent | [optional] |
 | **persona_version** | **String** |  | [optional][default to &#39;2023-01-05&#39;] |
 | **include** | **String** | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the &#x60;included&#x60; key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details. | [optional] |
+| **fields** | **String** | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details. | [optional] |
 
 ### Return type
 
@@ -683,6 +699,7 @@ opts = {
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
+  fields: 'fields_example', # String | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details.
   set_status_for_a_case_request: PersonaAPIClient::SetStatusForACaseRequest.new # SetStatusForACaseRequest | 
 }
 
@@ -722,6 +739,7 @@ end
 | **idempotency_key** | **String** | Ensures the request is idempotent | [optional] |
 | **persona_version** | **String** |  | [optional][default to &#39;2023-01-05&#39;] |
 | **include** | **String** | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the &#x60;included&#x60; key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details. | [optional] |
+| **fields** | **String** | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details. | [optional] |
 | **set_status_for_a_case_request** | [**SetStatusForACaseRequest**](SetStatusForACaseRequest.md) |  | [optional] |
 
 ### Return type
@@ -764,6 +782,7 @@ opts = {
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
+  fields: 'fields_example', # String | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details.
   set_tags_request: PersonaAPIClient::SetTagsRequest.new # SetTagsRequest | 
 }
 
@@ -803,6 +822,7 @@ end
 | **idempotency_key** | **String** | Ensures the request is idempotent | [optional] |
 | **persona_version** | **String** |  | [optional][default to &#39;2023-01-05&#39;] |
 | **include** | **String** | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the &#x60;included&#x60; key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details. | [optional] |
+| **fields** | **String** | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details. | [optional] |
 | **set_tags_request** | [**SetTagsRequest**](SetTagsRequest.md) |  | [optional] |
 
 ### Return type
@@ -845,6 +865,7 @@ opts = {
   idempotency_key: 'idempotency_key_example', # String | Ensures the request is idempotent
   persona_version: '2023-01-05', # String | 
   include: 'include_example', # String | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the `included` key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details.
+  fields: 'fields_example', # String | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details.
   update_a_case_request: PersonaAPIClient::UpdateACaseRequest.new # UpdateACaseRequest | 
 }
 
@@ -884,6 +905,7 @@ end
 | **idempotency_key** | **String** | Ensures the request is idempotent | [optional] |
 | **persona_version** | **String** |  | [optional][default to &#39;2023-01-05&#39;] |
 | **include** | **String** | A comma-separated list of relationship paths. This can be used to customize which related resources will be fully serialized in the &#x60;included&#x60; key in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#inclusion-of-related-resources) for more details. | [optional] |
+| **fields** | **String** | A comma-separated list of attributes to include in the response. This can be used to customize which attributes will be serialized in the response. See [Serialization](https://docs.withpersona.com/reference/serialization#sparse-fieldsets) for more details. | [optional] |
 | **update_a_case_request** | [**UpdateACaseRequest**](UpdateACaseRequest.md) |  | [optional] |
 
 ### Return type

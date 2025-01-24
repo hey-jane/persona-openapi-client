@@ -1,6 +1,6 @@
 # PersonaAPIClient::OAuthApi
 
-All URIs are relative to *https://withpersona.com/api/v1*
+All URIs are relative to *https://api.withpersona.com/api/v1*
 
 | Method | HTTP request | Description |
 | ------ | ------------ | ----------- |

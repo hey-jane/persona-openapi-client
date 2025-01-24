@@ -1,6 +1,6 @@
 # PersonaAPIClient::WebhooksInquiryEventsApi
 
-All URIs are relative to *https://withpersona.com/api/v1*
+All URIs are relative to *https://api.withpersona.com/api/v1*
 
 | Method | HTTP request | Description |
 | ------ | ------------ | ----------- |
@@ -39,7 +39,7 @@ opts = {
   persona_webhook_attempts_made: , # Integer | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful.
   persona_webhook_attempts_left: , # Integer | The number of times that Persona will attempt to deliver this webhook. This value is decremented each time Persona attempts to deliver the webhook.
   persona_webhook_first_attempted_at: , # Integer | The time at which Persona first attempted to deliver this webhook. This value is a Unix timestamp in seconds.
-  request_body:  # Hash<String, Object> | 
+  webhook_inquiry_approved_request:  # WebhookInquiryApprovedRequest | 
 }
 
 begin
@@ -76,7 +76,7 @@ end
 | **persona_webhook_attempts_made** | **Integer** | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful. | [optional] |
 | **persona_webhook_attempts_left** | **Integer** | The number of times that Persona will attempt to deliver this webhook. This value is decremented each time Persona attempts to deliver the webhook. | [optional] |
 | **persona_webhook_first_attempted_at** | **Integer** | The time at which Persona first attempted to deliver this webhook. This value is a Unix timestamp in seconds. | [optional] |
-| **request_body** | [**Hash&lt;String, Object&gt;**](Object.md) |  | [optional] |
+| **webhook_inquiry_approved_request** | [**WebhookInquiryApprovedRequest**](WebhookInquiryApprovedRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -117,7 +117,7 @@ opts = {
   persona_webhook_attempts_made: , # Integer | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful.
   persona_webhook_attempts_left: , # Integer | The number of times that Persona will attempt to deliver this webhook. This value is decremented each time Persona attempts to deliver the webhook.
   persona_webhook_first_attempted_at: , # Integer | The time at which Persona first attempted to deliver this webhook. This value is a Unix timestamp in seconds.
-  request_body:  # Hash<String, Object> | 
+  webhook_inquiry_completed_request:  # WebhookInquiryCompletedRequest | 
 }
 
 begin
@@ -154,7 +154,7 @@ end
 | **persona_webhook_attempts_made** | **Integer** | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful. | [optional] |
 | **persona_webhook_attempts_left** | **Integer** | The number of times that Persona will attempt to deliver this webhook. This value is decremented each time Persona attempts to deliver the webhook. | [optional] |
 | **persona_webhook_first_attempted_at** | **Integer** | The time at which Persona first attempted to deliver this webhook. This value is a Unix timestamp in seconds. | [optional] |
-| **request_body** | [**Hash&lt;String, Object&gt;**](Object.md) |  | [optional] |
+| **webhook_inquiry_completed_request** | [**WebhookInquiryCompletedRequest**](WebhookInquiryCompletedRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -195,7 +195,7 @@ opts = {
   persona_webhook_attempts_made: , # Integer | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful.
   persona_webhook_attempts_left: , # Integer | The number of times that Persona will attempt to deliver this webhook. This value is decremented each time Persona attempts to deliver the webhook.
   persona_webhook_first_attempted_at: , # Integer | The time at which Persona first attempted to deliver this webhook. This value is a Unix timestamp in seconds.
-  request_body:  # Hash<String, Object> | 
+  webhook_inquiry_created_request:  # WebhookInquiryCreatedRequest | 
 }
 
 begin
@@ -232,7 +232,7 @@ end
 | **persona_webhook_attempts_made** | **Integer** | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful. | [optional] |
 | **persona_webhook_attempts_left** | **Integer** | The number of times that Persona will attempt to deliver this webhook. This value is decremented each time Persona attempts to deliver the webhook. | [optional] |
 | **persona_webhook_first_attempted_at** | **Integer** | The time at which Persona first attempted to deliver this webhook. This value is a Unix timestamp in seconds. | [optional] |
-| **request_body** | [**Hash&lt;String, Object&gt;**](Object.md) |  | [optional] |
+| **webhook_inquiry_created_request** | [**WebhookInquiryCreatedRequest**](WebhookInquiryCreatedRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -273,7 +273,7 @@ opts = {
   persona_webhook_attempts_made: , # Integer | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful.
   persona_webhook_attempts_left: , # Integer | The number of times that Persona will attempt to deliver this webhook. This value is decremented each time Persona attempts to deliver the webhook.
   persona_webhook_first_attempted_at: , # Integer | The time at which Persona first attempted to deliver this webhook. This value is a Unix timestamp in seconds.
-  request_body:  # Hash<String, Object> | 
+  webhook_inquiry_declined_request:  # WebhookInquiryDeclinedRequest | 
 }
 
 begin
@@ -310,7 +310,7 @@ end
 | **persona_webhook_attempts_made** | **Integer** | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful. | [optional] |
 | **persona_webhook_attempts_left** | **Integer** | The number of times that Persona will attempt to deliver this webhook. This value is decremented each time Persona attempts to deliver the webhook. | [optional] |
 | **persona_webhook_first_attempted_at** | **Integer** | The time at which Persona first attempted to deliver this webhook. This value is a Unix timestamp in seconds. | [optional] |
-| **request_body** | [**Hash&lt;String, Object&gt;**](Object.md) |  | [optional] |
+| **webhook_inquiry_declined_request** | [**WebhookInquiryDeclinedRequest**](WebhookInquiryDeclinedRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -351,7 +351,7 @@ opts = {
   persona_webhook_attempts_made: , # Integer | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful.
   persona_webhook_attempts_left: , # Integer | The number of times that Persona will attempt to deliver this webhook. This value is decremented each time Persona attempts to deliver the webhook.
   persona_webhook_first_attempted_at: , # Integer | The time at which Persona first attempted to deliver this webhook. This value is a Unix timestamp in seconds.
-  request_body:  # Hash<String, Object> | 
+  webhook_inquiry_expired_request:  # WebhookInquiryExpiredRequest | 
 }
 
 begin
@@ -388,7 +388,7 @@ end
 | **persona_webhook_attempts_made** | **Integer** | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful. | [optional] |
 | **persona_webhook_attempts_left** | **Integer** | The number of times that Persona will attempt to deliver this webhook. This value is decremented each time Persona attempts to deliver the webhook. | [optional] |
 | **persona_webhook_first_attempted_at** | **Integer** | The time at which Persona first attempted to deliver this webhook. This value is a Unix timestamp in seconds. | [optional] |
-| **request_body** | [**Hash&lt;String, Object&gt;**](Object.md) |  | [optional] |
+| **webhook_inquiry_expired_request** | [**WebhookInquiryExpiredRequest**](WebhookInquiryExpiredRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -429,7 +429,7 @@ opts = {
   persona_webhook_attempts_made: , # Integer | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful.
   persona_webhook_attempts_left: , # Integer | The number of times that Persona will attempt to deliver this webhook. This value is decremented each time Persona attempts to deliver the webhook.
   persona_webhook_first_attempted_at: , # Integer | The time at which Persona first attempted to deliver this webhook. This value is a Unix timestamp in seconds.
-  request_body:  # Hash<String, Object> | 
+  webhook_inquiry_failed_request:  # WebhookInquiryFailedRequest | 
 }
 
 begin
@@ -466,7 +466,7 @@ end
 | **persona_webhook_attempts_made** | **Integer** | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful. | [optional] |
 | **persona_webhook_attempts_left** | **Integer** | The number of times that Persona will attempt to deliver this webhook. This value is decremented each time Persona attempts to deliver the webhook. | [optional] |
 | **persona_webhook_first_attempted_at** | **Integer** | The time at which Persona first attempted to deliver this webhook. This value is a Unix timestamp in seconds. | [optional] |
-| **request_body** | [**Hash&lt;String, Object&gt;**](Object.md) |  | [optional] |
+| **webhook_inquiry_failed_request** | [**WebhookInquiryFailedRequest**](WebhookInquiryFailedRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -507,7 +507,7 @@ opts = {
   persona_webhook_attempts_made: , # Integer | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful.
   persona_webhook_attempts_left: , # Integer | The number of times that Persona will attempt to deliver this webhook. This value is decremented each time Persona attempts to deliver the webhook.
   persona_webhook_first_attempted_at: , # Integer | The time at which Persona first attempted to deliver this webhook. This value is a Unix timestamp in seconds.
-  request_body:  # Hash<String, Object> | 
+  webhook_inquiry_marked_for_review_request:  # WebhookInquiryMarkedForReviewRequest | 
 }
 
 begin
@@ -544,7 +544,7 @@ end
 | **persona_webhook_attempts_made** | **Integer** | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful. | [optional] |
 | **persona_webhook_attempts_left** | **Integer** | The number of times that Persona will attempt to deliver this webhook. This value is decremented each time Persona attempts to deliver the webhook. | [optional] |
 | **persona_webhook_first_attempted_at** | **Integer** | The time at which Persona first attempted to deliver this webhook. This value is a Unix timestamp in seconds. | [optional] |
-| **request_body** | [**Hash&lt;String, Object&gt;**](Object.md) |  | [optional] |
+| **webhook_inquiry_marked_for_review_request** | [**WebhookInquiryMarkedForReviewRequest**](WebhookInquiryMarkedForReviewRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -585,7 +585,7 @@ opts = {
   persona_webhook_attempts_made: , # Integer | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful.
   persona_webhook_attempts_left: , # Integer | The number of times that Persona will attempt to deliver this webhook. This value is decremented each time Persona attempts to deliver the webhook.
   persona_webhook_first_attempted_at: , # Integer | The time at which Persona first attempted to deliver this webhook. This value is a Unix timestamp in seconds.
-  request_body:  # Hash<String, Object> | 
+  webhook_inquiry_transitioned_request:  # WebhookInquiryTransitionedRequest | 
 }
 
 begin
@@ -622,7 +622,7 @@ end
 | **persona_webhook_attempts_made** | **Integer** | The number of times that Persona has attempted to deliver this webhook. This value is incremented each time Persona attempts to deliver the webhook, regardless of whether the delivery was successful. | [optional] |
 | **persona_webhook_attempts_left** | **Integer** | The number of times that Persona will attempt to deliver this webhook. This value is decremented each time Persona attempts to deliver the webhook. | [optional] |
 | **persona_webhook_first_attempted_at** | **Integer** | The time at which Persona first attempted to deliver this webhook. This value is a Unix timestamp in seconds. | [optional] |
-| **request_body** | [**Hash&lt;String, Object&gt;**](Object.md) |  | [optional] |
+| **webhook_inquiry_transitioned_request** | [**WebhookInquiryTransitionedRequest**](WebhookInquiryTransitionedRequest.md) |  | [optional] |
 
 ### Return type
 
