@@ -4,7 +4,7 @@
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **type** | **String** | event | [optional] |
+| **type** | **String** | user | [optional] |
 | **id** | **String** |  | [optional] |
 
 ## Example

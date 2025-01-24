@@ -5,7 +5,7 @@
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **data** | [**Account**](Account.md) |  | [optional] |
-| **included** | [**Array&lt;AccountType&gt;**](AccountType.md) |  | [optional] |
+| **included** | [**Array&lt;AccountsIncludedObjectsInner&gt;**](AccountsIncludedObjectsInner.md) |  | [optional] |
 
 ## Example
 
